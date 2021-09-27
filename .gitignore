@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# My files
+user_data.py
+datas/GL/*
+datas/JP/*
+res/icons/*
+res/face/*
+res/ci/*
+res/command/*
+res/illust/*
+txt_files/*
+translation_sheet/*
