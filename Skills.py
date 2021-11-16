@@ -76,7 +76,7 @@ def SkillTemplate(s):
 }}}}"""
 
 def SkillTemplateJP(s, special=False):
-	return f"""{{{{SkillRaw
+	return f"""{{{{JP/SkillRaw
 |id = {s["id"]}
 |lv = {{{{{{lv|0}}}}}}
 |weapon_mastery_lv = {{{{{{weapon_mastery_lv|0}}}}}}

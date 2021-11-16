@@ -3,12 +3,12 @@ import os
 import UnityPy
 import json
 
-src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters"
+src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 env = UnityPy.load(src)
-extract_dir = "C:\\Users\\Arctia\\Desktop\\Projects\\Disgaea-RPG-Wiki\\Scripts\\wiki\\datas\\JP"
+extract_dir = "C:/Users/Arctia/Desktop/Projects/Disgaea-RPG-Wiki/Scripts/wiki/datas/JP"
 
 for obj in env.objects:
-    if obj.type == "MonoBehaviour":
+    if 1==1:#obj.type == "MonoBehaviour":
         # export
         if obj.serialized_type.nodes:
             # save decoded data

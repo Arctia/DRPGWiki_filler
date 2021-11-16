@@ -77,7 +77,7 @@ def read():
 	cids = ReadExcell(jish)
 
 	start = f"""<includeonly>{{{{#switch: {{{{{{1}}}}}}\n"""
-	names, bios, evilities, evilities_effect, titles, skills, skills_desc = start, start, start, start, start, start, start
+	names, bios, evilities, evilities_effect, titles, skills, skills_desc, skills_eff = start, start, start, start, start, start, start, start
 	for c in Charas:
 		for i in cids:
 			try:
@@ -90,6 +90,7 @@ def read():
 					titles += WriteTitles(c, ci)
 					skills += WriteSkills(c, ci)
 					skills_desc += WriteSkillsDescription(c, ci)
+					skills_eff += WriteSkillsEffect(c, ci)
 			except:
 				pass
 
@@ -129,6 +130,11 @@ def read():
 		page = wiki.pages["Template:Enum/JP/LeaderSkills/Effect"]
 		content = evilities_effect + end
 		Upload(page, content, True)
+	with open("./translation_sheet/txt/skills_effect.txt", "w", encoding="utf-8") as f:
+		f.write(skills_eff + end)
+		page = wiki.pages["Template:Enum/JP/SkillsEffect"]
+		content = skills_eff + end
+		Upload(page, content, True)
 
 def Fill_Arrays(c, l):
 	if c["unique_flg"] == True:
@@ -158,16 +164,13 @@ def WriteEvilities(c, ci):
 	return string
 
 def EvilityEffect(e, effect):
-	if e["id"] in [542, 100262, 100161]:
+	_to_replace = ["# PER #", "# PER#", "#PER #", "#PER#"] 
+	if e["id"] in [542, 100262, 100161]: # Drop Rate Increase exception
 		val = (e["effect_value_min"]/100)+1
-		effect = effect.replace("# PER #", str(val))
-		effect = effect.replace("#PER #", str(val))
-		effect = effect.replace("# PER#", str(val))
-		return effect.replace("#PER#", str(val))
-	effect = effect.replace("# PER #", str(e["effect_value_min"]))
-	effect = effect.replace("#PER #", str(e["effect_value_min"]))
-	effect = effect.replace("# PER#", str(e["effect_value_min"]))
-	return effect.replace("#PER#", str(e["effect_value_min"]))
+		for r in _to_replace: effect = effect.replace(r, str(val))
+		return effect
+	for r in _to_replace: effect = effect.replace(r, str(e["effect_value_min"]))
+	return effect
 
 def WriteEvilitiesEffect(c, ci):
 	l_ids = [c["m_leader_skill_id"], c["m_leader_skill_id_sub_1"], c["m_leader_skill_id_sub_2"], c["m_leader_skill_id_sub_3"]]
@@ -238,6 +241,43 @@ def WriteSkillsDescription(c, ci):
 			if s["id"] == sid:
 				string += f"""| {s['id']} = {ci[f"Skill Desc {count}"]}\n"""
 				count += 1
+				break
+	return string
+
+def WriteSkillsEffect(c, ci):
+	skills_ids = []
+	for s in CharaCommands:
+		if s["m_character_id"] == c["id"]:
+			skills_ids.append(s["m_command_id"])
+
+	for s in CharaRetrofits:
+		if s["m_character_id"] == c["id"]:
+			if s["retrofit_type"] == 1:
+				skills_ids.append(s["retrofit_value"])
+				break
+
+	string = ""
+	count = 1
+	for sid in skills_ids:
+		for s in Commands:
+			if s["id"] == sid:
+				effect = ci[f"Skill Effect {count}"]
+
+				for e in range(1,10):
+					effect = effect.replace("# ", "#").replace("%s #" % e, "%s#" % e)
+					if ("#PER%s#" % e) in effect:
+						if s["effect_values_min"][e-1] != s["effect_values_max_50"][e-1]:
+							value = "%s>%s" % (s["effect_values_min"][e-1], s["effect_values_max_50"][e-1])
+							value = value.replace("%", "", 1)
+						else:
+							value = "%s" % s["effect_values_min"][e-1]
+						effect = effect.replace("#PER%s#" % e, value)
+				for z in ["+", "-"]:
+					if z in effect:
+						effect = effect.replace(z, " " +z).replace("%", "% ").replace("  ", " ").replace(" ,", ", ").replace("  ", " ")
+
+				string += f"""| {s['id']} = {effect}\n"""
+				count +=1
 				break
 	return string
 
@@ -399,7 +439,7 @@ def ReadExcell(jish):
 			for cl in range(2,worksheet.max_column+1, 3):
 				if worksheet.cell(RowIDS["Character ID"]+1, cl).value == c["Character ID"]:
 					for key in RowIDS:
-						if "Character ID" in key or "Skill Effect" in key: continue
+						if "Character ID" in key: continue # or "Skill Effect" in key: continue
 						value = worksheet.cell(RowIDS[key]+1, cl+1).value
 						if value == None or value == "None":
 							val = worksheet.cell(RowIDS[key]+1, cl).value

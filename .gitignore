@@ -132,10 +132,14 @@ dmypy.json
 user_data.py
 datas/GL/*
 datas/JP/*
+datas/JP_2/*
+datas/JP_backup/*
 res/icons/*
 res/face/*
 res/ci/*
 res/command/*
 res/illust/*
 txt_files/*
-translation_sheet/*
+translation_sheet/Disgaea*
+translation_sheet/resul*
+translation_sheet/backups/

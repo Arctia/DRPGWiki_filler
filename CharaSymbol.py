@@ -8,8 +8,12 @@ def _not_usable(c):
 		return True
 	return False
 
+def _is_JP():
+	if JP: return "true"
+	return "false"
+
 def _template(c, rarity):
-	return f"""{{{{CharacterNavBoxFrame|{c["id"]}|Weapon={c["best_weapon_type"]}|kind={"human" if c['character_type'] == 1 else 'monster'}|JP=true|rarity={rarity}|type={EnumEvilSymbol[c["m_potential_class_id"]]}}}}}"""
+	return f"""{{{{CharacterNavBoxFrame|{c["id"]}|Weapon={c["best_weapon_type"]}|kind={"human" if c['character_type'] == 1 else 'monster'}|JP={_is_JP()}|rarity={rarity}|type={EnumEvilSymbol[c["m_potential_class_id"]]}}}}}"""
 
 def main():
 	print("starting the work")
@@ -23,6 +27,8 @@ def main():
 	for _type in range(1,7):
 		for c in Charas:
 			if _not_usable(c): continue
+			if not JP:
+				if not c["id"] in global_ids: continue
 			if _type == c["m_potential_class_id"] and c["unique_flg"] == 1:
 				types[type_ids[_type]] += _template(c, rarity=5)
 
@@ -30,6 +36,8 @@ def main():
 		types[type_ids[_type]] += "<br>"
 		for c in Charas:
 			if _not_usable(c): continue
+			if not JP:
+				if not c["id"] in global_ids: continue
 			if _type == c["m_potential_class_id"] and c["unique_flg"] == 0:
 				types[type_ids[_type]] += _template(c, rarity=4)
 
