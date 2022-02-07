@@ -331,6 +331,32 @@ def Evilities(c, l):
 
 	return l 
 
+def spells():
+	if JP:
+		col = offset_x
+		worksheet = workbook["Spells"]
+		for c in Commands:
+			if c["id"] < 200000 or c["id"] > 299999: continue
+			worksheet.cell(1, col, "Japanese")
+			worksheet.cell(1, col+1, "English")
+			counter = 2
+			for e in ["id", "name", "description", "description_effect"]:
+				worksheet.cell(counter, col, c[e])
+				counter += 1
+			col += 3
+	else:
+		print("Using Global Spells")
+		col = offset_x + 1
+		worksheet = workbook["Spells"]
+		for c in Commands:
+			if c["id"] < 200000 or c["id"] > 299999: continue
+			counter = 2
+			for e in ["id", "name", "description", "description_effect"]:
+				worksheet.cell(counter, col, c[e])
+				counter += 1
+			col += 3
+	workbook.save(spath)
+
 def WriteExcell(jish):
 	if JP:
 		for key in jish:
@@ -400,9 +426,9 @@ class Record():
 
 	def save_json(self):
 		with open('./translation_sheet/save/check.json', 'w') as json_file:
-			json.dump(self.cids_check, json_file)
+			json.dump(self.cids_check, json_file, indent=4)
 		with open('./translation_sheet/save/translated.json', 'w') as json_file:
-			json.dump(self.cids_record, json_file)
+			json.dump(self.cids_record, json_file, indent=4)
 
 	def WriteRecord(self, c, key, val):
 		#print(cids_check)
@@ -463,8 +489,10 @@ def ReadExcell(jish):
 	RECORD.save_json()
 	return cids
 					
-_r_ = input("write w to write r to read: ")
+_r_ = input("write w to write r to read s to write spells: ")
 if _r_ == "w":
 	main()
 elif _r_ == "r":
 	read()
+elif _r_ == "s":
+	spells()

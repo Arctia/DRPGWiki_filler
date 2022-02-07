@@ -16,7 +16,7 @@ def main():
 
 		if CHARA_MODE in ("new", "n"): New_Characters(c)
 		elif CHARA_MODE in ("edit", "e"):
-			if c["id"] < 40000 and c["m_leader_skill_id"] != 0: 
+			if c["id"] < 40000 and c["m_leader_skill_id"] != 0 and c["id"] > 21016:
 				Edit_Characters(c)
 		elif CHARA_MODE in ("rewrite", "r"):
 			if c["id"] in id_to_rewrite: Rewrite_Characters(c, False)
@@ -291,7 +291,8 @@ def SpellsTable(c):
 		if mc["m_character_id"] == c["id"]:
 			spells_id.append([mc["m_command_id"], mc["weapon_mastery_lv"]])
 
-	for spell in spells_id: Skills.create_skill(spell[0], EDIT)
+	# Create Spells but they're already there
+	#for spell in spells_id: Skills.create_skill(spell[0], EDIT)
 
 	string = f"{{{{Template:{jp_flag}SpellsTableRaw\n"
 	count = 1
@@ -302,8 +303,12 @@ def SpellsTable(c):
 	return string
 
 def NetherEnhancementTable(c):
-	return f"""{{{{NetherEnhancementTableRaw
-{RetroFitsTable(c)}
+	arr = RetroFitsTable(c)
+	string = ""
+	if arr[1] == 16: string = "15"
+	elif arr[1] == 21: string = "20"
+	return f"""{{{{NetherEnhancementTable{string}Raw
+{arr[0]}
 }}}}"""
 
 def RetroFitsTable(c):
@@ -314,9 +319,17 @@ def RetroFitsTable(c):
 			if r["retrofit_type"] == 1: string += f"""| row_{count} = Unlock Skill: '''{{{{Enum/JP/Skills|{r["retrofit_value"]}}}}}'''"""
 			elif r["retrofit_type"] == 3: string += f"""| row_{count} = Parameters '''+{r["retrofit_value"]}%'''"""
 			elif r["retrofit_type"] == 2: string += f"""| row_{count} = Unlock Evility: '''{{{{Enum/JP/LeaderSkills|{c["id"]}{int(r["retrofit_value"])+1}}}}}'''"""
+			elif r["retrofit_type"] == 4: string += f"""| row_{count} = Unique Skills SP Consumption '''-{r["retrofit_value"]}'''"""
+			elif r["retrofit_type"] == 6: string += f"""| row_{count} = ATK '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 8: string += f"""| row_{count} = INT '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 14: string += f"""| row_{count} = HP / DEF / RES '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 10: string += f"""| row_{count} = Flame Resistance '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 11: string += f"""| row_{count} = Water Resistance '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 12: string += f"""| row_{count} = Wind Resistance '''+{r["retrofit_value"]}%'''"""
+			elif r["retrofit_type"] == 13: string += f"""| row_{count} = Star Resistance '''+{r["retrofit_value"]}%'''"""
 			string += f"\n"
 			count += 1
-	return string
+	return [string, count]
 
 def Rituals(c, tabber=False):
 	if JP and tabber:

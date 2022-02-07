@@ -68,7 +68,7 @@
 | 69 = Beach Etna
 | 70 = Beach Flonne
 | 71 = Meaver
-| 72 = Marine
+| 72 = Marlene
 | 73 = Fuka XENO
 | 74 = Raspberyl XENO
 | 75 = Yukata Valvatorez
@@ -143,7 +143,16 @@
 | 145 = Magical Girl Laharl
 | 146 = Tavern Idol Flonne
 | 147 = Kagemaru
+| 148 = Future Warrior Pleinair
 | 149 = Admiral Rozalin
+| 150 = Future Usalia
+| 151 = Formal Valvatorez
+| 152 = Formal Artina
+| 153 = Nisa
+| 154 = Santa Seraphina
+| 155 = Santa Torachiyo
+| 156 = Supreme Girl Laharl
+| 157 = New Years Etna
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -250,6 +259,10 @@
 | 20041 = Des X
 | 20042 = Super Desco
 | 20043 = Murder Machine Prinny
+| 20044 = Santa Liezerota
+| 20045 = Zodiac Fuka
+| 20046 = Overlord Rozalin
+| 20051 = Love X
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

@@ -1,6 +1,6 @@
 <includeonly>{{#switch: {{{1}}}
 | 3000011 = Blazing Knuckle
-| 3000012 = Overlord's wrath
+| 3000012 = Overlord's Wrath
 | 3000013 = Meteor Impact
 | 3000014 = Overlord Dimension
 | 3000021 = Exploding Tiger
@@ -71,6 +71,9 @@
 | 3000221 = Spinning Swordance
 | 3000222 = Running Crosses
 | 3000223 = Summon Swordance
+| 3000231 = Magnificent Performance
+| 3000232 = Rose Stinger
+| 3000233 = Rosen Stars
 | 3000241 = Short Recoil
 | 3000242 = The Great Gun King
 | 3000243 = Magnificent World
@@ -444,9 +447,39 @@
 | 3001471 = Senpu Kunai
 | 3001472 = Art of Wire Trapping
 | 3001473 = Kageka Hyousainojin
+| 3001481 = Night of the Usagi
+| 3001482 = Usagi Sparring Practice
+| 3001483 = Blazing Shark Flash
 | 3001491 = Admiral's Order
 | 3001492 = Extinction Space Bomb
 | 3001493 = Galactic Wave Cannon
+| 3001501 = Usa-Usa Burst
+
+| 3001502 = Future Beam
+
+| 3001503 = Launch Rabbit Yell
+
+| 3001511 = Gravity Squeeze
+| 3001512 = Collapse Hall
+| 3001513 = Lunatic Wave
+| 3001521 = Request for Power
+| 3001522 = Twin Catastrophe
+| 3001523 = Holy Blessing
+| 3001531 = Justice Knife
+| 3001532 = V Extreme
+| 3001533 = N-I-S-A!
+| 3001541 = Dazzling Gift
+| 3001542 = Surprise Burst
+| 3001543 = Gorgeous Yuletide Decor
+| 3001551 = Wight Christmas
+| 3001552 = Onigiri For You
+| 3001553 = Merri Cristenmasse
+| 3001561 = Supreme Overlord's Realm
+| 3001562 = Black Flame Strike
+| 3001563 = Supreme Overlord Dimension
+| 3001571 = Howling Noise
+| 3001572 = Etna On Stage
+| 3001573 = Etna Concert
 | 3010011 = Prism Dynamite
 | 3010012 = Prism Justice
 | 3010013 = Prism Legend
@@ -638,6 +671,18 @@
 | 3200431 = Prinny Murder Barrage
 | 3200432 = Prinny Destroy β
 | 3200433 = Prinny Genocide Cannon
+| 3200441 = Last Resort...?
+| 3200442 = Ultimate Demon Present!
+| 3200443 = Frozen Memories
+| 3200451 = Year of the Tiger!
+| 3200452 = New Year's Roar
+| 3200453 = Love Tiger Flame Dance
+| 3200461 = Aetheric Strike
+| 3200462 = Lightning Crest
+| 3200463 = Overlord Authority
+| 3200511 = Love Burst
+| 3200512 = Love Beam
+| 3200513 = Love Sothoth
 | 3210021 = Buccal Cones
 | 3210022 = Frozen Lake
 | 3210023 = Dam Breaker

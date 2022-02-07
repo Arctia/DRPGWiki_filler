@@ -16,7 +16,7 @@ reached_id = 1
 EDIT = True
 EDIT_SKILLS = True
 PAGES_PATH = "./datas/text_pages/"
-To_Edit = ["SkillsTable", "CharacterLinks"]
+To_Edit = ["NetherEnhancementTable", "CharacterLinks"]
 
 # --- Getting terminal parameters
 opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:",["data=", "upload=", "chara=", "ids=", "reachid="])
@@ -61,7 +61,6 @@ def _load_json_(_path):
 
 Charas, CharaCommands, CharaRetrofits, CharaMagicCommands, Commands, LeaderSkills, ClassNames, RitualTrainings, RebirthMaterials, Weapons, Equipment, CharacterStory, CharacterStoryTalk = [],[],[],[],[],[],[],[],[],[],[],[],[]
 if JP:
-	
 	_e = {"character": Charas, "charactercommand": CharaCommands, "characterretrofit": CharaRetrofits, "charactermagiccommand": CharaMagicCommands, "command": Commands, "leaderskill": LeaderSkills, "characterclassname": ClassNames, "ritualtrainings": RitualTrainings, "necessaryrebirthmaterial": RebirthMaterials}
 	for key in _e: _e[key] = _load_json_(key)
 	Charas, CharaCommands, CharaRetrofits, CharaMagicCommands, Commands, LeaderSkills, ClassNames = _e["character"], _e["charactercommand"], _e["characterretrofit"], _e["charactermagiccommand"], _e["command"], _e["leaderskill"], _e["characterclassname"]
