@@ -83,6 +83,12 @@
 | 3000271 = Dark Rosario
 | 3000272 = Destruction Shot
 | 3000273 = Golden Battle Coat
+| 3000291 = Kitty Cat Copter
+| 3000292 = Catly Rave
+| 3000293 = Cat God Cometh!
+| 3000301 = Bane Rose
+| 3000302 = Purgatory Ignition
+| 3000303 = Flame Hazard
 | 3000311 = Chaos Emphasis
 | 3000312 = Dark Phenomenon
 | 3000313 = Chaos Divider
@@ -92,7 +98,7 @@
 | 3000333 = Flonnezilla
 | 3000334 = Extreme Love
 | 3000341 = Love Knuckle
-| 3000342 = Tri Dra-Meow	
+| 3000342 = Tri Dra-Meow
 | 3000343 = Saint Arrow
 | 3000344 = Great Flonzor X
 | 3000351 = Energy Break
@@ -107,7 +113,7 @@
 | 3000381 = Tyrant Sweep
 | 3000382 = Blood Sting
 | 3000383 = Emperor Flughunde
-| 3000391 = Exploding Tiger+
+| 3000391 = Would prefer Awakened Exploding Tiger but changed due to space limitation -Anastasia Delpierre Would prefer Awakened Exploding Tiger but changed due to space limitation -Anastasia Delpierre Exploding Tiger+
 | 3000392 = Hellfire Shot+
 | 3000393 = Avidya Holy Water+
 | 3000394 = Macrocosm+
@@ -133,14 +139,14 @@
 | 3000462 = Lion Flame Stir-Fry
 | 3000463 = Chef's Special
 | 3000471 = Nadarejin
-| 3000472 = Setsu getsuka
+| 3000472 = Added a space/line break because the word is too long to fit in the Skill box. Added a space/line break because the word is too long to fit in the Skill box. Added a space/line break because the word is too long to fit in the Skill box. Added a space/line break because the word is too long to fit in the Skill box. Setsu getsuka
 | 3000473 = Midare Fubuki
-| 3000481 = Hyojin Setsu getsuka
+| 3000481 = Setsu getsuka
 | 3000482 = Shunsetsuza
 | 3000483 = Midare Fubuki
 | 3000491 = Rose Thorns+
 | 3000492 = Rose Crest+
-| 3000493 = Mortal Liberate
+| 3000493 = Liberation preferred but may be too long -Anastasia Delpierre Liberation preferred but may be too long -Anastasia Delpierre Liberation preferred but may be too long -Anastasia Delpierre Liberation preferred but may be too long -Anastasia Delpierre Mortal Liberate
 | 3000494 = Karma Liberate+
 | 3000504 = Justice Robot
 | 3000511 = Deicide Shooter
@@ -454,11 +460,8 @@
 | 3001492 = Extinction Space Bomb
 | 3001493 = Galactic Wave Cannon
 | 3001501 = Usa-Usa Burst
-
 | 3001502 = Future Beam
-
 | 3001503 = Launch Rabbit Yell
-
 | 3001511 = Gravity Squeeze
 | 3001512 = Collapse Hall
 | 3001513 = Lunatic Wave
@@ -480,6 +483,49 @@
 | 3001571 = Howling Noise
 | 3001572 = Etna On Stage
 | 3001573 = Etna Concert
+| 3001581 = Pumpkin Panic
+| 3001582 = Trick Scream
+| 3001583 = Ryubence's Demon Beast Dictionary
+| 3001591 = Swamp Storm
+| 3001592 = Broom Impact
+| 3001593 = S U H M G A
+| 3001601 = Weaken Curse
+| 3001602 = Tomb Crisis
+| 3001603 = Fancy Healing
+| 3001611 = Demonlance: Under the Moon
+| 3001612 = Demonlance: Moon Rabbit Burst
+| 3001613 = Demonlance: Underheaven
+| 3001621 = Demonblade: Frozen Cross Slash
+| 3001622 = Demonblade: Icy Summit Sword
+| 3001623 = Demonblade: Overheaven
+| 3001624 = Berserk Blade: Overheaven
+| 3001631 = Lotus Dive Kick
+| 3001632 = Lightning Demon Fist
+| 3001633 = Million Lotus Palms
+| 3001641 = Love-Hate Sword
+| 3001642 = Glittering Love
+| 3001643 = End of Love
+| 3001651 = Planet Axe
+| 3001652 = Gold Gazer
+| 3001653 = Golden Butterflies
+| 3001661 = Wind Spirit Gale
+| 3001662 = Frostlord's Solidarity
+| 3001663 = Summoned Shadow Double Strike
+| 3001671 = Rest Breeze
+| 3001672 = Steal Funds
+| 3001673 = Chairman's Duties
+| 3001681 = Enemy Cleaning
+| 3001682 = Magnificent Maid's Duties
+| 3001683 = Magnificent Maid's Cleansing
+| 3001691 = Wake Sardine
+| 3001692 = Can Calmak
+| 3001693 = Absolute One
+| 3001731 = Thrust Boost
+| 3001732 = Wind Spirit Kamaitachi
+| 3001733 = Magical Zapper
+| 3001741 = P-A Waterfall Trap
+| 3001742 = Magical Prindance
+| 3001743 = Prinny Asagi Guards
 | 3010011 = Prism Dynamite
 | 3010012 = Prism Justice
 | 3010013 = Prism Legend
@@ -574,6 +620,9 @@
 | 3200082 = Robo Crush
 | 3200083 = Robo Bazooka
 | 3200084 = Arigato Roboto
+| 3200111 = Ding-Dong Dash
+| 3200112 = Wine Bottle Barrage
+| 3200113 = Goodbye Tink
 | 3200133 = Judgment Thunder
 | 3200141 = Rocket Punch
 | 3200142 = Final Punch
@@ -680,9 +729,27 @@
 | 3200461 = Aetheric Strike
 | 3200462 = Lightning Crest
 | 3200463 = Overlord Authority
+| 3200471 = Metal Justice
+| 3200472 = Twilight Elemental
+| 3200473 = World is Metallia's
+| 3200481 = Type-8 Time Bomb
+| 3200482 = Hundred Slashes
+| 3200483 = Witch's Legion
+| 3200491 = Wall of Rime
+| 3200492 = Bewitching Mist
+| 3200493 = Frozen Thunder Retribution
+| 3200501 = Blazing Swamp
+| 3200502 = Colossal Meteor Home Run
+| 3200503 = Astral Knuckle Nova
 | 3200511 = Love Burst
 | 3200512 = Love Beam
 | 3200513 = Love Sothoth
+| 3200521 = Flonne Flare
+| 3200522 = Armed Flonnezilla
+| 3200523 = Flonnezilla Reborn
+| 3200551 = Rebuilt Program
+| 3200552 = Drone Drop
+| 3200553 = Hyper Create!
 | 3210021 = Buccal Cones
 | 3210022 = Frozen Lake
 | 3210023 = Dam Breaker
@@ -1158,5 +1225,6 @@
 | 3301364 = Mystic Dragon Game
 | 200058 = Star
 |}}</includeonly><noinclude>
+This page serves for translations, if you want to help with that please contact Arctia before modify this page directly. Translations are made by [[User:DjinnandTonic|Djinn]], [[User:XYZexal|XYZexal]], Moot, [[User:DurianNoodle|DurianNoodle]] and google translate.
 [[Category:Enum]][[Category:TranslationTables]]
 </noinclude>

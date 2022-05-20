@@ -1,40 +1,35 @@
 
-####################################################################
-# Extrapolate DRPG Event Info and save them to ./txt_files/event.txt
-# Written by Arctia
-####################################################################
-
 from globals import *
-#import StageEnemy
+import StageEnemy
 
-bpath = "./datas/GL/Master"
 
-with open(bpath + "StageData.json", encoding="utf-8") as file:
-	Stages = json.load(file)
+bpath = "./datas/JP/"
 
-with open(bpath + "StageMissionData.json", encoding="utf-8") as file:
-	StageMissions = json.load(file)
+with open(bpath + "stage.json", encoding="utf-8") as file:
+	Stages = json.load(file)["DataList"]
 
-with open(bpath + "EventMissionData.json", encoding="utf-8") as file:
-	MEventMissions = json.load(file)
+with open(bpath + "stagemission.json", encoding="utf-8") as file:
+	StageMissions = json.load(file)["DataList"]
 
-with open(bpath + "EventBoostCharacterData.json", encoding="utf-8") as file:
-	EventBoostCharas = json.load(file)
+with open(bpath + "eventmission.json", encoding="utf-8") as file:
+	MEventMissions = json.load(file)["DataList"]
 
-with open(bpath + "EventMissionDailyData.json", encoding="utf-8") as file:
-	MEventDailyMissions = json.load(file)
+with open(bpath + "eventboostcharacter.json", encoding="utf-8") as file:
+	EventBoostCharas = json.load(file)["DataList"]
 
-with open(bpath + "ProductData.json", encoding="utf-8") as file:
-	MEventShops = json.load(file)
+with open(bpath + "eventmissiondaily.json", encoding="utf-8") as file:
+	MEventDailyMissions = json.load(file)["DataList"]
 
-with open(bpath + "AreaData.json", encoding="utf-8") as file:
-	MStory = json.load(file)
+with open(bpath + "product.json", encoding="utf-8") as file:
+	MEventShops = json.load(file)["DataList"]
+
+with open(bpath + "area.json", encoding="utf-8") as file:
+	MStory = json.load(file)["DataList"]
 
 EV_ID = int(input("Insert the event id: "))
 STAGE_PER_SECTION = int(input("Insert stages per section: "))
-Event_Stage_Pic = f"Event_{EV_ID}_map_icon"
 #Event_Stage_Pic = input("Insert the name of the stage pic on Fandom: ").replace(".png", "")
-#Event_Stage_Pic = "NBP_Map_icon"
+Event_Stage_Pic = f"Event_{EV_ID}_map_icon"
 
 EV_SHOP_ID 			= 100 + EV_ID
 event_start_at 		= 1000101101 + (EV_ID*1000000)
@@ -42,10 +37,7 @@ event_hard_at 		= 1000201101 + (EV_ID*1000000)
 event_rec 			= 10001 + (EV_ID*10); 			event_rec2 	= 10002 + (EV_ID*10)
 event_chapter_name 	= 100010 + (EV_ID*100)
 
-HIDDEN_MODE = "Hidden"
-
-"#########################################################"
-"Script Start"
+#Event_Stage_Pic = "NBP_Map_icon"
 
 def main():
 	easy_stages 	= []; easy_missions 	= []
@@ -61,7 +53,6 @@ def main():
 		if s["m_story_id"] != 0: continue
 
 		if int(str(s["id"])[-6]) == 2:
-			print(s["id"])
 			shard_stages.append(s)
 			shard_missions.append(GetMissions(s))
 		elif int(str(s["id"])[-3]) == 1: 
@@ -79,8 +70,7 @@ def main():
 	content += Table(easy_stages, easy_missions, "Easy")
 	content += Table(normal_stages, normal_missions, "Normal")
 	content += Table(hard_stages, hard_missions, "Hard")
-	if shard_stages != []:
-		content += Table(shard_stages, shard_missions, HIDDEN_MODE)
+	content += Table(shard_stages, shard_missions, "Super Hard Mode")
 	content += f"</tabber>"
 
 	content += f"""\n<tabber>\n"""
@@ -96,6 +86,7 @@ def main():
 
 	content += f"""</tabber>"""
 
+	#print(content)
 	print("[INFO	] Printing result to ./txt_files/event.txt ...")
 	with open("./txt_files/event.txt", "w", encoding="utf-8") as f:
 		f.write(content)
@@ -128,7 +119,7 @@ def DailyMissions():
 """
 
 def Dailies():
-	ids = {2003: "Event Points", 201: "Nether Quartz", 301: "AP Potion", 108: "BG ???"}
+	ids = {2003: "Event Points", 201: "Nether Quartz", 301: "AP Potion", 108: "BG ???", 4914: "Tickets"}
 	for j in range(2008, 2100): ids[j] = "Event Points"
 	string = f""
 	for dm in MEventDailyMissions:
@@ -152,7 +143,7 @@ def Missions():
 		if evm["m_event_id"] == EV_ID:
 			string += f"""|- \n| {evm["title"]}\n"""
 			sss = ids[evm["present_id"]] if evm["present_id"] in ids else "???"
-			string += f"""| {sss} x{evm["present_num"]}\n"""
+			string += f"""| {ids[evm["present_id"]]} x{evm["present_num"]}\n"""
 	return string
 
 def CharacterBoost():
@@ -165,7 +156,7 @@ def CharacterBoost():
 
 {Characters()}
 
-* There's a chance a Wave of Red & White Prism Rangers will appear, rewarding extra Event Points than usual.
+* There's a chance a Wave of pink Prinnies will appear, rewarding extra Event Points than usual.
 
 * Depending on the difficulty of the challenges, there'll be one stage increasing the bonus of higher PT everyday.
 |}}\n"""
@@ -203,25 +194,24 @@ def StartTable(epname="Title"):
 
 
 def Table(stages, missions, mode="Easy"):
+	#print(missions)
 	titles = []
 	for i in range(1,6):
 		for st in MStory:
 			if st["id"] == (event_chapter_name*10+i):
 				titles.append(st["name"])
-	print(titles)
 	content = f"|-|{mode} = {{{{#tag:tabber|"
-	n_ep = 1 if mode == HIDDEN_MODE else 5
-	for ep in range(n_ep):
+	for ep in range(5):
 		content += f"""{{{{!}}}}-{{{{!}}}}{titles[ep]} = """
 		content += StartTable(titles[ep])
 		wide = STAGE_PER_SECTION if not ep == 4 else STAGE_PER_SECTION + 3
-		if mode == HIDDEN_MODE: wide = 3
+		if mode == "Super Hard Mode": wide = 3
 		for c in range(wide):
 			content += FillStage(stages[c+(ep*STAGE_PER_SECTION)], missions[c+(ep*STAGE_PER_SECTION)])
 		content += f"""{{{{!}}}}-
 {{{{!}}}} colspan="6" <div style="text-align: center;"> {{{{!}}}}Area Clear Reward: [[File:Nether Quartz L.png|50px]] Nether Quartz 50x </div>
 """
-		if mode == HIDDEN_MODE: break
+		if mode == "Super Hard Mode": break
 	content += "}}"
 	return content
 
@@ -233,9 +223,17 @@ def FillStage(stage, missions):
 {{{{!}}}} {stage["exp"]}
 {{{{!}}}} ToDo
 {{{{!}}}}
-* {missions[0]} (Nether Quartz x10)
-* {missions[1]} (Nether Quartz x10)
-* {missions[2]} (Nether Quartz x10)\n"""
+* {MissionTranslate(missions[0])} (Nether Quartz x10)
+* {MissionTranslate(missions[1])} (Nether Quartz x10)
+* {MissionTranslate(missions[2])} (Nether Quartz x10)\n"""
+
+def MissionTranslate(mission):
+	if mission == "戦闘不能2人以下で勝利":
+		return "Less than 2 members defeated"
+	elif mission == "戦闘不能1人以下で勝利":
+		return "1 or less member defeated"
+	elif mission == "1人も戦闘不能にならずに勝利":
+		return "All members surviving"
 
 if __name__ == "__main__":
 	main()

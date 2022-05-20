@@ -1,12 +1,14 @@
 
 import json
 import openpyxl
+from openpyxl.styles import PatternFill
 from globals import *
 
 wpath = "./translation_sheet/Disgaea RPG Translations of Characters.xlsx"
 spath = "./translation_sheet/result.xlsx"
 
 workbook = openpyxl.load_workbook(wpath)
+#ws["A1"].fill = PatternFill("solid", start_color="FFA500")
 
 # Row | Col | Text
 
@@ -41,6 +43,8 @@ RowIDS = {"Character ID": 1,
 		  "Evility Desc 4": 31,
 		  }
 
+ids_to_check = [13,16,19,22,25,27,29,31]
+
 offset_x = 2
 cd = []
 UNIQUE_HUMAN = []
@@ -51,6 +55,7 @@ MONSTER = []
 
 def main():
 	for c in Charas:
+		if c["id"] >= 50000: continue
 		l = {}
 		l = Infos(c, l)
 		l = Skills(c, l)
@@ -61,6 +66,34 @@ def main():
 	"Human Generic": HUMAN, "Monster Generic": MONSTER}
 	
 	AddExcell(jish)
+
+def modify():
+	for c in Charas:
+		if c["id"] >= 50000: continue
+		l = {}
+		l = Infos(c, l)
+		l = Skills(c, l)
+		l = Evilities(c, l)
+		Fill_Arrays(c,l)
+
+	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
+	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	
+	ModifyExcell(jish)
+
+def blank_cells():
+	for c in Charas:
+		if c["id"] >= 50000: continue
+		l = {}
+		l = Infos(c, l)
+		l = Skills(c, l)
+		l = Evilities(c, l)
+		Fill_Arrays(c,l)
+
+	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
+	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	
+	BlankExcell(jish)
 
 def read():
 
@@ -94,7 +127,7 @@ def read():
 			except:
 				pass
 
-	end = f"""|}}}}</includeonly><noinclude>\n[[Category:Enum]][[Category:TranslationTables]]\n</noinclude>"""
+	end = f"""|}}}}</includeonly><noinclude>\nThis page serves for translations, if you want to help with that please contact Arctia before modify this page directly. Translations are made by [[User:DjinnandTonic|Djinn]], [[User:XYZexal|XYZexal]], Moot, [[User:DurianNoodle|DurianNoodle]] and google translate.\n[[Category:Enum]][[Category:TranslationTables]]\n</noinclude>"""
 	with open("./translation_sheet/txt/names.txt", "w", encoding="utf-8") as f:
 		f.write(names + end)
 		page = wiki.pages["Template:Enum/JP/CharaName"]
@@ -164,29 +197,65 @@ def WriteEvilities(c, ci):
 	return string
 
 def EvilityEffect(e, effect):
-	_to_replace = ["# PER #", "# PER#", "#PER #", "#PER#"] 
-	if e["id"] in [542, 100262, 100161]: # Drop Rate Increase exception
+	_to_replace = ["# PER #", "# PER#", "#PER #", "#PER#"]
+	if e["id"] in [542, 1672, 100262, 100161]: # Drop Rate Increase exception
 		val = (e["effect_value_min"]/100)+1
 		for r in _to_replace: effect = effect.replace(r, str(val))
 		return effect
 	for r in _to_replace: effect = effect.replace(r, str(e["effect_value_min"]))
 	return effect
 
+def SettingPerString(effect):
+	_to_replace = ["# PER #", "# PER#", "#PER #"]
+	_to_replace2 = ["# PER2 #", "# PER2#", "#PER2 #", "#PER2#"]
+	for r in _to_replace: effect = effect.replace(r, "#PER#")
+	for r in _to_replace2: effect = effect.replace(r, "#PER2#")
+	return effect
+
+def EvilityEffectSpecialCase(e, effect, add=0):
+	par = "#PER#" if add == 0 else "#PER2#"
+	if e["id"] in [542, 1672, 100262, 100161]:
+		val = (e["effect_value_min"]/100)+1
+		effect = effect.replace(par, str(val))
+	return effect
+
+def EvilityEffectReplacePer(e, effect, add=0):
+	par = "#PER#" if add == 0 else "#PER2#"
+	effect = effect.replace(par, str(e["effect_value_min"]))
+	return effect
+
+def EvilityEffectAdditional(e, effect, ae):
+	effect = SettingPerString(effect)
+	effect = EvilityEffectSpecialCase(e, effect, 0)
+	effect = EvilityEffectSpecialCase(ae, effect, 1)
+	effect = EvilityEffectReplacePer(e, effect, 0)
+	effect = EvilityEffectReplacePer(ae, effect, 1)
+	return effect
+
 def WriteEvilitiesEffect(c, ci):
 	l_ids = [c["m_leader_skill_id"], c["m_leader_skill_id_sub_1"], c["m_leader_skill_id_sub_2"], c["m_leader_skill_id_sub_3"]]
+	olids = [c["additional_m_leader_skill_id"], c["additional_m_leader_skill_id_sub_1"], c["additional_m_leader_skill_id_sub_2"], c["additional_m_leader_skill_id_sub_3"]]
 	string = f""
 	count = 1
-	for lid in l_ids:
-		for e in LeaderSkills:
-			if e["id"] != lid: continue
-			# Take Info from the skill and insert the value of the effect
-			#print(str(e["id"]) +": "+ci[f"Evility Desc {count}"])
-			effect = EvilityEffect(e, ci[f"Evility Desc {count}"])
-			string += f"""| {lid} = {effect}\n"""
-			count += 1
-			break
-	return string
 
+	for lids in l_ids:
+		for e in LeaderSkills:
+			if e["id"] != lids: continue
+			if olids[count-1] != 0:
+				print(l_ids + olids)
+				for la in LeaderSkills:
+					if la["id"] != olids[count-1]: continue
+					effect = EvilityEffectAdditional(e, ci[f"Evility Desc {count}"], la)
+					string += f"""| {lids} = {effect}\n"""
+					break
+				break
+			else:
+				effect = EvilityEffect(e, ci[f"Evility Desc {count}"])
+				string += f"""| {lids} = {effect}\n"""
+				break
+		count += 1
+
+	return string
 
 def WriteTitles(c, ci):
 	count = 1
@@ -319,13 +388,21 @@ def Skills(c, l):
 
 def Evilities(c, l):
 	l_ids = [c["m_leader_skill_id"], c["m_leader_skill_id_sub_1"], c["m_leader_skill_id_sub_2"], c["m_leader_skill_id_sub_3"]]
+	olids = [c["additional_m_leader_skill_id"], c["additional_m_leader_skill_id_sub_1"], c["additional_m_leader_skill_id_sub_2"], c["additional_m_leader_skill_id_sub_3"]]
 
 	count = 1
 	for lid in l_ids:
 		for e in LeaderSkills:
 			if e["id"] != lid: continue
 			l[f"Evility Name {count}"] = e["name"]
-			l[f"Evility Desc {count}"] = e["description"]
+			if olids[count-1] != 0:
+				for ae in LeaderSkills:
+					if ae["id"] != olids[count-1]: continue
+					des = ae["description"].replace("#PER#", "#PER2#")[1:]
+					l[f"Evility Desc {count}"] = f"{e['description']}, {des}"
+					break 
+			else:
+				l[f"Evility Desc {count}"] = e["description"]
 			count += 1
 			break
 
@@ -414,6 +491,62 @@ def AddExcell(jish):
 
 	workbook.save(spath)
 
+def ModifyExcell(jish):
+	pre_cell = 0
+	if JP:
+		for key in jish:
+			col = offset_x
+			worksheet = workbook[key]
+			for c in jish[key]:
+				found = False
+				last_cell = 0
+				for cl in range(2, worksheet.max_column+3, 3):
+					cell_value = worksheet.cell(RowIDS["Character ID"]+1, cl).value
+					#if cell_value == c["Character ID"]: break
+					if cell_value == None or cell_value == "None": last_cell = cl;break
+					if cell_value == c["Character ID"]:
+						found = True
+						for f in c:
+							value = worksheet.cell(RowIDS[f]+1, cl).value
+							if value != c[f] and RowIDS[f] in ids_to_check:
+								worksheet.cell(RowIDS[f]+1, cl, c[f])
+								worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="20EE20")
+								print("[INFO	]: Modified character %s" % c["Character ID"])
+						break
+
+	workbook.save(spath)
+
+def BlankExcell(jish):
+	pre_cell = 0
+	if JP:
+		for key in jish:
+			col = offset_x
+			worksheet = workbook[key]
+			for c in jish[key]:
+				found = False
+				last_cell = 0
+				for cl in range(2, worksheet.max_column+3, 3):
+					cell_value = worksheet.cell(RowIDS["Character ID"]+1, cl).value
+					#if cell_value == c["Character ID"]: break
+					if cell_value == None or cell_value == "None": last_cell = cl;break
+					if cell_value == c["Character ID"]:
+						found = True
+						for f in c:
+							if RowIDS[f]+1 == 2: continue
+							value = worksheet.cell(RowIDS[f]+1, cl).value
+							t_value = worksheet.cell(RowIDS[f]+1, cl+1).value
+							if not value in [None, "None", "-"]:
+								if t_value in [None, "None"]:
+									worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="bf819e")
+									print("[INFO	]: Modified character %s" % c["Character ID"])
+							#if value != c[f]:
+							#	worksheet.cell(RowIDS[f]+1, cl, c[f])
+							#	worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="F6CDFF")
+							#	print("[INFO	]: Modified character %s" % c["Character ID"])
+						break
+
+	workbook.save(spath)
+
 class Record():
 	cids_check = {}
 	cids_record = {}
@@ -489,10 +622,22 @@ def ReadExcell(jish):
 	RECORD.save_json()
 	return cids
 					
-_r_ = input("write w to write r to read s to write spells: ")
+_r_ = input("""write:
+ w to write result.xlxs
+ r to read values and push changes
+ s to write spells
+ m to check cells buffed or changed with green
+ p to check cells untranslated with violet
+what do you want to do? """)
 if _r_ == "w":
 	main()
 elif _r_ == "r":
 	read()
 elif _r_ == "s":
 	spells()
+elif _r_ == "m":
+	modify()
+elif _r_ == "p":
+	blank_cells()
+elif _r_ == "e":
+	exit()

@@ -41,7 +41,7 @@
 | 40 = Tyrant Overlord Killidia
 | 41 = Etna (2P)
 | 42 = Majin Etna
-| 43 = Asagi
+| 43 = Hero Asagi
 | 44 = Gordon
 | 45 = Jennifer
 | 46 = Mr. Champloo
@@ -153,6 +153,20 @@
 | 155 = Santa Torachiyo
 | 156 = Supreme Girl Laharl
 | 157 = New Years Etna
+| 158 = Ryubence
+| 159 = Overlord Metallia
+| 160 = Brainwashed Majorita
+| 161 = Black Rabbit Usa
+| 162 = White Rabbit Salia
+| 163 = Great Demon Fist Lieze
+| 164 = Seraphina XENO
+| 165 = Sapphire XENO
+| 166 = Summoner Adell
+| 167 = Yasuko
+| 168 = Maid Salvatore
+| 169 = Crowned Valvatorez
+| 173 = Asagi Asagiri
+| 174 = Prinny Mascot Asagi
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -262,7 +276,13 @@
 | 20044 = Santa Liezerota
 | 20045 = Zodiac Fuka
 | 20046 = Overlord Rozalin
+| 20047 = Metallia
+| 20048 = Hundred Knight
+| 20049 = Nezaria
+| 20050 = Witch Laharl
 | 20051 = Love X
+| 20052 = Flonnezilla
+| 20055 = HGC Asagi
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister
@@ -467,5 +487,6 @@
 | 60023 = Beach Prinny
 | 60024 = Beach Prinny Badass
 |}}</includeonly><noinclude>
+This page serves for translations, if you want to help with that please contact Arctia before modify this page directly. Translations are made by [[User:DjinnandTonic|Djinn]], [[User:XYZexal|XYZexal]], Moot, [[User:DurianNoodle|DurianNoodle]] and google translate.
 [[Category:Enum]][[Category:TranslationTables]]
 </noinclude>

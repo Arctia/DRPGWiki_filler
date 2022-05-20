@@ -1,4 +1,9 @@
 
+##################################################################
+# Main Loader Script for uploading things to Disgaea RPG wikia
+# Written by Arctia
+##################################################################
+
 import os, sys, getopt
 import time
 import json
@@ -115,7 +120,7 @@ def printl(string, mode="[INFO	]: "):
 
 SERIE = ["", "Disgaea 1", "Disgaea 2", "Disgaea 3", "Disgaea 4",
 			 "Disgaea D2", "Disgaea 5", "Disgaea RPG", "Disgaea 6", 
-			 "La Pucelle", "Makai Kingdom"]
+			 "La Pucelle", "Makai Kingdom", "Witch and Hundred Knight"]
 
 EnumKind = {0: '', 1: 'Humanoid', 2: 'Monster'}
 
@@ -138,6 +143,7 @@ EnumSerie = {0: "",
 			 8: "Disgaea 6",
 			 9: "La Pucelle",
 			 10: "Makai Kingdom",
+			 11: "Witch and Hundred Knight",
 			 }
 
 EnumEventShops = {  301: "[[File:item icon-normal-301.png]]",

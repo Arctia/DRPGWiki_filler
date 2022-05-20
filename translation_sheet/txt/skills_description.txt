@@ -83,6 +83,12 @@
 | 3000271 = A punch to dye the earth black...
 | 3000272 = Recycles the Netherworld's negative energy.
 | 3000273 = Have you ever felt a microcosm?
+| 3000291 = Quicky...to the Catcopter!
+| 3000292 = Daze enemies with your super-fast movement!
+| 3000293 = Make sure to put him back after each use!
+| 3000301 = A slash so fast you have to assume it's elegant.
+| 3000302 = Quite the spicy fireball.
+| 3000303 = Allow me to burn away even the cinders!
 | 3000311 = Enhance the body with converged demon power.
 | 3000312 = Slashes followed by a dark energy blast!
 | 3000313 = Divide the foe in half within the abyss.
@@ -93,10 +99,8 @@
 | 3000334 = This is the ultimate proof of Flonne's love!
 | 3000341 = A knuckle sandwich full of love!
 | 3000342 = The magic words are "Durian, Dragon, Drago-meow."
-
 | 3000343 = These arrows make demons cry.
 | 3000344 = The love power punch! Great Flonzor X!!
-
 | 3000351 = A skill that makes the enemy's magic explode.
 | 3000352 = Javelins rain down destruction.
 | 3000353 = What's being born from the darkness...!? Just wait!
@@ -157,7 +161,7 @@
 | 3000553 = The most expensive Christmas Tree in the Netherworld!
 | 3000554 = Glittering stars in the holy night.
 | 3000561 = Enjoy it seriously!
-| 3000562 = I just want to always be lovey-dovey with Adell!
+| 3000562 = I want to always be lovey-dovey with Adell!
 | 3000563 = "These are my first strokes"... That's it.
 | 3000564 = Auspicious flowers bloom as the blissful princess dances.
 | 3000571 = With love and kindness... Here we go!
@@ -458,7 +462,7 @@
 | 3001501 = Lock-on and fire a volley of energy bullets!
 | 3001502 = Expand the digital realm and fire a powerful beam!
 | 3001503 = The wishes of Usalia fills the stary skies...
-| 3001511 = The family feeds him with the stolen life force...
+| 3001511 = Familiars steal life force and satiate his hunger...
 | 3001512 = A dimensional pincushion!
 | 3001513 = Nothing but evil remains in Flughunde's wake...
 | 3001521 = Allies given power from heaven's blessings.
@@ -470,7 +474,7 @@
 | 3001541 = The power of Balor Gaze, giftwrapped!
 | 3001542 = Beware the surprise inside...
 | 3001543 = A holiday bash with Sera's wealth
-| 3001551 = Torachiyo's special onigiri full of energy!
+| 3001551 = Torachiyo's special onigiri full of spirit!
 | 3001552 = Santa Tora's presents can't be stopped!
 | 3001553 = The giant riceball of my dreams descends...!
 | 3001561 = A purgatory realm crafted by Laharl.
@@ -479,7 +483,50 @@
 | 3001571 = The Prinnies set up speakers...
 | 3001572 = Etna's flashy stage performance!
 | 3001573 = Enjoy the Beauty Queen's New Years Concert!
-| 3010011 = None
+| 3001581 = Summon a pumpkin to feast on your foe!
+| 3001582 = Gather the power of pumpkins for your allies!
+| 3001583 = Summon a whole Bestiary to attack!
+| 3001591 = The swamp erupts with a violent burst...
+| 3001592 = A high-flying rush...on a broom!
+| 3001593 = Super Ultra Hyper Maximum Great Attack.
+| 3001601 = Curse your foe with the converted power stolen from them!
+| 3001602 = Add a little something in the tombstone for a big surprise!
+| 3001603 = Gather the power of love to heal allies!
+| 3001611 = Leap off the moon and pierce the foe.
+| 3001612 = Turn countless spears into an explosion.
+| 3001613 = Form a demonlance to pierce the earth!
+| 3001621 = A blade swung so fast it freezes the air.
+| 3001622 = Form countless ice shards into a bladed peak.
+| 3001623 = A fluttering dance in a field of falling ice.
+| 3001624 = A maddening dance in a field of falling ice.
+| 3001631 = A dive kick that shatters the earth.
+| 3001632 = A heavenly strike faster than lightning.
+| 3001633 = The final technique of the Great Demon Fist's Heir.
+| 3001641 = The conflicting feelings within the sword strike the foes!
+| 3001642 = Transform your affections into a sword!
+| 3001643 = Slice the foe restrained by the chains of love!
+| 3001651 = Beware axes falling from other planets...
+| 3001652 = Seek and rend power from the earth itself.
+| 3001653 = President Sapphire's ultimate skill that splits the earth.
+| 3001661 = Summon a wind familiar to tear down foes.
+| 3001662 = A powerup bestowed from Frostlord Rozalin.
+| 3001663 = Summon another Adell for a team up attack.
+| 3001671 = Creates a magically refreshing breeze.
+| 3001672 = Summon a breeze to make the foe's money lighter.
+| 3001673 = A hammer of storms for naughty students!
+| 3001681 = Sweep the enemy off their feet... permanently!
+| 3001682 = Clobber the foe... in a maidly way.
+| 3001683 = If soap fails, cleanse it all with arrows!
+| 3001691 = An attack with sardines formed from water!
+| 3001692 = Summon a horde of underlings with vampiric power!
+| 3001693 = The voices of the people have decided their champion!
+| 3001731 = A veil of wind to aid allies.
+| 3001732 = Attacks so fast, foes are sliced without realizing it!
+| 3001733 = I promised my childhood friend I'd not die as a side character!
+| 3001741 = You're invited to a first-hand tour of the exploding Prinny experience!
+| 3001742 = Red Moon Prinny Power! ...Make Up!
+| 3001743 = A-SA-GI! A-SA-GI! WHOOO!
+| 3010011 = Let's go, everyone! Combine the power and charge!
 | 3010012 = "I'm hit!" That's what you've got to shout, it's the rule.
 | 3010013 = A dream collaboration between generations of Prism Rangers!
 | 3010021 = All friends will become stronger.
@@ -573,6 +620,9 @@
 | 3200082 = Beat the enemy up into space.
 | 3200083 = Unleash a super destructive blast.
 | 3200084 = Initiates a self-destruct explosion...
+| 3200111 = Does anyone play Ding-Dong Dash anymore..?
+| 3200112 = One hundred bottles of wine on your skull~
+| 3200113 = And yet your sacrifice goes unnoticed...
 | 3200133 = Special move of Vulcanus the Archangel.
 | 3200141 = A rocket arm using the most advanced technology.
 | 3200142 = A more advanced version of Rocket Punch.
@@ -589,7 +639,7 @@
 | 3200182 = Get out there and donate your time... and blood!
 | 3200183 = Remember to think green!
 | 3200191 = Rip through the very particles in the air.
-| 3200192 = Defeat evil with the holy power of the Overlord! ...What?
+| 3200192 = Defeat evil with the holy(?) power of the Overlord!
 | 3200193 = Call forth a localized miracle.
 | 3200201 = Curry is the best holiday treat, plip!
 | 3200202 = Rice Cake for Christmas? Nothing of the sort.
@@ -615,7 +665,7 @@
 | 3200261 = You should be afraid of Desco!
 | 3200262 = Desco will have you wrapped in black!
 | 3200263 = Desco will destroy everyone!
-| 3200264 = There's no enemies when Desco reveals her true form!
+| 3200264 = No foes will survive when Desco reveals her true form!
 | 3200271 = I can't work in the summer, dood!
 | 3200272 = It's about to exlode from the summer heat, dood...
 | 3200273 = The beam has a summery feel, dood!
@@ -653,7 +703,7 @@
 | 3200373 = As a last resort, Tink XENO self-destructs.
 | 3200381 = The blood strengthens me...
 | 3200382 = From the earth, a scarlet spear emerged...
-| 3200383 = I don't remember how many stars I've eaten.
+| 3200383 = I remember not how many stars I've consumed.
 | 3200384 = Nothing but pure crimson hatred...
 | 3200391 = A lightning bolt of Love descends!
 | 3200392 = Release the Limiter on Love's Power!
@@ -679,9 +729,27 @@
 | 3200461 = Electricity summoned by countless batons!
 | 3200462 = Titanic thunder called from the Dark Portal.
 | 3200463 = Unleash the concentrated power of the Overlord!
+| 3200471 = ...Bow to me! Why you little ****!!!
+| 3200472 = Metallia is so skilled, so can control all metal!
+| 3200473 = What!? The world belongs to Metallia!?
+| 3200481 = A timed explosive Tochka
+| 3200482 = A flurry of slashes too quick to count!
+| 3200483 = A bewitching combo with the Witch & the Hundred Knight!
+| 3200491 = A freezing mist seeps from the ground.
+| 3200492 = Traps foes with hallucinations.
+| 3200493 = Cold and crispy, just how I like it!
+| 3200501 = Create a scorching swamp of magma.
+| 3200502 = A direct crack to the skull with a point-blank meteor fly ball.
+| 3200503 = A supernova-sized blow using the power of another dimension.
 | 3200511 = The overlowing exploding of love!
 | 3200512 = Absorb the power of love and fire a powerful beam!
 | 3200513 = The transformed Love X's roar of love!
+| 3200521 = Of course Kaiju Flonne can breath fire...
+| 3200522 = A Giant Monster can equip Giant Missiles.
+| 3200523 = 666 billion-degree laser breath attack!
+| 3200551 = Asagi will recreate it from scratch☆
+| 3200552 = Oh no~! Here come the drones!
+| 3200553 = If you're low on staff, why not hire more "you"s?
 | 3210021 = Rejoice for being my food!
 | 3210022 = Watch out for the ice lake at night!
 | 3210023 = Some consider this attack quite the reward.
@@ -1157,5 +1225,6 @@
 | 3301364 = Maybe you'll give me half the world if I play along...?
 | 200058 = Damage with the power of the universe (1st stage)
 |}}</includeonly><noinclude>
+This page serves for translations, if you want to help with that please contact Arctia before modify this page directly. Translations are made by [[User:DjinnandTonic|Djinn]], [[User:XYZexal|XYZexal]], Moot, [[User:DurianNoodle|DurianNoodle]] and google translate.
 [[Category:Enum]][[Category:TranslationTables]]
 </noinclude>
