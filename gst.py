@@ -1,4 +1,5 @@
 
+import re
 import json
 import openpyxl
 from openpyxl.styles import PatternFill
@@ -128,6 +129,7 @@ def read():
 				pass
 
 	end = f"""|}}}}</includeonly><noinclude>\nThis page serves for translations, if you want to help with that please contact Arctia before modify this page directly. Translations are made by [[User:DjinnandTonic|Djinn]], [[User:XYZexal|XYZexal]], Moot, [[User:DurianNoodle|DurianNoodle]] and google translate.\n[[Category:Enum]][[Category:TranslationTables]]\n</noinclude>"""
+	print("\nUploading sheets...")
 	with open("./translation_sheet/txt/names.txt", "w", encoding="utf-8") as f:
 		f.write(names + end)
 		page = wiki.pages["Template:Enum/JP/CharaName"]
@@ -168,6 +170,7 @@ def read():
 		page = wiki.pages["Template:Enum/JP/SkillsEffect"]
 		content = skills_eff + end
 		Upload(page, content, True)
+	print("Sheets uploaded!!!")
 
 def Fill_Arrays(c, l):
 	if c["unique_flg"] == True:
@@ -207,7 +210,7 @@ def EvilityEffect(e, effect):
 
 def SettingPerString(effect):
 	_to_replace = ["# PER #", "# PER#", "#PER #"]
-	_to_replace2 = ["# PER2 #", "# PER2#", "#PER2 #", "#PER2#"]
+	_to_replace2 = ["# PER2 #", "# PER2#", "#PER2 #"]
 	for r in _to_replace: effect = effect.replace(r, "#PER#")
 	for r in _to_replace2: effect = effect.replace(r, "#PER2#")
 	return effect
@@ -242,7 +245,7 @@ def WriteEvilitiesEffect(c, ci):
 		for e in LeaderSkills:
 			if e["id"] != lids: continue
 			if olids[count-1] != 0:
-				print(l_ids + olids)
+				#print(l_ids + olids) #Printing Double IDs
 				for la in LeaderSkills:
 					if la["id"] != olids[count-1]: continue
 					effect = EvilityEffectAdditional(e, ci[f"Evility Desc {count}"], la)
@@ -400,6 +403,7 @@ def Evilities(c, l):
 					if ae["id"] != olids[count-1]: continue
 					des = ae["description"].replace("#PER#", "#PER2#")[1:]
 					l[f"Evility Desc {count}"] = f"{e['description']}, {des}"
+					if c["id"] == 200: print(l[f"Evility Desc {count}"])
 					break 
 			else:
 				l[f"Evility Desc {count}"] = e["description"]
@@ -584,6 +588,14 @@ class Record():
 			return self.cids_record[str(c["Character ID"])][key]
 		return None
 
+def replacenth(string, sub, wanted, n):
+    where = [m.start() for m in re.finditer(sub, string)][n-1]
+    before = string[:where]
+    after = string[where:]
+    after = after.replace(sub, wanted, 1)
+    newString = before + after
+    return newString
+
 RECORD = Record()
 
 def ReadExcell(jish):
@@ -608,8 +620,11 @@ def ReadExcell(jish):
 									value = RECORD.ReturnTranslation(c, key)
 								else:
 									RECORD.WriteRecord(c, key, val)
-									print(val)
+									print("Japanese: " + val)
 									value = translate(val)
+									if value.count("#PER#") > 1 and "Evility Desc" in key:
+										value = replacenth(value, "#PER#", "#PER2#", 2)
+									print("English: " + value)
 									RECORD.WriteTranslation(c, key, value)
 							else:
 								RECORD.WriteRecord(c, key, val)

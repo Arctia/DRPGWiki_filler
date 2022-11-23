@@ -45,7 +45,7 @@ Also note that for generics, only the first color is included, since their stats
 def Add_Character(c):
 	return f"""
 |-
-| {{{{CharacterNavBox{'JP' if JP else ''}|{c["id"]}|{c["name"]}|imgsize=64px}}}}
+| {{{{CharacterNav{'FrameJP' if JP else 'Box'}|{c["id"]}|{c["name"]}|imgsize=64px}}}}
 | [[{jp_flag}Character/{c["id"]}|{{{{Enum/JP/CharaName|{c["id"]}}}}}]]
 | {c["hp_min"]}
 | {c["atk_min"]}

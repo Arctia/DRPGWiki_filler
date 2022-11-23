@@ -43,7 +43,7 @@ def GetCharas(day):
 	s = ""
 	for cid in dates[day]:
 		#s += f"{{{{CharacterNavBoxJP|{c["id"]}}}}}"
-		s += f"""{{{{CharacterNavBoxFrame|{cid["id"]}|Weapon={cid["best_weapon_type"]}|kind={"human" if cid['character_type'] == 1 else 'monster'}|JP=true|rarity=4|type={EnumEvilSymbol[cid["m_potential_class_id"]]}}}}}"""
+		s += f"""{{{{CharacterNavFrameJP|{cid["id"]}}}}}"""#|Weapon={cid["best_weapon_type"]}|kind={"human" if cid['character_type'] == 1 else 'monster'}|JP=true|rarity=4|type={EnumEvilSymbol[cid["m_potential_class_id"]]}}}}}"""
 	return s
 
 ordered_dates = ordering(dates)

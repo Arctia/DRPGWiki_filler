@@ -5,11 +5,14 @@
 ##################################################################
 
 import os, sys, getopt
+import deepl
 import time
 import json
 import mwclient
-import mtranslate
-from user_data import username, password
+#import mtranslate
+from user_data import username, password, deeplauth
+
+translator = deepl.Translator(deeplauth)
 
 # --- Setting default values
 JP = True
@@ -21,7 +24,7 @@ reached_id = 1
 EDIT = True
 EDIT_SKILLS = True
 PAGES_PATH = "./datas/text_pages/"
-To_Edit = ["NetherEnhancementTable", "CharacterLinks"]
+To_Edit = ["StatsTable", "CharacterLinks"]
 
 # --- Getting terminal parameters
 opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:",["data=", "upload=", "chara=", "ids=", "reachid="])
@@ -83,13 +86,13 @@ else:
 def translate(value):
 	try:
 		if JP:
-			return mtranslate.translate(value, "en", "auto")
+			return translator.translate_text(value, target_lang="EN-GB").text
 		else:
 			return value
 	except:
 		print("\ntranslation error, wait 30 secs to retry.")
 		time.sleep(30)
-		translate(value)
+		return translate(value)
 
 def Upload(page, content, edit=True):
 	if page.exists and not edit: return

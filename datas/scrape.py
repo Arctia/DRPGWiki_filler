@@ -5,7 +5,7 @@ import json
 
 src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 env = UnityPy.load(src)
-extract_dir = "C:/Users/Arctia/Desktop/Projects/Disgaea-RPG-Wiki/Scripts/wiki/datas\\JP"
+extract_dir = "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"
 
 for obj in env.objects:
     if obj.type.name == "MonoBehaviour":

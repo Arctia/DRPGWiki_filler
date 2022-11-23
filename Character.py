@@ -16,7 +16,7 @@ def main():
 
 		if CHARA_MODE in ("new", "n"): New_Characters(c)
 		elif CHARA_MODE in ("edit", "e"):
-			if c["id"] < 40000 and c["m_leader_skill_id"] != 0 and c["id"] > 21016:
+			if c["id"] < 40000 and c["m_leader_skill_id"] != 0 and c["id"] > 0:
 				Edit_Characters(c)
 		elif CHARA_MODE in ("rewrite", "r"):
 			if c["id"] in id_to_rewrite: Rewrite_Characters(c, False)

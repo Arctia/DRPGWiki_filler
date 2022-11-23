@@ -13,7 +13,8 @@ def _is_JP():
 	return "false"
 
 def _template(c, rarity):
-	return f"""{{{{CharacterNavBoxFrame|{c["id"]}|Weapon={c["best_weapon_type"]}|kind={"human" if c['character_type'] == 1 else 'monster'}|JP={_is_JP()}|rarity={rarity}|type={EnumEvilSymbol[c["m_potential_class_id"]]}}}}}"""
+	return f"""{{{{CharacterNavFrameJP|{c["id"]}|Laharl}}}}"""
+	#return f"""{{{{CharacterNavBoxFrame|{c["id"]}|Weapon={c["best_weapon_type"]}|kind={"human" if c['character_type'] == 1 else 'monster'}|JP={_is_JP()}|rarity={rarity}|type={EnumEvilSymbol[c["m_potential_class_id"]]}}}}}"""
 
 def main():
 	print("starting the work")

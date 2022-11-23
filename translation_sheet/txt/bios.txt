@@ -119,7 +119,7 @@
 | 121 = A Holy Guardian summoned from another Dimension. Bearing the title of "Frostlord", she gives a cool impression, but also has a lazy side.
 | 122 = A Holy Guardian with the power to manipulate flames, she has earned the title of "Flamelord". A competitive and playful battle maniac.
 | 123 = A Zombie Girl fan of Horror movies, but she has a fear of ghosts. She often ends up grabbing someone's arm and screaming "Eek a scary ghost!" She has broken the hearts of many boys who visited the Love Laboratory.
-| 124 = A soldier from the Survey Corps. Ever since she was a recruit, she has demonstrated her power and wields her swords today to protect her loved ones.
+| 124 = A soldier from the Scout Regiment. Ever since she was a recruit, she has demonstrated her power and wields her swords today to protect her loved ones.
 | 125 = The commander of the Special Ops Squad of the Survey Corps. Known as the strongest soldier in the human race. Has a track record of destroying countless Titans.
 | 126 = With the one he loves dead in his arms, Adell is consumed by solitude. He hungers on flesh and blood, but his appetite will never be sated...
 | 127 = Fuka's enjoying her time on the beach! She loves the new white swimwear and the sun visor made by Valvatorez and her friends.
@@ -165,8 +165,46 @@
 | 167 = A girl that attends Majin Academy. As a chairman of the student council, her motto is to fight dirty and with extreme prejudice. She is living her unscrupulous demonic school life to the fullest.
 | 168 = Salvatore has been accepted into Majin Academy's Maid program, tempted by being able to give orders to both customers and masters as much as she wants. Her culinary specialty is the "Lovey-Dovey Omelette Rice".
 | 169 = Valvatorez, having hit first place in the DISGAEA RPG Popularity contest, won this majestic crown.
+| 170 = A boy who dreams of the world outside the walled city. He has an extraordinary hatred for the Titans that causes him to be reckless.
+| 171 = Fuka dons the jacket of the Survey Corps and is enthusiastic about destroying Titans. But she has zero intention of devoting herself to the Corps.
+| 172 = The once-defeated hero Asagi was ressurrected, together with the power of Overlord Asagi. A true hero will rise again and again, anytime!
 | 173 = The male Asagi created by HGC Asagi to be the main character of an action game. He uses pointlessly stylish attacks to defeat his enemies!
 | 174 = A mysterious Asagi wearing a Prinny Mascot costume. While she tries hard, she's not good at playing a Prinny and often forgets her lines need to contain "dood".
+| 175 = The popular heroine of Asagi Memorial, a romance game created by Creator Asagi. She's quite particular about her glasses.
+| 177 = Almaz dressed as a groom for the Bridal Grand Prix. He's always happy to walk down the aisle at Sapphire's side.
+| 178 = Sapphire dressed up for the Bridal Grand Prix. With this dress, her love power for Almaz increases 100 times over!
+| 179 = Seraphina dressed up for the Bridal Grand Prix. It seems this dress is just as expensive as the Great Flonzor X giant robot... or more!
+| 180 = Rozalin dressed up for the Bridal Grand Prix. Her dress was tailor-made for her by Hanako and Sapphire.
+| 181 = The ultimate Tyrant Overlord who seized the title of "The Strongest" during the ancient Netherworld War era.
+| 182 = After Super Reincarnating a nearly infinite amount of times, Zed's power has exceeded its limits and grown unstoppable.
+| 183 = A researcher of the legend of the Holy Swimsuit. The shackles on her wrists and ankles seem to increase her mana power.
+| 184 = Artina, enthusiastic to show off her new swimsuit on the white sand beach! But sadly, Valvatorez is busy setting up the Sardine Festival elsewhere...
+| 185 = Saint Etna suddenly ended up clad in the Holy Swimsuit of Legend. The embarassment is plain on her cheeks.
+| 186 = Pure Flonne, having gained even more of the Power of Love, transformed into a Super Awakened Angel. She'll crush all evil with this new overwhelming Power of Love!
+| 187 = While he looks a bit rough in his cool summer clothes, the difference between his normal cold smile and the genuine smile he shows his master causes many to swoon.
+| 188 = This scorching hero of justice takes time off to be a bug-catching expert for the demonic summer. The plastic cage contains the newest member of the team, Prism Stag Beetle!
+| 189 = Thursday with a new body and advanced emotion software based on schematics from Genjuro Kazamatsuri. The long blonde hair seems to be detachable.
+| 190 = Mao has become the curator of the Netherworld Manji Tech Expo, a dream of his since childhood. The cane he carries contains the power of a superhero.
+| 191 = Hanako from 10 years after having earned the title of Majin. While she didn't get the dynamite body she expected, she did gain a considerable amount of power.
+| 192 = The Thunderlord, Laharl, was accidentally transformed into a woman by the malfunctioning Transmigration Machine. Even as a Thunderlady, Laharl's combat power is as strong as ever.
+| 193 = Transformed by the Sacred Tome into the image of the most cringe-inducing fool in the cosmos, Royal King Drake. But Laharl makes the most of it and remains stronger than ever!
+| 194 = Zetta's self-proclaimed rival and nemesis. He's always challenging Zetta to epic final battles, but there's never a clear winner.
+| 195 = In this form, Petta has accumulated three powers at once: the power of a Time Traveller, a Freakin' Badass Overlord, and an Atrocious Overlord!
+| 196 = A mysterious girl who has a deep connection with the Sacred Tome, and whose mysterious nature even Pram cannot predict.
+| 197 = The true form of Pram the Oracle when she unleashes all her Mana power. Her overwhelming aura of power freezes everything nearby.
+| 198 = Etna steals the power of  Zetta's eyes along with his outfit. This doubles the power of her Sexy Beam, making her the Most Badass Beauty Queen in the Cosmos!
+| 199 = From Future Warrior Pleinair
+With the power of the brave that I inherited
+Awakened Laharl.
+| 200 = With the power to manipulate space-time, the future and the past,
+Turned into a demon king who travels back and forth between parallel worlds
+Mr Prenel.
+| 202 = It became smaller after its magical power was stolen by the demon king Pleinair.
+The appearance of Rosalind. When you are piggybacked on Adele,
+She quickly becomes sleepy.
+| 203 = Liselotta dressed in a glittering dress.
+The dress she wore was Seraphine
+She seems to be a special order item ordered from the gorgeous demon world.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -282,7 +320,20 @@
 | 20050 = Laharl donned Metallia's outfit, wielding the power of the Great Swamp Witch herself, and becoming unstoppable!
 | 20051 = With the super-magical hot-blooded love cells created by Mao within her body and the bonds of those close to her, Des X has awakened to all kinds of love!
 | 20052 = With the power of love, Flonne has become a giant monster kaiju! Whenever she sees a tall building, she goes to great lengths to destroy it! She dreams of facing off with a giant robot!
+| 20053 = In addition to her immense inherent fighting power, Mikasa wields a powerful anti-Titan weapon, the Thunder Spear.
+Its overwhelming power pierces any armor.
+| 20054 = A mysterious Asagi that suddenly appeared in the game worlds developed by HGC Asagi, creating glitches. Their true identity is an amalgamation of unfinished Asagi data that have gained sentience.
 | 20055 = Undergoing a harsh game development, Creator Asagi discovered the legendary power Enadori, causing her to evolve! When the effects of Enadori wears off, she'll revert back to normal.
+| 20056 = Sicily wearing a new swimsuit to enjoy a fun Demonic Summer. With her Prinny-themed Surfboard, she can tackle even the roughest waves!
+| 20057 = A new swimsuit-clad Prinny! This year's Prinny grew even stronger from working long hours on the beach, getting a sunburn along the way!
+| 20058 = Due to certain circumstances, Majorita has become a ghost! Despite her ghostly state, she still enjoys playing pranks on the demons around her.
+| 20059 = Raspberyl dressed in a custom space suit made by Mao. Apparently, the suit is equipped with over 100 super functions.
+| 20060 = A Cyborg Prinny for showcase at the Netherworld Manji Expo. Custom demo version only available at the Netherworld Manji Expo.
+| 20061 = Cursed by Majorita, Usalia's overflowing power runs rampant. The violence can only be tamed by feeding her curry.
+| 20062 = The Most Badass Freakin' Overlord in the Cosmos and protagonist of Makai Kingdom... has been transformed into a weird book.
+| 20063 = To celebrate the 3rd anniversary of the Disgaea RPG
+A golden lucky board rushed over.
+Even at the celebration seat, the mouth does not stop.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.
