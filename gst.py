@@ -62,6 +62,18 @@ jish = {'Unique Human': UNIQUE_HUMAN,
 		"Human Generic": HUMAN, 
 		"Monster Generic": MONSTER}
 
+def replace_wrong_evility():
+	for c in Charas:
+		if c["id"] != 127: continue
+		c["additional_m_leader_skill_id_sub_3"] = 1278
+		c["m_leader_skill_id_sub_3"] = 1274
+		break
+	for e in LeaderSkills:
+		if e["id"] == 1274: e["id"] = 1278
+		elif e["id"] == 1278: e["id"] = 1274
+
+replace_wrong_evility()
+
 def main():
 	for c in Charas:
 		if c["id"] >= 50000: continue
@@ -213,6 +225,7 @@ def WriteBios(c, ci):
 	return f'| {c["id"]} = {ci["Bio"]}\n'
 
 def WriteEvilities(c, ci):
+	cid = c['id']
 	l_ids = [c["m_leader_skill_id"], c["m_leader_skill_id_sub_1"], c["m_leader_skill_id_sub_2"], c["m_leader_skill_id_sub_3"]]
 	string = f""
 	count = 1
@@ -419,6 +432,12 @@ def Evilities(c, l):
 	l_ids = [c["m_leader_skill_id"], c["m_leader_skill_id_sub_1"], c["m_leader_skill_id_sub_2"], c["m_leader_skill_id_sub_3"]]
 	olids = [c["additional_m_leader_skill_id"], c["additional_m_leader_skill_id_sub_1"], c["additional_m_leader_skill_id_sub_2"], c["additional_m_leader_skill_id_sub_3"]]
 
+	if l_ids[3] > olids[3] and olids[3] != 0:
+		print("first leaderskill is after")
+		swap = l_ids[3]
+		l_ids[3] = olids[3]
+		olids[3] = swap
+
 	count = 1
 	for lid in l_ids:
 		for e in LeaderSkills:
@@ -436,7 +455,7 @@ def Evilities(c, l):
 			count += 1
 			break
 
-	return l 
+	return l
 
 def spells():
 	if JP:
@@ -627,7 +646,7 @@ RECORD = Record()
 def ReadExcell(jish):
 	cids = {}
 	RECORD.load_json()
-	print(RECORD.cids_check)
+	#print(RECORD.cids_check)
 	for key in jish:
 		col = offset_x
 		worksheet = workbook[key]
