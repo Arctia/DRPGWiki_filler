@@ -146,3 +146,7 @@ translation_sheet/Disgaea*
 translation_sheet/resul*
 translation_sheet/backups/
 translation_sheet/test.py
+translation_sheet/check.json
+translation_sheet/translated.json
+translation_sheet/txt/*
+
