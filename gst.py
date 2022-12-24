@@ -49,10 +49,18 @@ ids_to_check = [13,16,19,22,25,27,29,31]
 offset_x = 2
 cd = []
 UNIQUE_HUMAN = []
+UNIQUE_HUMAN_2 = []
 UNIQUE_MONSTER = []
 UNIQUE_UNPLAYABLE = []
 HUMAN = []
 MONSTER = []
+
+jish = {'Unique Human': UNIQUE_HUMAN,
+		'Unique Human 2': UNIQUE_HUMAN_2,
+		'Unique Monster': UNIQUE_MONSTER, 
+		'Unique Unplayable': UNIQUE_UNPLAYABLE,
+		"Human Generic": HUMAN, 
+		"Monster Generic": MONSTER}
 
 def main():
 	for c in Charas:
@@ -63,8 +71,12 @@ def main():
 		l = Evilities(c, l)
 		Fill_Arrays(c,l)
 
-	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
-	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	jish = {'Unique Human': UNIQUE_HUMAN,
+		'Unique Human 2': UNIQUE_HUMAN_2,
+		'Unique Monster': UNIQUE_MONSTER, 
+		'Unique Unplayable': UNIQUE_UNPLAYABLE,
+		"Human Generic": HUMAN, 
+		"Monster Generic": MONSTER}
 	
 	AddExcell(jish)
 
@@ -77,8 +89,12 @@ def modify():
 		l = Evilities(c, l)
 		Fill_Arrays(c,l)
 
-	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
-	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	jish = {'Unique Human': UNIQUE_HUMAN,
+		'Unique Human 2': UNIQUE_HUMAN_2,
+		'Unique Monster': UNIQUE_MONSTER, 
+		'Unique Unplayable': UNIQUE_UNPLAYABLE,
+		"Human Generic": HUMAN, 
+		"Monster Generic": MONSTER}
 	
 	ModifyExcell(jish)
 
@@ -91,8 +107,12 @@ def blank_cells():
 		l = Evilities(c, l)
 		Fill_Arrays(c,l)
 
-	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
-	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	jish = {'Unique Human': UNIQUE_HUMAN,
+		'Unique Human 2': UNIQUE_HUMAN_2,
+		'Unique Monster': UNIQUE_MONSTER, 
+		'Unique Unplayable': UNIQUE_UNPLAYABLE,
+		"Human Generic": HUMAN, 
+		"Monster Generic": MONSTER}
 	
 	BlankExcell(jish)
 
@@ -105,8 +125,12 @@ def read():
 		l = Evilities(c, l)
 		Fill_Arrays(c,l)
 
-	jish = {'Unique Human': UNIQUE_HUMAN, 'Unique Monster': UNIQUE_MONSTER, 'Unique Unplayable': UNIQUE_UNPLAYABLE,
-	"Human Generic": HUMAN, "Monster Generic": MONSTER}
+	jish = {'Unique Human': UNIQUE_HUMAN,
+		'Unique Human 2': UNIQUE_HUMAN_2,
+		'Unique Monster': UNIQUE_MONSTER, 
+		'Unique Unplayable': UNIQUE_UNPLAYABLE,
+		"Human Generic": HUMAN, 
+		"Monster Generic": MONSTER}
 
 	cids = ReadExcell(jish)
 
@@ -175,7 +199,9 @@ def read():
 def Fill_Arrays(c, l):
 	if c["unique_flg"] == True:
 		if c["m_leader_skill_id"] == 0 or c['id']>40000: UNIQUE_UNPLAYABLE.append(l)
-		elif c["character_type"] == 1: UNIQUE_HUMAN.append(l)
+		elif c["character_type"] == 1:
+			if c["id"] < 200: UNIQUE_HUMAN.append(l)
+			else: UNIQUE_HUMAN_2.append(l)
 		elif c["character_type"] == 2: UNIQUE_MONSTER.append(l)
 	elif c["character_type"] == 1: HUMAN.append(l)
 	elif c["character_type"] == 2: MONSTER.append(l)
