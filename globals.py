@@ -10,9 +10,9 @@ import time
 import json
 import mwclient
 #import mtranslate
-from user_data import username, password, deeplauth
+from user_data import username, password#, deeplauth
 
-translator = deepl.Translator(deeplauth)
+# translator = deepl.Translator(deeplauth)
 
 # --- Setting default values
 JP = True
