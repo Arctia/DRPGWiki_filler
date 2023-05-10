@@ -2,8 +2,12 @@
 import re
 import json
 import openpyxl
+
+from plibs.config import Config
 from openpyxl.styles import PatternFill
 from globals import *
+
+jconf = Config()
 
 wpath = "./translation_sheet/Disgaea RPG Translations of Characters.xlsx"
 spath = "./translation_sheet/result.xlsx"
@@ -528,6 +532,7 @@ def AddExcell(jish):
 						for f in c:
 							worksheet.cell(RowIDS[f]+1, cl, c[f])
 						print("[INFO	]: Added character %s" % c["Character ID"])
+						jconf.add_new_chara(c)
 						break
 				if not found and last_cell > 0:
 					cl = last_cell
@@ -536,7 +541,7 @@ def AddExcell(jish):
 					for f in c:
 						worksheet.cell(RowIDS[f]+1, cl, c[f])
 					print("[INFO	]: Added character %s" % c["Character ID"])
-
+					jconf.add_new_chara(c)
 
 	workbook.save(spath)
 
@@ -561,6 +566,7 @@ def ModifyExcell(jish):
 								worksheet.cell(RowIDS[f]+1, cl, c[f])
 								worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="20EE20")
 								print("[INFO	]: Modified character %s" % c["Character ID"])
+								jconf.add_mod_chara(c)
 						break
 
 	workbook.save(spath)

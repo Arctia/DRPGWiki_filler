@@ -1,0 +1,25 @@
+{
+    "last_run_time": "0000-00-00 00-00",
+    "new_charas": [{
+                "id": 127,
+                "release_date": "0000-00-00 00-00"
+            },
+            {
+                "id": 128,
+                "release_date": "0000-00-00 00-00"
+            }],
+    "modified_charas": [],
+    "old_datas": {
+        "new_charas": [
+            {
+                "id": 127,
+                "release_date": "0000-00-00 00-00"
+            },
+            {
+                "id": 128,
+                "release_date": "0000-00-00 00-00"
+            }
+        ],
+        "modified_charas": []
+    }
+}

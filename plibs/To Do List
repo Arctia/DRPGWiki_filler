@@ -1,0 +1,10 @@
+To Do List
+  ° Automating extraction and add to website in ubuntu
+    - automate wiki upload
+      . add characters to list (load html page, add relevant data and reupload, keep in mind newly added and mod data)
+
+
+Done
+	- while running gst.py create a config.json file that saves new characters id and/or modded
+	- load assets and extract images of only new characters
+	- auto write in update_characters.py the id of characters to write/rewrite
