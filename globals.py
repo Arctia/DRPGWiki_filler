@@ -123,7 +123,8 @@ def printl(string, mode="[INFO	]: "):
 
 SERIE = ["", "Disgaea 1", "Disgaea 2", "Disgaea 3", "Disgaea 4",
 			 "Disgaea D2", "Disgaea 5", "Disgaea RPG", "Disgaea 6", 
-			 "La Pucelle", "Makai Kingdom", "Witch and Hundred Knight"]
+			 "La Pucelle", "Makai Kingdom", "Witch and Hundred Knight", 
+			 "Phantom Brave", "Soul Cradle", "Disgaea 7"]
 
 EnumKind = {0: '', 1: 'Humanoid', 2: 'Monster'}
 
@@ -147,6 +148,9 @@ EnumSerie = {0: "",
 			 9: "La Pucelle",
 			 10: "Makai Kingdom",
 			 11: "Witch and Hundred Knight",
+			 12: "Phantom Brave",
+			 13: "Soul Cradle",
+			 14: "Disgaea 7",
 			 }
 
 EnumEventShops = {  301: "[[File:item icon-normal-301.png]]",

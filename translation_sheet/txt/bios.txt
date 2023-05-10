@@ -194,32 +194,57 @@
 | 197 = The true form of Pram the Oracle when she unleashes all her Mana power. Her overwhelming aura of power freezes everything nearby.
 | 198 = Etna steals the power of  Zetta's eyes along with his outfit. This doubles the power of her Sexy Beam, making her the Most Badass Beauty Queen in the Cosmos!
 | 199 = The form of Laharl awakened by the power of a hero inherited from Future Warrior Pleinair.
-| 200 = With the power to manipulate time and space, he has become a demon king who travels between the future, the past and parallel worlds.
-parallel worlds.
-Mr Plenaire.
-| 201 = Etna was given magical powers by the Dark Shark Demon King Plenaire.
-She was supposed to have unwantedly become an executive of the evil Demon King.
-She is reputed to be better suited to playing a villain than a demon king.
-| 202 = The demon king Plenaire took her magic and made her smaller.
-Rosalind's figure. When Adele gives her a piggyback ride, she
-she immediately falls asleep.
+| 200 = "Ms. Pleinair, who has the power to manipulate time and space, and has turned into a demon lord who travels between the future, the past, and parallel worlds."
+| 201 = Etna was enchanted by Shadowshark Overlord Pleinair. She should have become an executive of the evil Overlord in an undesired way, but she is said to be better suited to be a villain than an Overlord.
+| 202 = The figure of Rozalin, who was robbed of her magical power by the Shadowshark Pleinair and became smaller. When Adell carries her on his back, she immediately becomes sleepy.
 | 203 = Liezerota dressed in a glittering formal attire. 
 The dress seems to be custom-made Seraphina ordered from Gorgeous. 
-| 204 = Transferred from Future Usalia.
-Fron transformed by the heroic armour.
-Her breasts appear large, but the armour is hollow.
-| 205 = Heard Black Santa was out of control.
-Rushed to the pinch on Holy Night.
-Future Usalia in Santa costume.
-| 206 = Sicily in a different world, where she calls herself the Demon King.
-Dressed in a jet-black Santa suit, she
-runs around the Holy Night of the Demon Winter.
-| 207 = Avenge the evil that infests Christmas!
-The hero of justice, the best in Japan!
-I will protect the Holy Night of the Demon World!
-| 208 = She was an innocent girl who longed to be Santa ......
-Sicily XENO's Crucimimimus powers transformed her into a
-transformed into a pitch-black deadly warrior.
+| 204 = Flonne transformed into a hero using armor given to her by Future Usalia. Her chest looks big, but the inside of the armor is hollow.
+| 205 = Hearing about Black Santa's rampage, Future Usalia dressed as Santa rushed to the pinch on Christmas Eve.
+| 206 = A self-proclaimed Overlord, Sicily from another world. Dressed in a jet-black Santa outfit, she runs around the holy night of winter.
+| 207 = Avenge the evil that plagues Christmas! A hero of justice, Nisa! I will protect the Yuletide of the Netherworld!
+| 208 = She was an innocent girl who longed for Santa... but with Sicily XENO's Christmas Power, she was transformed into a pitch-black vicious warrior.
+| 210 = Lucy, who gained the power of the year of the rabbit and became the main character of this year. Investigators are of course working during the year-end and New Year holidays! According to her, she is still undercover during the New Year's visit.
+| 211 = Melodia dressed in a dancer-like costume as a shrine maiden of the heresy. She plans to propose to Zed again in a new form.
+| 212 = Ice Emperor Rosalind in her sunny clothes.
+On her first date with summoner Adele.
+Her chest and stomach are heaving.
+| 213 = Plum in Aetna costume.
+She has the power of a sexy demon and a genius demon king.
+No one can stop her.
+| 214 = Mysterious power to control spirits (phantoms).
+A 13-year-old girl with the ability to manipulate phantoms. Because of her ability
+people around her call her an 'evil spirit possessor'.
+| 215 = A young man who is a spirit (phantom) living in another world.
+He is kind and has a strong sense of justice.
+He believes that his mission is to protect Marrone.
+| 216 = The other personality that inhabits Eclair's mind.
+The opposite of the original Eclair, who acts as a saint.
+She is the opposite of the original Eclair, who acts as a saint, and has a free-spirited personality.
+| 217 = In the depths of hell, in the sub-abusive death back prison.
+Prisoners incarcerated. Even after 30,000 executions had been carried out.
+Immortal prisoners who have survived.
+| 218 = Blood-sucked by the ephemeral sovereign Varvatose and turned into a household servant.
+Altina from another world. Serves as a nurse and maid.
+She is faithful to her master's orders.
+| 219 = He is an otherworldly Actare and a super narcissist.
+He is one of the Holy Protectorate and unlike the real Actare.
+He has tremendous power.
+| 220 = Saint Etna's wish to have the power of a saint fulfilled.
+Laharl in a powered-up different world.
+The power is wielded to protect important objects.
+| 221 = Heretical in the 'Nichinomoto Demon Group', which places great importance on bushido.
+A stray samurai with a self-proclaimed 'humanistic allergy'.
+He vomits blood when he perceives friendship, affection or sympathy.
+| 222 = A female heroine who bears the title 'Zekkosai', the strongest swordsman in Japan.
+She is also Fuji's master, but has now given up the sword,
+She is currently training to master the spear. She has a serious sweet tooth.
+| 224 = A natural young lady from the Wahey demon world.
+She is a severe geek of the Japanese demon world, and tries to subdue the others by spouting her erroneous view of bushido.
+She tries to make the others follow her by speaking out her false views on bushido.
+| 225 = Fuji's daughter who loves her father.
+Once a subversive in the Hinomoto Demon Group, she was feared as the 'Ice Fang Princess',
+She was feared as the 'Ice Fang Princess'.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -292,7 +317,9 @@ transformed into a pitch-black deadly warrior.
 | 20007 = The Netherworld President, who reigns over all demons. He's Emizel's Father. Is he the cause of all this corruption...?
 | 20008 = An all-purpose robot made by Jennifer. It is equipped with a computerized voice and a self-destruct mechanism.
 | 20009 = A timid and cynical person, Adell's younger brother. He has horns on his head due to the curse of Overlord Zenon. He admires and respects Rozalin.
-| 20010 = The younger sister of Adell and Taro, who's shy but energetic. She has wings on her back due to the curse of Overlord Zenon. Despite her young age, her cooking skills are on par with the professionals.
+| 20010 = Younger sister of Adele and Taro.
+Demonised by the curse of the demon king Zenon.
+She has demon wings on her back.
 | 20011 = Rozalin's childhood friend. Before he was turned into a frog, he used to be a handsome boy. When he loses his temper, a red poisonous frog surfaces!
 | 20012 = Tink is ruled by a violent personality.
 Usually reverts to her original personality when she hears a spell.
@@ -351,6 +378,31 @@ Its overwhelming power pierces any armor.
 | 20063 = To celebrate the third anniversary of Disgaea RPG.
 The golden lucky board that rushed to the party.
 Even at the celebration, its diminishing mouth doesn't stop.
+| 20064 = Liezerota possessed by the darkness from Void Dark's soul. It's thought that all the Netherworlds would be destroyed if this power was not contained.
+| 20065 = Is chocolate rice cake a bad idea for New Year's Day?
+The battle with the Kagamimochi Pliny is on.
+Now cut off.
+| 20066 = Seraphine in Metallica costume.
+She combines the power of the Nibble Henne witches with the power of the magic eye.
+She cannot be stopped.
+| 20067 = A god of destruction from another world than the demon world.
+He is a violent man who treats others like rubbish worms.
+He loves a yellow fruit called Hotapota.
+| 20068 = With a large number of evil souls by Gig.
+Altina, who was given the power of the demon king Prie.
+A bit more foul-mouthed and cruel than usual.
+| 20069 = A bottle with a letter inside its body.
+Has the ability to warp to the destination of the letter.
+Widely used in the magical world.
+| 20070 = A girl much like Cron, who unites XENO.
+When her armour given to her by the Demon King Xenon was shattered.
+Her hidden inner magic power has gone out of control.
+| 20071 = Holy Prinny in the service of Saint Etna.
+She has a twinkle in her eye and is willing to
+labour and is full of hope and vitality.
+| 20072 = Pliny, a specially made secretary exclusively for Pililika.
+Excellent secretary, but businesslike and a bit thin-skinned.
+Roughing it is not her speciality, but she is usually strong when she gets serious.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.
