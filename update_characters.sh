@@ -1,7 +1,7 @@
 echo "creating frames"
-cd "res/DRPGWiki"
+cd "frame_builder"
 py make_frames.py
-cd "../.."
+cd ".."
 echo "uploading Images..."
 #py UploadImages.py
 echo "uploading Character/s..."

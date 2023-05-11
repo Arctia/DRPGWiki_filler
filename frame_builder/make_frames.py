@@ -3,19 +3,19 @@ import sys
 import json, os
 from PIL import Image
 from PIL import ImageOps
-sys.path.insert(1, os.path.join("..", ".."))
+sys.path.insert(1, os.path.join(".."))
 
 from plibs.config import Config
 
 
 io = Image.open
-jconf = Config(os.path.join("..", "..", "plibs"))
+jconf = Config(os.path.join("..", "plibs"))
 
 BADASS = jconf.js["base_type"]["BADASS"]
 GORGEOUS = jconf.js["base_type"]["GORGEOUS"]
 ids = jconf.get_aids()
 
-with open(os.path.join("..", "..", "datas", "JP", "character.json"), encoding="utf-8") as file:
+with open(os.path.join("..", "datas", "JP", "character.json"), encoding="utf-8") as file:
 	Characters = json.load(file)["DataList"]
 
 class Pos(object):
@@ -62,7 +62,7 @@ _p_weap 	= "./weapon/"
 _p_evil 	= "./evil_symbol/"
 _p_kind		= "./kind/"
 
-frame_path	= os.path.join("..", "..", "plibs", "assets", "assetbundles",
+frame_path	= os.path.join("..", "plibs", "assets", "assetbundles",
 	"images", "chara", "frames")
 
 def crop_face(img):
@@ -97,7 +97,7 @@ def create_image(chara):
 	void.paste(evil, (7, 93), evil)
 	void.paste(kind, (5, 5), kind)
 
-	void.save(f"./result/{chara.id}.png")
+	# void.save(f"./result/{chara.id}.png")
 	os.makedirs(frame_path, exist_ok = True)
 	void.save(f"{frame_path}/{chara.id}.png")
 	#void.show()
