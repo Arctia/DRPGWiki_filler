@@ -171,6 +171,9 @@
 | 173 = The male Asagi created by HGC Asagi to be the main character of an action game. He uses pointlessly stylish attacks to defeat his enemies!
 | 174 = A mysterious Asagi wearing a Prinny Mascot costume. While she tries hard, she's not good at playing a Prinny and often forgets her lines need to contain "dood".
 | 175 = The popular heroine of Asagi Memorial, a romance game created by Creator Asagi. She's quite particular about her glasses.
+| 176 = The protagonist of the fighting game Asagi Fighters.
+His motto: "I'm going to meet someone stronger than me",
+He continues his journey to train as a warrior.
 | 177 = Almaz dressed as a groom for the Bridal Grand Prix. He's always happy to walk down the aisle at Sapphire's side.
 | 178 = Sapphire dressed up for the Bridal Grand Prix. With this dress, her love power for Almaz increases 100 times over!
 | 179 = Seraphina dressed up for the Bridal Grand Prix. It seems this dress is just as expensive as the Great Flonzor X giant robot... or more!
@@ -206,30 +209,14 @@ The dress seems to be custom-made Seraphina ordered from Gorgeous.
 | 208 = She was an innocent girl who longed for Santa... but with Sicily XENO's Christmas Power, she was transformed into a pitch-black vicious warrior.
 | 210 = Lucy, who gained the power of the year of the rabbit and became the main character of this year. Investigators are of course working during the year-end and New Year holidays! According to her, she is still undercover during the New Year's visit.
 | 211 = Melodia dressed in a dancer-like costume as a shrine maiden of the heresy. She plans to propose to Zed again in a new form.
-| 212 = Ice Emperor Rosalind in her sunny clothes.
-On her first date with summoner Adele.
-Her chest and stomach are heaving.
-| 213 = Plum in Aetna costume.
-She has the power of a sexy demon and a genius demon king.
-No one can stop her.
-| 214 = Mysterious power to control spirits (phantoms).
-A 13-year-old girl with the ability to manipulate phantoms. Because of her ability
-people around her call her an 'evil spirit possessor'.
-| 215 = A young man who is a spirit (phantom) living in another world.
-He is kind and has a strong sense of justice.
-He believes that his mission is to protect Marrone.
-| 216 = The other personality that inhabits Eclair's mind.
-The opposite of the original Eclair, who acts as a saint.
-She is the opposite of the original Eclair, who acts as a saint, and has a free-spirited personality.
-| 217 = In the depths of hell, in the sub-abusive death back prison.
-Prisoners incarcerated. Even after 30,000 executions had been carried out.
-Immortal prisoners who have survived.
-| 218 = Blood-sucked by the ephemeral sovereign Varvatose and turned into a household servant.
-Altina from another world. Serves as a nurse and maid.
-She is faithful to her master's orders.
-| 219 = He is an otherworldly Actare and a super narcissist.
-He is one of the Holy Protectorate and unlike the real Actare.
-He has tremendous power.
+| 212 = Rozalin, the Frost Lord, dressed in a festive outfit. Her heart and stomach are racing with excitement at her New Year's visit date with Summoner Adell.
+| 213 = Pram in Etna's costume. Possessing the power of a Beauty Queen and a genius Overlord. No one can stop her.
+| 214 = A 13-year-old girl with the mysterious power to manipulate spirits (phantoms). People around her call her "demon possessed" because of her abilities.
+| 215 = A phantom young man who lives in another world. He is kind and has a strong sense of justice, and believes it is his mission to protect Marone.
+| 216 = Another personality that lives in Éclair's heart. She is the complete opposite of the original Éclair, who acts as a saint, and has a free-spirited personality.
+| 217 = A prisoner who was imprisoned at the bottom of Hell. An immortal prisoner who has survived 30,000 executions.
+| 218 = Artina from a different world who became a follower after having her blood sucked by Valvatorez, the Ephemeral Lord. She works as a nurse and maid and follows her master's orders.
+| 219 = A super narcissist who is an Axel from another world. He is one of the Holy Guardians, and unlike the real Axel, he has tremendous power.
 | 220 = Saint Etna's wish to have the power of a saint fulfilled.
 Laharl in a powered-up different world.
 The power is wielded to protect important objects.
@@ -239,12 +226,21 @@ He vomits blood when he perceives friendship, affection or sympathy.
 | 222 = A female heroine who bears the title 'Zekkosai', the strongest swordsman in Japan.
 She is also Fuji's master, but has now given up the sword,
 She is currently training to master the spear. She has a serious sweet tooth.
+| 223 = Watching the dark chanbara special effects film Katanaman.
+The affected Fron dressed up as a samurai.
+The costume with the motif of Zekkosai was made by Pirilika.
 | 224 = A natural young lady from the Wahey demon world.
 She is a severe geek of the Japanese demon world, and tries to subdue the others by spouting her erroneous view of bushido.
 She tries to make the others follow her by speaking out her false views on bushido.
 | 225 = Fuji's daughter who loves her father.
 Once a subversive in the Hinomoto Demon Group, she was feared as the 'Ice Fang Princess',
 She was feared as the 'Ice Fang Princess'.
+| 226 = Sisters of Desco and Deszetto, with their raging hooking technology.
+A new powered-up form that makes full use of Increased volume.
+They have grown so much that they look almost like hookers.
+| 229 = The 'Flame Emperor', a member of the flame-controlling Sacred Protection Emperors,
+A form specialising in attacks with the fist.
+Their combat power improves markedly, but they are also extremely worn out.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -375,34 +371,19 @@ Its overwhelming power pierces any armor.
 | 20060 = A Cyborg Prinny for showcase at the Netherworld Manji Expo. Custom demo version only available at the Netherworld Manji Expo.
 | 20061 = Cursed by Majorita, Usalia's overflowing power runs rampant. The violence can only be tamed by feeding her curry.
 | 20062 = The Most Badass Freakin' Overlord in the Cosmos and protagonist of Makai Kingdom... has been transformed into a weird book.
-| 20063 = To celebrate the third anniversary of Disgaea RPG.
-The golden lucky board that rushed to the party.
-Even at the celebration, its diminishing mouth doesn't stop.
+| 20063 = A golden Lucky Board that rushed over to celebrate Disgaea RPG's 3rd anniversary. Even at the table of celebration, it won't stop running its mouth.
 | 20064 = Liezerota possessed by the darkness from Void Dark's soul. It's thought that all the Netherworlds would be destroyed if this power was not contained.
-| 20065 = Is chocolate rice cake a bad idea for New Year's Day?
-The battle with the Kagamimochi Pliny is on.
-Now cut off.
-| 20066 = Seraphine in Metallica costume.
-She combines the power of the Nibble Henne witches with the power of the magic eye.
-She cannot be stopped.
-| 20067 = A god of destruction from another world than the demon world.
-He is a violent man who treats others like rubbish worms.
-He loves a yellow fruit called Hotapota.
-| 20068 = With a large number of evil souls by Gig.
-Altina, who was given the power of the demon king Prie.
-A bit more foul-mouthed and cruel than usual.
-| 20069 = A bottle with a letter inside its body.
-Has the ability to warp to the destination of the letter.
-Widely used in the magical world.
-| 20070 = A girl much like Cron, who unites XENO.
-When her armour given to her by the Demon King Xenon was shattered.
-Her hidden inner magic power has gone out of control.
-| 20071 = Holy Prinny in the service of Saint Etna.
-She has a twinkle in her eye and is willing to
-labour and is full of hope and vitality.
-| 20072 = Pliny, a specially made secretary exclusively for Pililika.
-Excellent secretary, but businesslike and a bit thin-skinned.
-Roughing it is not her speciality, but she is usually strong when she gets serious.
+| 20065 = Is it wrong to eat chocolate ricecakes on New Year's day? The battle with the Mirror Cake Prinny has been cut off.
+| 20066 = Seraphina in a Metallia costume. The combination of her Balor Gaze and the Witch of Niblhenne's power makes her unstoppable.
+| 20067 = A God of Destruction who came from somewhere beyond the Netherworld. He's a rough man that treats others like trash, and his favorite thing to eat is Hot Pods.
+| 20068 = Artina, overcome by a large number of evil souls and granted Overlord Priere's power by Gig. She's a little more foul-mouthed and cruel than usual.
+| 20069 = A message in a bottle. It has the ability to warp to the letter's address, and is widely used in the Netherworld.
+| 20070 = The leader of XENO, a girl who looks a lot like Flonne. The magical power contained within her is out of control now that the armor given to her by Overlord Zenon has been shattered.
+| 20071 = A holy Prinny who serves Saint Etna. Her eyes are sparkling, and she's full of hope and vitality. She works hard on her own.
+| 20072 = Pirilika's special secretary Prinny. Though an excellent secretary, he's business-like and a little heartless. Rough stylings aren't his specialty, but he's strong when he gets serious.
+| 20073 = He is an umpire for VR Fighters and is a member of the
+Lucky Board with a red card.
+His diminishing mouth doesn't stop at the match venue.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.

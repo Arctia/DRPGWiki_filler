@@ -1,12 +1,14 @@
 
 from user_data import *
-# from globals import *
+from globals import *
 import mwclient
 import time, json, os, sys
 from plibs.config import Config
+from datetime import datetime
 
-wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
-#wiki.login(username=username, password=password)
+# wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
+# wiki.login(username=username, password=password)
+datetime_f = "%Y-%m-%d %H:%M:%S"
 
 def	desktop_view(text:str, id_list:list) -> str:
 	for i in id_list:
@@ -39,19 +41,81 @@ def	uniques_view(id_list:list):
 
 	# join mobile and desktop view
 	txt = "".join([page_uniques[k] for k in page_uniques])
-	print(txt)
+	# print(txt)
 
 	# upload new text
-	# Upload('Template:JP/Characters/Uniques', txt)
+	Upload(page, txt)
+	print("[INFO  ]: Written Uniques Page")
+
+def check_date(date, tp="month", value="00") -> bool:
+	if tp == "month": tp = "%m"
+	if tp == "year": tp = "%Y"
+	if tp == "day": tp = "%d"
+
+	if datetime.strptime(date, datetime_f).strftime(tp) == value:
+		return True
+
+	return False
+
+def write_new_section(dates, characters) -> str:
+	return f"""|-
+!style="text-align:left" |Latest Addition {dates}
+|-
+|{characters}\n"""
+
+def template_view(jconf:object):
+	js = jconf.js
+
+	new_charas = sorted(js['new_charas'], key=lambda x: datetime.strptime(x['release_date'], datetime_f), reverse=False)
+	mod_charas = sorted(js['modified_charas'], key=lambda x: datetime.strptime(x['mod_date'], datetime_f), reverse=True)
+
+	years = set(datetime.strptime(d['release_date'], datetime_f).strftime('%Y') for d in js['new_charas'])
+	months = set(datetime.strptime(d['release_date'], datetime_f).strftime('%m') for d in js['new_charas'])
+	days = set(datetime.strptime(d['release_date'], datetime_f).strftime('%d') for d in js['new_charas'])
+
+	years = sorted(years, key=lambda x: int(x), reverse = True)
+	months = sorted(months, key=lambda x: int(x), reverse = True)
+	days = sorted(days, key=lambda x: int(x), reverse = True)
+
+	new_fragment = "{|\n"
+
+	charas = ""
+	dates = ""
+	for year in years:
+
+		for month in months:
+			dates = ""
+			charas = ""
+			for day in days:
+				for chara in new_charas:
+					if (check_date(chara['release_date'], "day", day) and 
+						check_date(chara['release_date'], "month", month) and
+						check_date(chara['release_date'], "year", year)):
+						tmp = f"{month}/{day}"
+						if not tmp in dates:
+							if dates != "": 
+								dates += " - "
+								charas += "  -  "
+							dates += f"{tmp}"
+						charas += f"{{{{CharacterNavFrameJP|{chara['id']}}}}}"
+
+			if dates != "": 
+				dates += f"/{year}"
+				new_fragment += write_new_section(dates, charas)
+
+	page = wiki.pages['Template:JP/Characters']
+	page_text = page.text().replace("{|\n", new_fragment, 1)
+	Upload(page, page_text)
+	print("[INFO  ]: Written Main Template Page")
+
 
 def main():
-	id_list = Config("./plibs/").get_ids()
+	jconf = Config("./plibs/")
+	id_list = jconf.get_ids()
 
 	uniques_view(id_list)
-
-
-
-
+	template_view(jconf)
 
 if __name__ == '__main__':
 	main()
+

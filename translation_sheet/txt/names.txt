@@ -171,6 +171,7 @@
 | 173 = Asagiri Asagi
 | 174 = Prinny Mascot Asagi
 | 175 = Asagi Koigiri
+| 176 = Fighter Asagi
 | 177 = Groom Almaz
 | 178 = Bride Sapphire
 | 179 = Bride Seraphina
@@ -205,7 +206,7 @@
 | 208 = Dark Santa Noel
 | 210 = Zodiac Lucy
 | 211 = Priestess Melodia
-| 212 = Frost Lord Rozalin
+| 212 = New Year Frost Lord Rozalin
 | 213 = Majin Pram
 | 214 = Marona
 | 215 = Ash
@@ -216,8 +217,11 @@
 | 220 = Holy Thunderlord Laharl
 | 221 = Fuji
 | 222 = Higan Zesshosai
+| 223 = Flonne Zesshosai
 | 224 = Piririka
 | 225 = Ao
+| 226 = Desco X
+| 229 = Fire Fist Flamelord Majorita
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -352,7 +356,8 @@
 | 20069 = Bottlemail
 | 20070 = Fallen Avatar Flonne
 | 20071 = Saint Prinny
-| 20072 = P2C
+| 20072 = Pii-chan
+| 20073 = Referee Lucky Board
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

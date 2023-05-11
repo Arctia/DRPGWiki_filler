@@ -30,23 +30,25 @@ class	Config():
 
 	def add_new_chara(self, c):
 		for character in self.js['new_charas']:
-			if c['id'] == character['id']:
+			if c['Character ID'] == character['id']:
 				return
 		chara = {
-			'id': c['id'],
-			'release_date': c['book'],
+			'id': c['Character ID'],
+			'release_date': c['book_appear_at'],
 		}
 		self.js['new_charas'].append(chara)
+		self.save_config()
 
 	def add_mod_chara(self, c):
 		for character in self.js['modified_charas']:
-			if c['id'] == character['id']: 
+			if c['Character ID'] == character['id']: 
 				return
 		chara = {
-			'id': c['id'],
+			'id': c['Character ID'],
 			'modified_date': datetime.datetime.now().strftime("%m-%Y"),
 		}
 		self.js['modified_charas'].append(chara)
+		self.save_config()
 
 	def get_ids(self):
 		data = []

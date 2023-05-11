@@ -5,16 +5,18 @@ import requests
 from globals import wiki, time
 
 res_path = "./res/"
+res_path = os.path.join("plibs", "assets", "assetbundles",
+	"images", "chara")
 
 folders = ["ci", "illust", "command", "face"]
 ico_folder = "icons"
-frame_folder = "result"
+frame_folder = "frames"
 
-img_replace = False
+img_replace = True
 
 def main():
 	for folder in folders:
-		for file in os.listdir(res_path+folder+"/"):
+		for file in os.listdir(os.path.join(res_path,folder)):
 			if file[-4:] != ".png": continue
 			UploadImage(file, folder)
 
@@ -24,7 +26,7 @@ def UploadImage(file, folder=""):
 	try:
 		page = wiki.pages[f"File:{name}"]
 		if page.exists == False or img_replace == True:
-			ff = res_path+folder+"/"+file
+			ff = os.path.join(res_path, folder, file)
 			print(ff)
 			wiki.upload(file=ff, filename=name, ignore=True)
 	except requests.exceptions.ReadTimeout:
@@ -47,7 +49,7 @@ def Upload_Icon(file, folder=""):
 	try:
 		page = wiki.pages[f"File:{name}"]
 		if page.exists == False:
-			ff = res_path+folder+"/"+file
+			ff = os.path.join(res_path, folder, file)
 			print(ff)
 			wiki.upload(file=ff, filename=name, ignore=True)
 	except requests.exceptions.ReadTimeout:
@@ -62,7 +64,7 @@ def Upload_Frame(file, folder=""):
 	try:
 		page = wiki.pages[f"File:{name}"]
 		if page.exists == False or img_replace:
-			ff = res_path+folder+"/"+file
+			ff = os.path.join(res_path, folder, file)
 			print(ff)
 			wiki.upload(file=ff, filename=name, ignore=True)
 	except requests.exceptions.ReadTimeout:
@@ -78,7 +80,7 @@ def upload_icons():
 		Upload_Icon(file, ico_folder)
 
 def upload_frames():
-	for file in os.listdir(res_path+frame_folder+"/"):
+	for file in os.listdir(os.path.join(res_path, frame_folder)):
 		Upload_Frame(file, frame_folder)
 
 

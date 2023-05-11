@@ -2,10 +2,13 @@
 import UnityPy, shutil, json, os
 from config import Config
 
-GAMEDATA_PATH = "./folder"
+GAMEDATA_PATH = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\"
 EXTRACT_PATH = "."
 
-FOLDERS_TO_CHECK = ['chara', "wait_front"]
+CHARA_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
+FRONT_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
+
+STOP_FOLDER = "images/chara_contest"
 
 def	extract_data(src: str, dest: str, ids):
 	for root, dirs, file in os.walk(src):
@@ -17,20 +20,11 @@ def	extract_data(src: str, dest: str, ids):
 				if obj.type.name in ["Texture2D", "Sprite"]:
 					data = obj.read()
 					paths = path.split("/")
-					switch = False
-					
-					# check if path is eligible of extraction
-					for fd in FOLDERS_TO_CHECK:
-						if fd in paths:
-							switch = True
-							break
-					if not switch: continue
-					
 
 					dst = os.path.join(dest, *path.split("/"))
-					os.makedirs(os.path.dirname(dst), exist_ok=True)
+					
 					dst, ext = os.path.splitext(dst)
-					fn = dst.split("/")[-1].replace("front", "")
+					fn = dst.split("\\")[-1].replace("front", "")
 
 					switch = False
 					for i in ids:
@@ -39,9 +33,34 @@ def	extract_data(src: str, dest: str, ids):
 							break
 					if not switch: continue
 					
+					os.makedirs(os.path.dirname(dst), exist_ok=True)
 					dst += ".png"
 					data.image.save(dst)
 					print(f"[INFO  ]: Written: {dst}")
+
+def unpack_frames(source_folder : str, destination_folder : str, ids):
+	for root, dirs, files in os.walk(source_folder):
+		for file_name in files:
+
+			switch = False
+			for i in ids:
+				if str(i) == file_name.replace("front", ""):
+					switch = True
+					break
+			if not switch: continue
+
+			file_path = os.path.join(root, file_name)
+			env = UnityPy.load(file_path)
+
+			for obj in env.objects:
+				if obj.type.name in ["Sprite"]:
+					data = obj.read()
+					dest = os.path.join(destination_folder, file_name, data.name)
+					os.makedirs(os.path.dirname(dest), exist_ok = True)
+					dest, ext = os.path.splitext(dest)
+					dest = dest + ".png"
+					img = data.image
+					img.save(dest)
 
 ################################################ Main script
 jconf = Config()
@@ -52,8 +71,10 @@ aids = jconf.get_aids()
 if os.path.isdir(os.path.join(EXTRACT_PATH, "assets")):
 	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
 
+print(ids)
 # Extract new Images
-extract_data(GAMEDATA_PATH, EXTRACT_PATH, ids)
+extract_data(CHARA_FOLDER, EXTRACT_PATH, ids)
+unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
 
 with open(os.path.join("..", "update_characters.sh"), "r") as f:
 	lines = f.readlines()
@@ -69,5 +90,5 @@ with open(os.path.join("..", "update_characters.sh"), "w") as f:
 		f.write(l)
 
 # Reset chara configs after the work went fine
-jconf.__reset__()
+# jconf.__reset__()
 

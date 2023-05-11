@@ -7,7 +7,7 @@ from plibs.config import Config
 from openpyxl.styles import PatternFill
 from globals import *
 
-jconf = Config()
+jconf = Config("./plibs/")
 
 wpath = "./translation_sheet/Disgaea RPG Translations of Characters.xlsx"
 spath = "./translation_sheet/result.xlsx"
@@ -400,6 +400,7 @@ def Infos(c, l, res = {}):
 	l["Character ID"] = c["id"]
 	l["Character Name"] = c["name"]
 	l["Bio"] = c["description"]
+	l['book_appear_at'] = c["book_appear_at"]
 	count = 1
 	for cl in ClassNames:
 		if cl["m_character_id"] == c["id"]:
@@ -515,6 +516,7 @@ def AddExcell(jish):
 	pre_cell = 0
 	if JP:
 		for key in jish:
+			if key == 'Unique Unplayable': continue
 			col = offset_x
 			worksheet = workbook[key]
 			for c in jish[key]:
@@ -530,7 +532,7 @@ def AddExcell(jish):
 						for i in range(3):
 							worksheet.insert_cols(cl)
 						for f in c:
-							worksheet.cell(RowIDS[f]+1, cl, c[f])
+							if f != "book_appear_at": worksheet.cell(RowIDS[f]+1, cl, c[f])
 						print("[INFO	]: Added character %s" % c["Character ID"])
 						jconf.add_new_chara(c)
 						break
@@ -539,7 +541,7 @@ def AddExcell(jish):
 					for i in range(3):
 						worksheet.insert_cols(cl)
 					for f in c:
-						worksheet.cell(RowIDS[f]+1, cl, c[f])
+						if f != "book_appear_at": worksheet.cell(RowIDS[f]+1, cl, c[f])
 					print("[INFO	]: Added character %s" % c["Character ID"])
 					jconf.add_new_chara(c)
 
@@ -561,6 +563,7 @@ def ModifyExcell(jish):
 					if cell_value == c["Character ID"]:
 						found = True
 						for f in c:
+							if f == "book_appear_at": continue
 							value = worksheet.cell(RowIDS[f]+1, cl).value
 							if value != c[f] and RowIDS[f] in ids_to_check:
 								worksheet.cell(RowIDS[f]+1, cl, c[f])
