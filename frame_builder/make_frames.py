@@ -7,9 +7,10 @@ sys.path.insert(1, os.path.join(".."))
 
 from plibs.config import Config
 
+fd_plibs = os.path.join("..", "plibs")
 
 io = Image.open
-jconf = Config(os.path.join("..", "plibs"))
+jconf = Config(folder = fd_plibs)
 
 BADASS = jconf.js["base_type"]["BADASS"]
 GORGEOUS = jconf.js["base_type"]["GORGEOUS"]
@@ -55,14 +56,16 @@ _void 		= "./void.png"
 _bg			= "./bg.png"
 
 # _p_faces 	= "./face/"
-_p_faces 	= "C:/Users/Arctia/Desktop/Root/Projects/DRPG_Wiki/plibs/assets/assetbundles/images/chara/face/"
+_p_faces	= os.path.join(fd_plibs, "assets", "assetbundles",
+	"images", "chara", "face")
+
 
 _p_frames 	= "./frame/"
 _p_weap 	= "./weapon/"
 _p_evil 	= "./evil_symbol/"
 _p_kind		= "./kind/"
 
-frame_path	= os.path.join("..", "plibs", "assets", "assetbundles",
+frame_path	= os.path.join(fd_plibs, "assets", "assetbundles",
 	"images", "chara", "frames")
 
 def crop_face(img):

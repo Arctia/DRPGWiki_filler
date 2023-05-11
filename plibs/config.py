@@ -3,8 +3,8 @@ import datetime, json, os
 class	Config():
 	path = './config.json'
 
-	def __init__(self, path=""):
-		self.path = os.path.join(path, self.path)
+	def __init__(self, folder=""):
+		self.path = os.path.join(folder, self.path)
 		self.load_config()
 
 	def __reset__(self):
