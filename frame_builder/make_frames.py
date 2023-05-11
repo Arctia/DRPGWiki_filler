@@ -55,7 +55,6 @@ icon_size 	= (36 ,	36)
 _void 		= "./void.png"
 _bg			= "./bg.png"
 
-# _p_faces 	= "./face/"
 _p_faces	= os.path.join(fd_plibs, "assets", "assetbundles",
 	"images", "chara", "face")
 
@@ -100,7 +99,6 @@ def create_image(chara):
 	void.paste(evil, (7, 93), evil)
 	void.paste(kind, (5, 5), kind)
 
-	# void.save(f"./result/{chara.id}.png")
 	os.makedirs(frame_path, exist_ok = True)
 	void.save(f"{frame_path}/{chara.id}.png")
 	#void.show()
