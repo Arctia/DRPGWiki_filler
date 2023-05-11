@@ -31,7 +31,7 @@ def mobile_view(text:str, id_list:list) -> str:
 	text = text.replace("|}", str_to_add)
 	return text
 
-def	uniques_view(id_list:list):
+def	uniques_view(id_list:list, new_charas):
 	# load wiki page text and divide mobile from desktop
 	page = wiki.pages['Template:JP/Characters/Uniques']
 	page_uniques = {
@@ -41,7 +41,6 @@ def	uniques_view(id_list:list):
 
 	# join mobile and desktop view
 	txt = "".join([page_uniques[k] for k in page_uniques])
-	# print(txt)
 
 	# upload new text
 	Upload(page, txt)
@@ -108,9 +107,9 @@ def template_view(jconf:object):
 	Upload(page, page_text)
 	print("[INFO  ]: Written Main Template Page")
 
-
 def main():
 	jconf = Config("./plibs/")
+	jconf.order_by_datetime()
 	id_list = jconf.get_ids()
 
 	uniques_view(id_list)

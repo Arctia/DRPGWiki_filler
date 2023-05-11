@@ -28,6 +28,11 @@ class	Config():
 		with open(self.path, 'w') as f:
 			json.dump(self.js , f, indent=4)
 
+	def order_by_datetime(self):
+		cp = self.js
+		cp = sorted(cp['new_charas'], key=lambda x: datetime.strptime(x['release_date'], datetime_f), reverse=True)
+		self.js = cp
+
 	def add_new_chara(self, c):
 		for character in self.js['new_charas']:
 			if c['Character ID'] == character['id']:
@@ -37,6 +42,7 @@ class	Config():
 			'release_date': c['book_appear_at'],
 		}
 		self.js['new_charas'].append(chara)
+		self.order_by_datetime()
 		self.save_config()
 
 	def add_mod_chara(self, c):
