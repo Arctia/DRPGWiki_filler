@@ -9,6 +9,7 @@ from datetime import datetime
 # wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
 # wiki.login(username=username, password=password)
 datetime_f = "%Y-%m-%d %H:%M:%S"
+datetime_m = "%m-%Y"
 
 def	desktop_view(text:str, id_list:list) -> str:
 	for i in id_list:
@@ -67,7 +68,7 @@ def template_view(jconf:object):
 	js = jconf.js
 
 	new_charas = sorted(js['new_charas'], key=lambda x: datetime.strptime(x['release_date'], datetime_f), reverse=False)
-	mod_charas = sorted(js['modified_charas'], key=lambda x: datetime.strptime(x['mod_date'], datetime_f), reverse=True)
+	mod_charas = sorted(js['modified_charas'], key=lambda x: datetime.strptime(x['modified_date'], datetime_m), reverse=True)
 
 	years = set(datetime.strptime(d['release_date'], datetime_f).strftime('%Y') for d in js['new_charas'])
 	months = set(datetime.strptime(d['release_date'], datetime_f).strftime('%m') for d in js['new_charas'])

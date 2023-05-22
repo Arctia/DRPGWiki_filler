@@ -114,7 +114,7 @@
 | 116 = Bieko
 | 117 = Piyori
 | 118 = Misedor
-| 119 = Wicked Mao
+| 119 = Evil Reborn Mao
 | 120 = Emizel XENO
 | 121 = Frostlord Rozalin
 | 122 = Flamelord Majorita
@@ -206,7 +206,7 @@
 | 208 = Dark Santa Noel
 | 210 = Zodiac Lucy
 | 211 = Priestess Melodia
-| 212 = New Year Frost Lord Rozalin
+| 212 = New Year Frostlord Rozalin
 | 213 = Majin Pram
 | 214 = Marona
 | 215 = Ash
@@ -218,9 +218,10 @@
 | 221 = Fuji
 | 222 = Higan Zesshosai
 | 223 = Flonne Zesshosai
-| 224 = Piririka
+| 224 = Pirilika
 | 225 = Ao
 | 226 = Desco X
+| 227 = Starblade Sicily XENO
 | 229 = Fire Fist Flamelord Majorita
 | 1001 = Prism Red
 | 1002 = Prism Blue
@@ -296,7 +297,7 @@
 | 20009 = Taro
 | 20010 = Hanako
 | 20011 = Tink
-| 20012 = Tink (red)
+| 20012 = Tink (Red)
 | 20013 = Vulcanus
 | 20014 = Kurtis
 | 20015 = Lamington

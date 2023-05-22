@@ -590,6 +590,7 @@ def BlankExcell(jish):
 					if cell_value == c["Character ID"]:
 						found = True
 						for f in c:
+							if f == "book_appear_at": continue
 							if RowIDS[f]+1 == 2: continue
 							value = worksheet.cell(RowIDS[f]+1, cl).value
 							t_value = worksheet.cell(RowIDS[f]+1, cl+1).value

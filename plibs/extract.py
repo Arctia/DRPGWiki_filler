@@ -68,8 +68,8 @@ ids = jconf.get_ids()
 aids = jconf.get_aids()
 
 # Delete old ones 
-if os.path.isdir(os.path.join(EXTRACT_PATH, "assets")):
-	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
+#if os.path.isdir(os.path.join(EXTRACT_PATH, "assets")):
+#	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
 
 print(ids)
 # Extract new Images

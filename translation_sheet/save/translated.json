@@ -1587,5 +1587,50 @@
         "Evility Desc 3": "At end of turn, if any enemy is RES debuffed, party's ATK, INT, CRD +#PER#% (2T)",
         "Evility Name 4": "Invincible!",
         "Evility Desc 4": "At the start of combat, grant yourself invincibility (#PER# times)."
+    },
+    "172": {
+        "Skill Effect 1": "Basic parameters other than HP -#PER2#% (3T) & any of the status effects (2T) granted [all enemies].",
+        "Skill Effect 2": "Grants CRD+#PER3#% & SP auto-recovery [#PER2#](3T) when using a technique [self].",
+        "Skill Effect 3": "Gauge +#PER2# & technique power on critical +#PER4#% & CRT +#PER3#% when using a technique when killing an enemy [self].",
+        "Evility Desc 3": "At the start of the turn, if you are under the ATK buff effect, you are granted +#PER#%(1T) damage dealt by your Special Moves."
+    },
+    "174": {
+        "Skill Effect 1": "[No continuous fire] ATK, INT, CRD +#PER2#%(3T)[all allies], SP auto-recovery [#PER5#](3T) granted & action gauge +#PER6#[self].",
+        "Skill Effect 2": "ATK, DEF+#PER1#%(3T)[all allies],ATK, DEF-#PER3#%(3T) & Action Gauge -#PER5#[all enemies].",
+        "Skill Effect 3": "Damage calculated by adding +#PER2#% of technique power on a critical hit & #PER3#% of DEF [self].",
+        "Evility Desc 4": "If there are 4 or more characters in your party with [Axe, Sword, Gun, Staff, Demon Magic] as their special weapon type, your ATK and DEF +#PER#%, CRD +#PER2#%."
+    },
+    "227": {
+        "Character Name": "Star Sword Sicily XENO",
+        "Bio": "Sicily XENO equipped with the original twin swords.\nThe original setting for the twin swords is very complicated,\nso vast that it covers several pages of notes.",
+        "Title 1": "Setting picture of the evil star note.",
+        "Title 2": "Setting picture of the evil star note.",
+        "Title 3": "Setting picture of the evil star note.",
+        "Title 4": "Setting picture of the evil star note.",
+        "Title 5": "The Evil Star that Sees the Future",
+        "Title 6": "Jet-black twin-sworded holy demon king",
+        "Skill Name 1": "eclipse karma",
+        "Skill Desc 1": "It is not swung by the weight of the sword.",
+        "Skill Effect 1": "ATK+Number of enemy characters killed by this technique x #PER2#% (3T) [self].",
+        "Skill Name 2": "chaos-catalysis",
+        "Skill Desc 2": "It is not a feat for an evil star equipped with a sacred weapon.",
+        "Skill Effect 2": "[No Consecutive] Action Gauge +#PER2#[Himself],ATK/CRD +#PER3#%(2T) & CRT +#PER5#%(2T) & Damage dealt by Special Moves +#PER6#%(2T) granted [All Allies].",
+        "Skill Name 3": "Cardinal Nova",
+        "Skill Desc 3": "The jet black of death and the sky of nothingness combine to look the strongest. ......",
+        "Skill Effect 3": "Streak [1-6 (power D)] & when target is DEF debuffed, technique power +#PER3#% [self].",
+        "Evility Name 1": "Glittering Vega",
+        "Evility Desc 1": "Party ATK and CRD +#PER#%, HP +#PER2#%.",
+        "Evility Name 2": "Capella's Embrace.",
+        "Evility Desc 2": "Damage dealt by special attacks when you are equipped with a sword weapon +#PER#%, plus damage dealt by your party's special attacks +#PER2#%.",
+        "Evility Name 3": "Rigel's trajectory.",
+        "Evility Desc 3": "At start of turn, if under CRT buff effect, your ATK +#PER#% (1T), CRD +#PER2#% (1T)",
+        "Evility Name 4": "The Eyes of Antares",
+        "Evility Desc 4": "At the start of the Wave, the entire enemy is weakened (max. Lv.#PER#)."
+    },
+    "20054": {
+        "Skill Effect 1": "ATK, INT, CRD +#PER2#% (3T) [all allies].",
+        "Skill Effect 2": "[No Consecutive] Action Gauge +#PER2#[self],DEF, RES -#PER3#%(3T)[all enemies].",
+        "Skill Effect 3": "Damage calculated by adding +#PER2#% of technique power to enemies with RES debuff & #PER3#% of RES [self], taking #PER4# of target's SP [enemy only].",
+        "Evility Desc 3": "DEF and RES of all enemies - #PER#%, SPD, CRT and CRD - #PER2#%."
     }
 }

@@ -13,7 +13,7 @@ jconf = Config(os.path.join("..", "..", "plibs"))
 
 BADASS = jconf.js["base_type"]["BADASS"]
 GORGEOUS = jconf.js["base_type"]["GORGEOUS"]
-ids = jconf.get_aids()
+ids = jconf.get_ids()
 
 with open(os.path.join("..", "..", "datas", "JP", "character.json"), encoding="utf-8") as file:
 	Characters = json.load(file)["DataList"]

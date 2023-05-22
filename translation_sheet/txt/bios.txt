@@ -171,9 +171,7 @@
 | 173 = The male Asagi created by HGC Asagi to be the main character of an action game. He uses pointlessly stylish attacks to defeat his enemies!
 | 174 = A mysterious Asagi wearing a Prinny Mascot costume. While she tries hard, she's not good at playing a Prinny and often forgets her lines need to contain "dood".
 | 175 = The popular heroine of Asagi Memorial, a romance game created by Creator Asagi. She's quite particular about her glasses.
-| 176 = The protagonist of the fighting game Asagi Fighters.
-His motto: "I'm going to meet someone stronger than me",
-He continues his journey to train as a warrior.
+| 176 = The main character of the fighting game, "Asagi Fighters." Her martial arts creed is to always seek out stronger and stronger opponents.
 | 177 = Almaz dressed as a groom for the Bridal Grand Prix. He's always happy to walk down the aisle at Sapphire's side.
 | 178 = Sapphire dressed up for the Bridal Grand Prix. With this dress, her love power for Almaz increases 100 times over!
 | 179 = Seraphina dressed up for the Bridal Grand Prix. It seems this dress is just as expensive as the Great Flonzor X giant robot... or more!
@@ -188,59 +186,43 @@ He continues his journey to train as a warrior.
 | 188 = This scorching hero of justice takes time off to be a bug-catching expert for the demonic summer. The plastic cage contains the newest member of the team, Prism Stag Beetle!
 | 189 = Thursday with a new body and advanced emotion software based on schematics from Genjuro Kazamatsuri. The long blonde hair seems to be detachable.
 | 190 = Mao has become the curator of the Netherworld Manji Tech Expo, a dream of his since childhood. The cane he carries contains the power of a superhero.
-| 191 = Hanako from 10 years after having earned the title of Majin. While she didn't get the dynamite body she expected, she did gain a considerable amount of power.
-| 192 = The Thunderlord, Laharl, was accidentally transformed into a woman by the malfunctioning Transmigration Machine. Even as a Thunderlady, Laharl's combat power is as strong as ever.
+| 191 = Hanako's future self in 10 years, having earned the title of Majin. While she didn't get the dynamite body she expected, she did gain a considerable amount of power.
+| 192 = Thunderlord Laharl was accidentally transformed into a woman by the malfunctioning Transmigration Machine. Even as a Thunderlady, Laharl's combat power is as strong as ever.
 | 193 = Transformed by the Sacred Tome into the image of the most cringe-inducing fool in the cosmos, Royal King Drake. But Laharl makes the most of it and remains stronger than ever!
 | 194 = Zetta's self-proclaimed rival and nemesis. He's always challenging Zetta to epic final battles, but there's never a clear winner.
 | 195 = In this form, Petta has accumulated three powers at once: the power of a Time Traveller, a Freakin' Badass Overlord, and an Atrocious Overlord!
 | 196 = A mysterious girl who has a deep connection with the Sacred Tome, and whose mysterious nature even Pram cannot predict.
 | 197 = The true form of Pram the Oracle when she unleashes all her Mana power. Her overwhelming aura of power freezes everything nearby.
 | 198 = Etna steals the power of  Zetta's eyes along with his outfit. This doubles the power of her Sexy Beam, making her the Most Badass Beauty Queen in the Cosmos!
-| 199 = The form of Laharl awakened by the power of a hero inherited from Future Warrior Pleinair.
-| 200 = "Ms. Pleinair, who has the power to manipulate time and space, and has turned into a demon lord who travels between the future, the past, and parallel worlds."
-| 201 = Etna was enchanted by Shadowshark Overlord Pleinair. She should have become an executive of the evil Overlord in an undesired way, but she is said to be better suited to be a villain than an Overlord.
-| 202 = The figure of Rozalin, who was robbed of her magical power by the Shadowshark Pleinair and became smaller. When Adell carries her on his back, she immediately becomes sleepy.
-| 203 = Liezerota dressed in a glittering formal attire. 
-The dress seems to be custom-made Seraphina ordered from Gorgeous. 
+| 199 = Laharl's new form when awakened by the Power of a Hero from Future Warrior Pleinair.
+| 200 = A future Pleinair, who has gained the power to manipulate time and space. She has turned into an Overlord who travels between the future, the past, and parallel worlds.
+| 201 = Etna when enchanted by Shadowshark Overlord Pleinair. At first she seemed brainwashed, but actually Etna thought the role of top villainess suited her pretty well so she went along willingly.
+| 202 = A version of Rozalin who was drained of her mana power by Shadowshark Overlord Pleinair and became younger. When Adell carries her on his back, she immediately becomes sleepy like a little kid.
+| 203 = Liezerota dressed in glittering formal attire. The dress seems to be a custom-made outfit Seraphina ordered from Gorgeous. 
 | 204 = Flonne transformed into a hero using armor given to her by Future Usalia. Her chest looks big, but the inside of the armor is hollow.
-| 205 = Hearing about Black Santa's rampage, Future Usalia dressed as Santa rushed to the pinch on Christmas Eve.
-| 206 = A self-proclaimed Overlord, Sicily from another world. Dressed in a jet-black Santa outfit, she runs around the holy night of winter.
-| 207 = Avenge the evil that plagues Christmas! A hero of justice, Nisa! I will protect the Yuletide of the Netherworld!
-| 208 = She was an innocent girl who longed for Santa... but with Sicily XENO's Christmas Power, she was transformed into a pitch-black vicious warrior.
+| 205 = Learning of an otherworldly Dark Santa's rampage in the past, Future Usalia dressed as Santa and rushed to save the timeline on Christmas Eve.
+| 206 = The self-proclaimed Overlord Sicily from another world. Dressed in a jet-black Santa outfit, she sews chaos on the holy night of winter.
+| 207 = To avenge the evil that plagues the holidays! A hero of justice, Nisa, shall protect the Yuletide of the Netherworld!
+| 208 = A once-innocent fangirl for Santa... but due to Sicily XENO's Dark Yule Power, she was transformed into a vicious advocate of Dark Santa instead.
 | 210 = Lucy, who gained the power of the year of the rabbit and became the main character of this year. Investigators are of course working during the year-end and New Year holidays! According to her, she is still undercover during the New Year's visit.
-| 211 = Melodia dressed in a dancer-like costume as a shrine maiden of the heresy. She plans to propose to Zed again in a new form.
-| 212 = Rozalin, the Frost Lord, dressed in a festive outfit. Her heart and stomach are racing with excitement at her New Year's visit date with Summoner Adell.
+| 211 = Melodia dressed in a dancer-like costume as an unorthodox shrine maiden. She plans to propose to Zed again with this new style.
+| 212 = Frostlord Rozalin, dressed in a festive outfit. Her heart and stomach are racing with excitement at her New Year's date with Summoner Adell.
 | 213 = Pram in Etna's costume. Possessing the power of a Beauty Queen and a genius Overlord. No one can stop her.
 | 214 = A 13-year-old girl with the mysterious power to manipulate spirits (phantoms). People around her call her "demon possessed" because of her abilities.
-| 215 = A phantom young man who lives in another world. He is kind and has a strong sense of justice, and believes it is his mission to protect Marone.
-| 216 = Another personality that lives in Éclair's heart. She is the complete opposite of the original Éclair, who acts as a saint, and has a free-spirited personality.
-| 217 = A prisoner who was imprisoned at the bottom of Hell. An immortal prisoner who has survived 30,000 executions.
-| 218 = Artina from a different world who became a follower after having her blood sucked by Valvatorez, the Ephemeral Lord. She works as a nurse and maid and follows her master's orders.
-| 219 = A super narcissist who is an Axel from another world. He is one of the Holy Guardians, and unlike the real Axel, he has tremendous power.
-| 220 = Saint Etna's wish to have the power of a saint fulfilled.
-Laharl in a powered-up different world.
-The power is wielded to protect important objects.
-| 221 = Heretical in the 'Nichinomoto Demon Group', which places great importance on bushido.
-A stray samurai with a self-proclaimed 'humanistic allergy'.
-He vomits blood when he perceives friendship, affection or sympathy.
-| 222 = A female heroine who bears the title 'Zekkosai', the strongest swordsman in Japan.
-She is also Fuji's master, but has now given up the sword,
-She is currently training to master the spear. She has a serious sweet tooth.
-| 223 = Watching the dark chanbara special effects film Katanaman.
-The affected Fron dressed up as a samurai.
-The costume with the motif of Zekkosai was made by Pirilika.
-| 224 = A natural young lady from the Wahey demon world.
-She is a severe geek of the Japanese demon world, and tries to subdue the others by spouting her erroneous view of bushido.
-She tries to make the others follow her by speaking out her false views on bushido.
-| 225 = Fuji's daughter who loves her father.
-Once a subversive in the Hinomoto Demon Group, she was feared as the 'Ice Fang Princess',
-She was feared as the 'Ice Fang Princess'.
-| 226 = Sisters of Desco and Deszetto, with their raging hooking technology.
-A new powered-up form that makes full use of Increased volume.
-They have grown so much that they look almost like hookers.
-| 229 = The 'Flame Emperor', a member of the flame-controlling Sacred Protection Emperors,
-A form specialising in attacks with the fist.
-Their combat power improves markedly, but they are also extremely worn out.
+| 215 = The phantom of a young man from another world. He is kind and has a strong sense of justice, and makes it his mission to protect Marona.
+| 216 = Another personality that lives in Éclair's heart. She is the complete opposite of the normal saintly Éclair, and has a chaotic personality.
+| 217 = An inmate imprisoned in the deepest depths of Hell. An immortal prisoner who has survived 30,000 executions.
+| 218 = Artina from another world who became a thrall after having her blood sucked by Valvatorez, the Nightmare Tyrant. She works as his nurse and maid and follows her master's orders.
+| 219 = A super narcissistic Axel from another world. He is one of the Holy Guardians, but unlike the other Axel, he has tremendous power.
+| 220 = A Laharl from another world who was temporarily granted the power of the Saint to fulfill Saint Etna's wish. This power is wielded to protect the ones who matter most.
+| 221 = A rogue samurai who rejected the Bushido tenets of the Hinomoto Netherworld Cluster. He is self-diagnosed with a "Virtue Allergy", and if explosed to high amounts of friendship, affection, or sympathy, begins to cough up considerable amounts of blood.
+| 222 = A heroine who bears the title of Hinomoto's Strongest Swordsman, "Zesshosai". She has become Fuji's sword master and has given up her sword in a new pursuit to study the spear. Her love of rich sweets is unmatched.
+| 223 = Taking after her favorite Dark Samurai B-Movie action hero, "Katanaman", Flonne has studied the blade. This custom-made Katanaman cosplay was designed by Pirilika. 
+| 224 = A somewhat ditzy girl from the Wahei Netherworld. She's an extreme Hinomoto fangirl with a rose-colored view of what Bushido is. But she persists in trying to get everyone she can to embrace it!
+| 225 = Fuji's daughter who adores her papa. She was once feared as the "Ice Fang Princess" for her repeated destructive incidents in the Hinomoto Netherworld Cluster.
+| 226 = Making use of their rage and their newfound sisterly bond, Desco and Des X have fused into a new form. Their combined power has increased their size temporarily to look about the same age as their big sister Fuka.
+| 227 = Sicily XENO when clad in the manifested equipment of her Original Character, do not steal. The backstory behind her dual-wielded blades is extensive enough to fill multiple notebooks!
+| 229 = A powered up form of one of the four Holy Guardians, the Flamelord, but specialized in using clawed fist attacks. While the power boost is immense, the exhaustion of maintaining this form is equally difficult.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -313,13 +295,9 @@ Their combat power improves markedly, but they are also extremely worn out.
 | 20007 = The Netherworld President, who reigns over all demons. He's Emizel's Father. Is he the cause of all this corruption...?
 | 20008 = An all-purpose robot made by Jennifer. It is equipped with a computerized voice and a self-destruct mechanism.
 | 20009 = A timid and cynical person, Adell's younger brother. He has horns on his head due to the curse of Overlord Zenon. He admires and respects Rozalin.
-| 20010 = Younger sister of Adele and Taro.
-Demonised by the curse of the demon king Zenon.
-She has demon wings on her back.
-| 20011 = Rozalin's childhood friend. Before he was turned into a frog, he used to be a handsome boy. When he loses his temper, a red poisonous frog surfaces!
-| 20012 = Tink is ruled by a violent personality.
-Usually reverts to her original personality when she hears a spell.
-jealousy and anger, he cannot stop his outbursts.
+| 20010 = Adell and Taro's little sister. She's a demon thanks to Overlord Zenon's curse, she even has devil wings sprouting from her back!
+| 20011 = Rozalin's childhood friend. Before he was turned into a frog, he used to be a handsome boy. When he loses his temper, his poisonous red alter ago comes out!
+| 20012 = Tink when taken over by his bad-tempered alter ego. He usually can be returned to normal be reciting a spell, but he's so full of jealousy and anger now that his rampage can't be stopped!
 | 20013 = This archangel is jealous of Flonne, who's favored by the Seraph. He lost himself in ambition and anger and has gone haywire.
 | 20014 = He was caught up in an incident and lost 70% of his body. He's a cyborg who calls himself the Defender of Earth.
 | 20015 = A leader of the heavenly world on par with the demon world. A beautiful angel with love and kindness that not only cares about Celestia, but also the Netherworld.
@@ -375,12 +353,12 @@ Its overwhelming power pierces any armor.
 | 20064 = Liezerota possessed by the darkness from Void Dark's soul. It's thought that all the Netherworlds would be destroyed if this power was not contained.
 | 20065 = Is it wrong to eat chocolate ricecakes on New Year's day? The battle with the Mirror Cake Prinny has been cut off.
 | 20066 = Seraphina in a Metallia costume. The combination of her Balor Gaze and the Witch of Niblhenne's power makes her unstoppable.
-| 20067 = A God of Destruction who came from somewhere beyond the Netherworld. He's a rough man that treats others like trash, and his favorite thing to eat is Hot Pods.
+| 20067 = A God of Death who came from beyond the Netherworld. He's rough around the edges and has a bad habit of  treating others like trash. He's basically addicted to eating the fruit known as Hot Pods.
 | 20068 = Artina, overcome by a large number of evil souls and granted Overlord Priere's power by Gig. She's a little more foul-mouthed and cruel than usual.
 | 20069 = A message in a bottle. It has the ability to warp to the letter's address, and is widely used in the Netherworld.
 | 20070 = The leader of XENO, a girl who looks a lot like Flonne. The magical power contained within her is out of control now that the armor given to her by Overlord Zenon has been shattered.
 | 20071 = A holy Prinny who serves Saint Etna. Her eyes are sparkling, and she's full of hope and vitality. She works hard on her own.
-| 20072 = Pirilika's special secretary Prinny. Though an excellent secretary, he's business-like and a little heartless. Rough stylings aren't his specialty, but he's strong when he gets serious.
+| 20072 = Pirilika's special secretary Prinny. Though an excellent secretary, he's business-like and a little heartless. Violence isn't his specialty, but he's strong when he gets serious.
 | 20073 = He is an umpire for VR Fighters and is a member of the
 Lucky Board with a red card.
 His diminishing mouth doesn't stop at the match venue.
