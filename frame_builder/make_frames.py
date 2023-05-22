@@ -3,19 +3,20 @@ import sys
 import json, os
 from PIL import Image
 from PIL import ImageOps
-sys.path.insert(1, os.path.join("..", ".."))
+sys.path.insert(1, os.path.join(".."))
 
 from plibs.config import Config
 
+fd_plibs = os.path.join("..", "plibs")
 
 io = Image.open
-jconf = Config(os.path.join("..", "..", "plibs"))
+jconf = Config(folder = fd_plibs)
 
 BADASS = jconf.js["base_type"]["BADASS"]
 GORGEOUS = jconf.js["base_type"]["GORGEOUS"]
 ids = jconf.get_ids()
 
-with open(os.path.join("..", "..", "datas", "JP", "character.json"), encoding="utf-8") as file:
+with open(os.path.join("..", "datas", "JP", "character.json"), encoding="utf-8") as file:
 	Characters = json.load(file)["DataList"]
 
 class Pos(object):
@@ -54,15 +55,16 @@ icon_size 	= (36 ,	36)
 _void 		= "./void.png"
 _bg			= "./bg.png"
 
-# _p_faces 	= "./face/"
-_p_faces 	= "C:/Users/Arctia/Desktop/Root/Projects/DRPG_Wiki/plibs/assets/assetbundles/images/chara/face/"
+_p_faces	= os.path.join(fd_plibs, "assets", "assetbundles",
+	"images", "chara", "face")
+
 
 _p_frames 	= "./frame/"
 _p_weap 	= "./weapon/"
 _p_evil 	= "./evil_symbol/"
 _p_kind		= "./kind/"
 
-frame_path	= os.path.join("..", "..", "plibs", "assets", "assetbundles",
+frame_path	= os.path.join(fd_plibs, "assets", "assetbundles",
 	"images", "chara", "frames")
 
 def crop_face(img):
@@ -97,7 +99,6 @@ def create_image(chara):
 	void.paste(evil, (7, 93), evil)
 	void.paste(kind, (5, 5), kind)
 
-	void.save(f"./result/{chara.id}.png")
 	os.makedirs(frame_path, exist_ok = True)
 	void.save(f"{frame_path}/{chara.id}.png")
 	#void.show()

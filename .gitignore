@@ -142,8 +142,7 @@ res/command/*
 res/illust/*
 txt_files/*
 
-res/*
-!res/DRPGWiki/
+res/
 
 res/DRPGWiki/*
 !res/DRPGWiki/evil_symbol
