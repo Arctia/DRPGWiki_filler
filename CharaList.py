@@ -120,7 +120,7 @@ def template_view(jconf:object):
 					page_text = page_text.replace(text_to_replace, new_fragment)
 				else:
 					new_fragment += write_new_section(dates, charas)
-					page_text = "{|\n" += page_text.replace("{|\n", new_fragment, 1)
+					page_text = "{|\n" + page_text.replace("{|\n", new_fragment, 1)
 
 			# if dates != "": 
 			# 	dates += f"/{year}"
@@ -132,10 +132,10 @@ def template_view(jconf:object):
 
 def main():
 	jconf = Config("./plibs/")
-	jconf.order_by_datetime()
+	jconf.order_by_datetime('new_charas')
 	id_list = jconf.get_ids()
 
-	uniques_view(id_list)
+	uniques_view(id_list, jconf.js['new_charas'])
 	template_view(jconf)
 
 if __name__ == '__main__':

@@ -1,5 +1,7 @@
 import datetime, json, os
 
+datetime_f = "%Y-%m-%d %H:%M:%S"
+
 class	Config():
 	path = './config.json'
 
@@ -28,10 +30,10 @@ class	Config():
 		with open(self.path, 'w') as f:
 			json.dump(self.js , f, indent=4)
 
-	def order_by_datetime(self):
+	def order_by_datetime(self, key_to_order):
 		cp = self.js
-		cp = sorted(cp['new_charas'], key=lambda x: datetime.strptime(x['release_date'], datetime_f), reverse=True)
-		self.js = cp
+		cp = sorted(cp[key_to_order], key=lambda x: datetime.datetime.strptime(x['release_date'], datetime_f), reverse=True)
+		self.js[key_to_order] = cp
 
 	def add_new_chara(self, c):
 		for character in self.js['new_charas']:
@@ -42,7 +44,7 @@ class	Config():
 			'release_date': c['book_appear_at'],
 		}
 		self.js['new_charas'].append(chara)
-		self.order_by_datetime()
+		self.order_by_datetime('new_charas')
 		self.save_config()
 
 	def add_mod_chara(self, c):
@@ -58,6 +60,7 @@ class	Config():
 
 	def get_ids(self):
 		data = []
+		print(self.js)
 		for chara in self.js['new_charas']:
 			data.append(chara['id'])
 		return data
