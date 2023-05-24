@@ -63,6 +63,13 @@ def write_new_section(dates, characters) -> str:
 |-
 |{characters}\n"""
 
+def month_in_page(page, month, year):
+	latest_line = page.split("\n")[3]
+	ld = latest_line.split(" ")[-1]
+	if (ld.split("/")[0] == month and ld.split("/")[2] == year):
+		return latest_line
+	return False
+
 def template_view(jconf:object):
 	js = jconf.js
 
@@ -77,7 +84,8 @@ def template_view(jconf:object):
 	months = sorted(months, key=lambda x: int(x), reverse = True)
 	days = sorted(days, key=lambda x: int(x), reverse = True)
 
-	new_fragment = "{|\n"
+	page = wiki.pages['Template:JP/Characters']
+	page_text = page.text()
 
 	charas = ""
 	dates = ""
@@ -86,6 +94,8 @@ def template_view(jconf:object):
 		for month in months:
 			dates = ""
 			charas = ""
+			new_fragment = ""
+
 			for day in days:
 				for chara in new_charas:
 					if (check_date(chara['release_date'], "day", day) and 
@@ -98,13 +108,25 @@ def template_view(jconf:object):
 								charas += "  -  "
 							dates += f"{tmp}"
 						charas += f"{{{{CharacterNavFrameJP|{chara['id']}}}}}"
-
-			if dates != "": 
+			
+			if dates != "":
 				dates += f"/{year}"
-				new_fragment += write_new_section(dates, charas)
+				line_to_replace = month_in_page(page_text, month, year)
+				
+				if line_to_replace:
+					charas += page_text.split("\n")[4].replace("|-", "")
+					new_fragment += write_new_section(dates, charas)
+					text_to_replace = page_text.split("\n")[2] + page_text.split("\n")[3] + page_text.split("\n")[4]
+					page_text = page_text.replace(text_to_replace, new_fragment)
+				else:
+					new_fragment += write_new_section(dates, charas)
+					page_text = "{|\n" += page_text.replace("{|\n", new_fragment, 1)
 
-	page = wiki.pages['Template:JP/Characters']
-	page_text = page.text().replace("{|\n", new_fragment, 1)
+			# if dates != "": 
+			# 	dates += f"/{year}"
+			# 	new_fragment += write_new_section(dates, charas)
+	
+	# page_text = page.text().replace("{|\n", new_fragment, 1)
 	Upload(page, page_text)
 	print("[INFO  ]: Written Main Template Page")
 

@@ -51,7 +51,7 @@ class	Config():
 				return
 		chara = {
 			'id': c['Character ID'],
-			'modified_date': datetime.datetime.now().strftime("%m-%Y"),
+			'modified_date': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
 		}
 		self.js['modified_charas'].append(chara)
 		self.save_config()
