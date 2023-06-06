@@ -4,10 +4,11 @@ import UnityPy
 import json
 
 src = "./JPMasters"
+src = "../output"
 #src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 env = UnityPy.load(src)
 #extract_dir = "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"
-extract_dir = "./JP"
+extract_dir = "./JPTranslated"
 
 for obj in env.objects:
     if obj.type.name == "MonoBehaviour":
