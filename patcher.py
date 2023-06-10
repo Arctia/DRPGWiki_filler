@@ -1,10 +1,10 @@
 
-import UnityPy, shutil, json
+import UnityPy, platform, shutil, json
 from gst import *
 
-src = os.path.join("datas", "JPTranslated")
 src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
-# src = os.path.join("output")
+if platform.system == 'Linux': src = os.path.join("datas", "masters")
+
 env = UnityPy.load(src)
 path_M = os.path.join("datas", "JPMasters")
 
@@ -49,11 +49,12 @@ def	empty_character() -> dict:
 	return chara
 
 def	replace_values(chara:dict, wc, col:int) -> None:
-	chara['id'] = wc(RowIDS["Character ID"] + 1, col + 1).value
+	chara['id'] = wc(RowIDS["Character ID"] + 1, col).value
 	chara['name'] = wc(RowIDS["Character Name"] + 1, col + 1).value
 	for i in range(1, 6):
 		chara[f'class_name_{i}'] = wc(RowIDS[f"Title {i + 1}"] + 1, col + 1).value
 	chara['description'] = wc(RowIDS["Bio"] + 1, col + 1).value
+	print(chara['name'])
 
 worksheets = ['Unique Human', 'Unique Human 2', 'Unique Monster',
 				'Human Generic', 'Monster Generic']
@@ -68,6 +69,7 @@ def patcher(characters:dict, skills:dict) -> None:
 			replace_values(chara, wc, col)
 
 			# select character in obj data
+			print(f"[START ]: character <{chara['id']}>")
 			for c in characters:
 				if c['id'] == chara['id']: break
 			
@@ -86,6 +88,8 @@ def patcher(characters:dict, skills:dict) -> None:
 						if val != None: s['description'] = val
 						val:str = wc(RowIDS[f"Skill Effect {i}"] + 1, col + 1).value
 						if val != None: s['description_effect'] = val
+
+			print(f"[DONE  ]: character <{c['id']}>")
 			
 			# replace all leaderskills
 
