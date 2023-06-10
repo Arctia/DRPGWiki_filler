@@ -3,6 +3,7 @@ import UnityPy, shutil, json
 from gst import *
 
 src = os.path.join("datas", "JPTranslated")
+src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 # src = os.path.join("output")
 env = UnityPy.load(src)
 path_M = os.path.join("datas", "JPMasters")
@@ -48,13 +49,11 @@ def	empty_character() -> dict:
 	return chara
 
 def	replace_values(chara:dict, wc, col:int) -> None:
-	print("[ERR   ]: in value_replacer")
 	chara['id'] = wc(RowIDS["Character ID"] + 1, col + 1).value
 	chara['name'] = wc(RowIDS["Character Name"] + 1, col + 1).value
 	for i in range(1, 6):
 		chara[f'class_name_{i}'] = wc(RowIDS[f"Title {i + 1}"] + 1, col + 1).value
 	chara['description'] = wc(RowIDS["Bio"] + 1, col + 1).value
-	print(chara)
 
 worksheets = ['Unique Human', 'Unique Human 2', 'Unique Monster',
 				'Human Generic', 'Monster Generic']
