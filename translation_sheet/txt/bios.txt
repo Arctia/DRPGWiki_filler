@@ -222,6 +222,7 @@
 | 225 = Fuji's daughter who adores her papa. She was once feared as the "Ice Fang Princess" for her repeated destructive incidents in the Hinomoto Netherworld Cluster.
 | 226 = Making use of their rage and their newfound sisterly bond, Desco and Des X have fused into a new form. Their combined power has increased their size temporarily to look about the same age as their big sister Fuka.
 | 227 = Sicily XENO when clad in the manifested equipment of her Original Character, do not steal. The backstory behind her dual-wielded blades is extensive enough to fill multiple notebooks!
+| 228 = Valvatorez from another world. It is said that all who gaze upon his ethereal form come to fear and admire him. All, that is, except the one man who defeated him...
 | 229 = A powered up form of one of the four Holy Guardians, the Flamelord, but specialized in using clawed fist attacks. While the power boost is immense, the exhaustion of maintaining this form is equally difficult.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
@@ -333,7 +334,7 @@
 | 20045 = Through strict Romance Disciple practices and her own natural force of will, Fuka has claimed the power of the Zodiac Tiger.
 | 20046 = Rozalin wearing the garb of Overlord Priere. Inspired by such a mighty costume, she taps into her inner potential to gain the power to overwhelm all her opponents!
 | 20047 = The self-proclaimed genius Swamp Witch. She lives on the banks of a magical swamp that emits a poisonous miasma that keeps out all other living things.
-| 20048 = A magical familiar summoned from another world by Metallia. It's supposed be a Demon God with overwhelming power, however...
+| 20048 = A magical familiar summoned from another world by Metallia. It's supposedly a Demon God with overwhelming power, however...
 | 20049 = A witch that serves as the Head Witch of the Walpurgis Nighttime Soiree. Specializing in illusionary fog magic, she appears to be the most skilled within her generation.
 | 20050 = Laharl donned Metallia's outfit, wielding the power of the Great Swamp Witch herself, and becoming unstoppable!
 | 20051 = With the super-magical hot-blooded love cells created by Mao within her body and the bonds of those close to her, Des X has awakened to all kinds of love!
@@ -362,6 +363,7 @@ Its overwhelming power pierces any armor.
 | 20073 = He is an umpire for VR Fighters and is a member of the
 Lucky Board with a red card.
 His diminishing mouth doesn't stop at the match venue.
+| 20074 = Fuka has succeeded in performing a triple Magichange fusion with her two younger sisters. By using not only a Magichanged weapon but a full body armor Magichange, their strength has been increased immensely.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.

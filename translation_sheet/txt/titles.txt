@@ -1337,7 +1337,13 @@
 | 2273 = Original Character Idea
 | 2274 = Original Character Idea
 | 2275 = My New Drip
-| 2276 = Dual-Wielding Ruin Overlord
+| 2276 = Ruin Overlord of the Twin Blades
+| 2281 = Otherworldly Vampire
+| 2282 = Otherworldly Vampire
+| 2283 = Otherworldly Vampire
+| 2284 = Otherworldly Vampire
+| 2285 = Sardine Seeker
+| 2286 = Insatiable Craving
 | 2291 = Hooded Fighter
 | 2292 = Hooded Fighter
 | 2293 = Hooded Fighter
@@ -2160,6 +2166,12 @@
 | 200734 = Red Card Rabbit
 | 200735 = Bridged Judge Rabbit
 | 200736 = Unfair Referee Rabbit
+| 200741 = Fused Prinny?
+| 200742 = Fused Prinny?
+| 200743 = Fused Prinny?
+| 200744 = Fused Prinny?
+| 200745 = Fused Dreaming Maiden
+| 200746 = Triple Fused Sisters
 | 210011 = Krichevskoy Group
 | 210012 = Krichevskoy Group
 | 210013 = Krichevskoy Group

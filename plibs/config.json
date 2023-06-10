@@ -2,30 +2,33 @@
     "last_run_time": "0000-00-00 00-00",
     "new_charas": [
         {
-            "id": 227,
-            "release_date": "2023-05-18 00:00:00"
+            "id": 28,
+            "release_date": "2023-06-05 13:05:00"
+        },
+        {
+            "id": 231,
+            "release_date": "2023-06-05 13:05:00"
+        },
+        {
+            "id": 232,
+            "release_date": "2023-06-05 13:05:00"
+        },
+        {
+            "id": 228,
+            "release_date": "2023-05-27 00:00:00"
+        },
+        {
+            "id": 20074,
+            "release_date": "2023-05-27 00:00:00"
         }
     ],
-    "modified_charas": [
-        {
-            "id": 172,
-            "modified_date": "05-2023"
-        },
-        {
-            "id": 174,
-            "modified_date": "05-2023"
-        },
-        {
-            "id": 20054,
-            "modified_date": "05-2023"
-        },
-        {
-            "id": 20063,
-            "modified_date": "05-2023"
-        }
-    ],
+    "modified_charas": [],
     "old_datas": {
         "new_charas": [
+            {
+                "id": 227,
+                "release_date": "2023-05-18 00:00:00"
+            },
             {
                 "id": 176,
                 "release_date": "2023-05-02 13:05:00"
@@ -47,7 +50,24 @@
                 "release_date": "2023-05-02 13:05:00"
             }
         ],
-        "modified_charas": []
+        "modified_charas": [
+            {
+                "id": 172,
+                "modified_date": "05-2023"
+            },
+            {
+                "id": 174,
+                "modified_date": "05-2023"
+            },
+            {
+                "id": 20054,
+                "modified_date": "05-2023"
+            },
+            {
+                "id": 20063,
+                "modified_date": "05-2023"
+            }
+        ]
     },
     "base_type": {
         "BADASS": [
@@ -102,7 +122,9 @@
             213,
             20068,
             20070,
-            223
+            223,
+            228,
+            20074
         ],
         "GORGEOUS": [
             20,

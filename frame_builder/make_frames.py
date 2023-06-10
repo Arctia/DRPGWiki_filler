@@ -67,6 +67,9 @@ _p_kind		= "./kind/"
 frame_path	= os.path.join(fd_plibs, "assets", "assetbundles",
 	"images", "chara", "frames")
 
+frame_path = "../plibs/assets/assetbundles/images/chara/frames/"
+_p_faces = "../plibs/assets/assetbundles/images/chara/face/"
+
 def crop_face(img):
 	w = img.width
 	crop_size = (w - 175) if w > 175 else 0

@@ -222,6 +222,7 @@
 | 225 = Ao
 | 226 = Desco X
 | 227 = Starblade Sicily XENO
+| 228 = Nightmare Tyrant Valvatorez
 | 229 = Fire Fist Flamelord Majorita
 | 1001 = Prism Red
 | 1002 = Prism Blue
@@ -359,6 +360,7 @@
 | 20071 = Saint Prinny
 | 20072 = Pii-chan
 | 20073 = Referee Lucky Board
+| 20074 = Ultimate Weapon Fuka
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

@@ -691,6 +691,9 @@
 | 3002271 = The giant sword looks like it's swinging around its wielder...
 | 3002272 = This is child's play for one equipped with this sacred treasure.
 | 3002273 = The blackness of death and the void of the heavens... are just the coolest!
+| 3002281 = The tyrant's children must indulge their thirst...
+| 3002282 = Resistance is futile within this swarm...
+| 3002283 = Even the entire world will be lost in this nightmare...
 | 3002291 = It's basically like Big Bro Shinelord's Beam attack!
 | 3002292 = Can't stop, won't stop, burn it up!
 | 3002293 = The power of these claws are first rate!
@@ -904,7 +907,7 @@
 | 3200462 = Titanic thunder called from the Dark Portal.
 | 3200463 = Unleash the concentrated power of the Overlord!
 | 3200471 = ...Bow to me! Why you little ****!!!
-| 3200472 = Metallia is so skilled, so can control all metal!
+| 3200472 = Metallia is so skilled, so can control all elements at once!
 | 3200473 = What!? The world belongs to Metallia!?
 | 3200481 = A timed explosive Tochka
 | 3200482 = A flurry of slashes too quick to count!
@@ -984,6 +987,9 @@
 | 3200731 = Beam that fires at those who commit fouls as a penalty
 | 3200732 = Boldly showing favoritism to your preferred team
 | 3200733 = Violence should be the last resort for stopping skirmishes
+| 3200741 = The sisters trained hard to perfect this move.
+| 3200742 = A terrifying technique born from batting practice...
+| 3200743 = The logical extreme of knocking one out of the park.
 | 3210021 = Rejoice for being my food!
 | 3210022 = Watch out for the ice lake at night!
 | 3210023 = Some consider this attack quite the reward.

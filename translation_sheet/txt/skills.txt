@@ -691,6 +691,9 @@
 | 3002271 = Eclipse Karma
 | 3002272 = Chaotic Catharsis
 | 3002273 = Cardinal Nova
+| 3002281 = Bat Trample
+| 3002282 = Draining Brodiaea
+| 3002283 = True Tyrant
 | 3002291 = Burning Up!
 | 3002292 = Beat Down Time!
 | 3002293 = Incinerate Claw!
@@ -984,6 +987,9 @@
 | 3200731 = Red Card Beam
 | 3200732 = Recovery~
 | 3200733 = Assault~
+| 3200741 = True - Twintail Godly Weapon
+| 3200742 = DES Artist
+| 3200743 = Ultimate Weapon DES Blast
 | 3210021 = Buccal Cones
 | 3210022 = Frozen Lake
 | 3210023 = Dam Breaker
