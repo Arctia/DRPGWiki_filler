@@ -2,7 +2,7 @@
 import UnityPy, platform, shutil, json
 from gst import *
 
-src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters2\\"
 if platform.system == 'Linux': src = os.path.join("datas", "masters")
 
 env = UnityPy.load(src)
@@ -93,18 +93,42 @@ def patcher(characters:dict, skills:dict) -> None:
 			
 			# replace all leaderskills
 
+def story_patcher(dialogues) -> None:
+
+	stc_id 	= 10
+	manual 	= 6
+	google 	= 4
+
+	wb = openpyxl.load_workbook('translation_sheet/story.xlsx')
+	for ws in wb:
+		wc = ws.cell
+		for row in range(2, ws.max_row):
+			_id_ = wc(row, stc_id).value
+			if _id_ == None: continue
+			message = wc(row, manual).value
+			if message == None:	message = wc(row, google).value
+			if message == None: continue
+			for d in dialogues:
+				if d['id'] == int(_id_):
+					d['talk_text'] = message
+					print(f"[WROTE   ]: {message}")
+					break
 
 def main():
-	obj_char = load_unitypy_obj("character")
-	characters = obj_char.read_typetree()
-	obj_skills = load_unitypy_obj("command")
-	skills = obj_skills.read_typetree()
+	# obj_char 	= load_unitypy_obj("character")
+	# characters 	= obj_char.read_typetree()
+	# obj_skills 	= load_unitypy_obj("command")
+	# skills 		= obj_skills.read_typetree()
+	obj_stories	= load_unitypy_obj("storytalk")
+	dialogues 	= obj_stories.read_typetree()
 
 	# call the main patcher
-	patcher(characters['DataList'], skills['DataList'])
+	# patcher(characters['DataList'], skills['DataList'])
+	story_patcher(dialogues['DataList'])
 
-	obj_char.save_typetree(characters)
-	obj_skills.save_typetree(skills)
+	# obj_char.save_typetree(characters)
+	# obj_skills.save_typetree(skills)
+	obj_stories.save_typetree(dialogues)
 	save()
 
 if __name__ == '__main__':
