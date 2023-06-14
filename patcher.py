@@ -2,6 +2,9 @@
 import UnityPy, platform, shutil, json
 from gst import *
 
+STORY = True
+CHARS = True
+
 src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters2\\"
 if platform.system == 'Linux': src = os.path.join("datas", "JPMasters")
 
@@ -129,9 +132,8 @@ def patcher(characters:dict, skills:dict, leaderskills:dict) -> None:
 
 			print(f"[DONE  ]: character <{c['id']}>")
 
-def story_patcher(dialogues) -> None:
-
-	stc_id 	= 10
+def story_patcher(dialogues, stories, areas) -> None:
+	stc_id 	= 8
 	manual 	= 6
 	google 	= 4
 
@@ -141,33 +143,61 @@ def story_patcher(dialogues) -> None:
 		for row in range(2, ws.max_row):
 			_id_ = wc(row, stc_id).value
 			if _id_ == None: continue
+
+			# check that is an area, story or message
+			col1 = wc(row, 1).value
 			message = wc(row, manual).value
 			if message == None:	message = wc(row, google).value
 			if message == None: continue
-			for d in dialogues:
-				if d['id'] == int(_id_):
-					d['talk_text'] = message
-					print(f"[WROTE   ]: {message}")
-					break
+
+			if col1 == None or "text" in col1:
+				for d in dialogues:
+					if d['id'] == int(_id_):
+						d['talk_text'] = message
+						break
+			elif "Scene" in col1:
+				for s in stories:
+					if s['id'] == int(_id_):
+						s['title'] = message
+						break
+			elif "Area" in col1:
+				for a in areas:
+					if a['id'] == int(_id_):
+						a['name'] = message
+						break
 
 def main():
-	obj_char 	= load_unitypy_obj("character")
-	characters 	= obj_char.read_typetree()
-	obj_skills 	= load_unitypy_obj("command")
-	skills 		= obj_skills.read_typetree()
-	obj_lskills 	= load_unitypy_obj("leaderskill")
-	lskills 		= obj_lskills.read_typetree()
-	obj_stories	= load_unitypy_obj("storytalk")
-	dialogues 	= obj_stories.read_typetree()
+	# chars patcher
+	if CHARS:
+		obj_char 	= load_unitypy_obj("character")
+		characters 	= obj_char.read_typetree()
+		obj_skills 	= load_unitypy_obj("command")
+		skills 		= obj_skills.read_typetree()
+		obj_lskills 	= load_unitypy_obj("leaderskill")
+		lskills 		= obj_lskills.read_typetree()
+		
+		patcher(characters['DataList'], skills['DataList'], lskills['DataList'])
+		
+		obj_char.save_typetree(characters)
+		obj_skills.save_typetree(skills)
+		obj_lskills.save_typetree(lskills)
 
-	# call the main patcher
-	patcher(characters['DataList'], skills['DataList'], lskills['DataList'])
-	story_patcher(dialogues['DataList'])
+	# story dialogues patcher
+	if STORY:
+		obj_stories	= load_unitypy_obj("storytalk")
+		dialogues 	= obj_stories.read_typetree()
+		obj_area	= load_unitypy_obj("area")
+		areas 		= obj_area.read_typetree()
+		obj_story	= load_unitypy_obj("story")
+		stories 	= obj_story.read_typetree()
 
-	obj_char.save_typetree(characters)
-	obj_skills.save_typetree(skills)
-	obj_lskills.save_typetree(lskills)
-	obj_stories.save_typetree(dialogues)
+		story_patcher(dialogues['DataList'], stories['DataList'], areas['DataList'])
+	
+		obj_area.save_typetree(areas)
+		obj_story.save_typetree(stories)
+		obj_stories.save_typetree(dialogues)
+
+	# save enviroment
 	save()
 
 if __name__ == '__main__':
