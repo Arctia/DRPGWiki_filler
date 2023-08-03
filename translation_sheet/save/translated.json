@@ -1632,5 +1632,10 @@
         "Skill Effect 2": "[No Consecutive] Action Gauge +#PER2#[self],DEF, RES -#PER3#%(3T)[all enemies].",
         "Skill Effect 3": "Damage calculated by adding +#PER2#% of technique power to enemies with RES debuff & #PER3#% of RES [self], taking #PER4# of target's SP [enemy only].",
         "Evility Desc 3": "DEF and RES of all enemies - #PER#%, SPD, CRT and CRD - #PER2#%."
+    },
+    "230": {
+        "Title 1": "Muchipuri Mystery.",
+        "Title 2": "Muchipuri Mystery.",
+        "Title 3": "Muchipuri Mystery."
     }
 }

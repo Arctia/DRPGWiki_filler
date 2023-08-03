@@ -77,7 +77,7 @@ def create_image(chara):
 	void = io(_void)
 	bg 	 = io(_bg)
 
-	face = io(_p_faces + f"{chara.id}.png")
+	face = io(_p_faces + f"\\{chara.id}.png")
 	face = crop_face(face)
 
 	frame = io(_p_frames + f"{chara.fr}.png")

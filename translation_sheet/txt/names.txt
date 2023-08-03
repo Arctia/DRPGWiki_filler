@@ -222,7 +222,17 @@
 | 225 = Ao
 | 226 = Desco X
 | 227 = Starblade Sicily XENO
+| 228 = Nightmare Tyrant Valvatorez
 | 229 = Fire Fist Flamelord Majorita
+| 230 = Demon Detective Girl Laharl
+| 231 = Onigiri Detective Torachiyo
+| 232 = Aileen
+| 233 = Transcendent Adell
+| 234 = Beach Seraphina
+| 235 = Beach Rozalin
+| 236 = Beach Valvatorez
+| 237 = Beach Usalia
+| 238 = Beach Fallen Angel Flonne
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -359,6 +369,9 @@
 | 20071 = Saint Prinny
 | 20072 = Pii-chan
 | 20073 = Referee Lucky Board
+| 20074 = Ultimate Weapon Fuka
+| 20075 = Holy Saint Etna
+| 20076 = Beach Saint Prinny
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

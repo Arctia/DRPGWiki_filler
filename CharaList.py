@@ -9,7 +9,7 @@ from datetime import datetime
 # wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
 # wiki.login(username=username, password=password)
 datetime_f = "%Y-%m-%d %H:%M:%S"
-datetime_m = "%m-%Y"
+datetime_m = "%Y-%m-%d %H:%M:%S"
 
 def	desktop_view(text:str, id_list:list) -> str:
 	for i in id_list:

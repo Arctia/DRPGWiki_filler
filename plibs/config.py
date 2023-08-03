@@ -32,7 +32,7 @@ class	Config():
 
 	def order_by_datetime(self, key_to_order):
 		cp = self.js
-		cp = sorted(cp[key_to_order], key=lambda x: datetime.datetime.strptime(x['release_date'], datetime_f), reverse=True)
+		cp = sorted(cp[key_to_order], key=lambda x: datetime.datetime.strptime(x['release_date'], datetime_f), reverse=False)
 		self.js[key_to_order] = cp
 
 	def add_new_chara(self, c):

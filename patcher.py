@@ -2,13 +2,12 @@
 import UnityPy, platform, shutil, json
 from gst import *
 
-STORY = True
+STORY = False
 CHARS = True
 
-src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters2\\"
+src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 if platform.system == 'Linux': src = os.path.join("datas", "JPMasters")
 
-src = os.path.join("datas", "JPMasters")
 env = UnityPy.load(src)
 path_M = os.path.join("datas", "JPMasters")
 
@@ -58,7 +57,6 @@ def	replace_values(chara:dict, wc, col:int) -> None:
 	for i in range(1, 6):
 		chara[f'class_name_{i}'] = wc(RowIDS[f"Title {i + 1}"] + 1, col + 1).value
 	chara['description'] = wc(RowIDS["Bio"] + 1, col + 1).value
-	print(chara['name'])
 
 worksheets = ['Unique Human', 'Unique Human 2', 'Unique Monster',
 				'Human Generic', 'Monster Generic']
@@ -122,9 +120,9 @@ def patcher(characters:dict, skills:dict, leaderskills:dict) -> None:
 							continue
 
 						l['description'] = splitted[0]
-						for l in leaderskills:
-							if l['id'] != lid: continue
-							l['description'] = splitted[1].replace("PER2", "PER")
+						for lr in leaderskills:
+							if lr['id'] != alid: continue
+							lr['description'] = ", " + splitted[1].replace("PER2", "PER")
 							break
 					else:
 						l['description'] = effect
@@ -137,6 +135,7 @@ def story_patcher(dialogues, stories, areas) -> None:
 	manual 	= 6
 	google 	= 4
 
+	print(f"[INFO  ]: opening excell story file")
 	wb = openpyxl.load_workbook('translation_sheet/story.xlsx')
 	for ws in wb:
 		wc = ws.cell

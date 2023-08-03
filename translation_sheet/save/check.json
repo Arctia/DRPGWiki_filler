@@ -5747,5 +5747,73 @@
         "Evility Desc 3": "\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u3001CRT\u30d0\u30d5\u52b9\u679c\u3092\u53d7\u3051\u3066\u3044\u308b\u5834\u5408\u3001\u81ea\u5206\u306eATK+#PER#%(1T), CRD+#PER2#%(1T)",
         "Evility Name 4": "\u30a2\u30f3\u30bf\u30ec\u30b9\u306e\u773c\u5149",
         "Evility Desc 4": "WAVE\u958b\u59cb\u6642\u3001\u6575\u5168\u4f53\u306b\u8870\u5f31(\u6700\u5927Lv.#PER#)\u4ed8\u4e0e"
+    },
+    "228": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "230": {
+        "Title 1": "\u30e0\u30c1\u30d7\u30ea\u30df\u30b9\u30c6\u30ea\u30fc",
+        "Title 2": "\u30e0\u30c1\u30d7\u30ea\u30df\u30b9\u30c6\u30ea\u30fc",
+        "Title 3": "\u30e0\u30c1\u30d7\u30ea\u30df\u30b9\u30c6\u30ea\u30fc",
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "231": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "232": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "233": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "234": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "235": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "236": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "237": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "238": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "20074": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "20075": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "20076": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
     }
 }
