@@ -2,8 +2,8 @@
 import UnityPy, platform, shutil, json
 from gst import *
 
-STORY = False
-CHARS = True
+STORY = True
+CHARS = False
 
 src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
 if platform.system == 'Linux': src = os.path.join("datas", "JPMasters")
@@ -131,7 +131,7 @@ def patcher(characters:dict, skills:dict, leaderskills:dict) -> None:
 			print(f"[DONE  ]: character <{c['id']}>")
 
 def story_patcher(dialogues, stories, areas) -> None:
-	stc_id 	= 8
+	stc_id 	= 26
 	manual 	= 6
 	google 	= 4
 

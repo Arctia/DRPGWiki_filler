@@ -233,6 +233,14 @@
 | 236 = Beach Valvatorez
 | 237 = Beach Usalia
 | 238 = Beach Fallen Angel Flonne
+| 239 = Ceefore
+| 240 = Yeyasu
+| 241 = Beach Pirilika
+| 242 = Beach Higan Zesshosai
+| 243 = Bunny Meaver
+| 244 = Bunny Lieselotta.
+| 246 = Mizuki
+| 247 = Wild Fenrich
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -372,6 +380,9 @@
 | 20074 = Ultimate Weapon Fuka
 | 20075 = Holy Saint Etna
 | 20076 = Beach Saint Prinny
+| 20077 = Suisen
+| 20078 = Hadou Zesshosai
+| 20079 = Toto Majorita
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

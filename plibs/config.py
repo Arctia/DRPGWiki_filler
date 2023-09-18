@@ -58,23 +58,26 @@ class	Config():
 		self.js['modified_charas'].append(chara)
 		self.save_config()
 
-	def get_ids(self):
+	def get_ids(self) -> list:
 		data = []
 		print(self.js)
 		for chara in self.js['new_charas']:
 			data.append(chara['id'])
 		return data
 
-	def get_mids(self):
+	def get_mids(self) -> list:
 		data = []
 		for chara in self.js['modified_charas']:
 			data.append(chara['id'])
 		return data
 
-	def get_aids(self):
+	def get_aids(self) -> list:
 		data = []
 		for chara in self.js['new_charas']:
 			data.append(chara['id'])
 		for chara in self.js['modified_charas']:
 			data.append(chara['id'])
 		return data
+
+	def get_exids(self) -> list:
+		return self.js['EX']

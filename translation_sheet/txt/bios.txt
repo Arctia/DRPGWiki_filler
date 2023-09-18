@@ -233,6 +233,16 @@
 | 236 = Valvatorez when seeking to overcome a vampire's innate weakness to flowing water. This sardine-themed hoodie has quickly become his favorite summer outfit.
 | 237 = Usalia having joined the swimming lessons camp. Her goal this summer is to overcome the reliance on her old friend, the floatie innertube, and venture off on her own to enjoy some beach house seafood curry.
 | 238 = Flonne when possessed by the Legendary Holy Swimsuit. The swimsuit warps her personality to be more like a real Fallen Angel's, so she acts a little more sultry than usual.
+| 239 = Known across Hinomoto as the Chivalric Thief, Mouse★Girl. She's obsessed with weapons, explosions, and sniffing gunpowder, which if she goes too long without doing, will negatively affect her health.
+| 240 = A Shogun of the Hinomoto Netherworld Cluster. A bit of a narcissist and a womanizer, his personality can cause trouble. Still, he has a knack for handling Infernal Treasures.
+| 241 = A pure-hearted young CEO enjoying her summer vacation. Pirilika is especially enjoying developing new special moves on the sands with her friends Flonne and Higan, who are always in the same mindset as her.
+| 242 = The Netherworld's strongest swordsman, known as the "Zesshosai" enjoying a relaxing summer. Though she's on vacation with Pirilika, she never skips a day of training, but she also won't pass up a chance at some seasonal sweets while she's at it!
+| 243 = Meaver all dressed up in the traditional garb of Toto Bunny to celebrate the Harvest Moon Festival. She's just excited to be included!
+| 244 = To participate in the Rabbit Rabbit Demon World's traditional event 'Beastly Night'.
+Lieselotta in a rabbit costume. She doesn't like to expose her skin, but she is happy to be matching with Seraphine.
+but she is happy to be matching with Seraphine.
+| 246 = A graduate of magic school who used to be Summoner Adell's school mate. He has a knack for mind-altering magic. Due to this immense talent, he is known as the "Untouchable Super Genius Mage."
+| 247 = Fenrich's werewolf blood is out of control due to the heightened power of the harvest moon, so his fighting prowess and hair volume have drastically increased. Don't call him a Doggie or a Fluffy Butler if you like all your limbs where they are.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -369,12 +379,13 @@ Its overwhelming power pierces any armor.
 | 20070 = The leader of XENO, a girl who looks a lot like Flonne. The magical power contained within her is out of control now that the armor given to her by Overlord Zenon has been shattered.
 | 20071 = A holy Prinny who serves Saint Etna. Her eyes are sparkling, and she's full of hope and vitality. She works hard on her own.
 | 20072 = Pirilika's special secretary Prinny. Though an excellent secretary, he's business-like and a little heartless. Violence isn't his specialty, but he's strong when he gets serious.
-| 20073 = He is an umpire for VR Fighters and is a member of the
-Lucky Board with a red card.
-His diminishing mouth doesn't stop at the match venue.
+| 20073 = A Lucky Board who serves as the Referee who issues Red Card penalties during the VR Fighters tournament. Never shuts up, even during key moments of a match.
 | 20074 = Fuka has succeeded in performing a triple Magichange fusion with her two younger sisters. By using not only a Magichanged weapon but a full body armor Magichange, their strength has been increased immensely.
 | 20075 = A Saint who awakened her maximum powers of purification. With her gentle heart, she can call forth the holy stars to purge malice from evil beings.
 | 20076 = Saint Prinny in a never-before-seen swimsuit. She's usually close to Saint Etna's side, but now she's flying solo at the beach. What could be going on there...?
+| 20077 = A young boy who served as the "Forseeing Magistrate," a prominent member of the shogunate. He may look youthful, but he is highly capable in battle, collecting data with his Infernal Treasure to predict the future.
+| 20078 = Hadou Zesshosai, known as the demon god of the Warring-Netherworlds Period. A hero said to have once destroyed a whole Netherworld on his own all in order to protect a young princess.
+| 20079 = Majorita dressed up in traditional Toto Bunny garb to participate in the Harvest Moon Festival. She claims she's only doing it so she can prank Usalia.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.

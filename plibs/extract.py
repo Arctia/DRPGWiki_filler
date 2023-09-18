@@ -28,7 +28,7 @@ def	extract_data(src: str, dest: str, ids):
 
 					switch = False
 					for i in ids:
-						if str(i) == fn:
+						if str(i) == fn or f"{str(i)}_1" == fn:
 							switch = True
 							break
 					if not switch: continue
