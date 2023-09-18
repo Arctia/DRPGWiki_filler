@@ -79,5 +79,9 @@ class	Config():
 			data.append(chara['id'])
 		return data
 
+	def add_ex_char(self, id:int) -> None:
+		if not id in self.js['EX']:
+			self.js['EX'].append(id)
+
 	def get_exids(self) -> list:
 		return self.js['EX']

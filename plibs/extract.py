@@ -30,6 +30,8 @@ def	extract_data(src: str, dest: str, ids):
 					for i in ids:
 						if str(i) == fn or f"{str(i)}_1" == fn:
 							switch = True
+							if {str(i)}_1 == fn:
+								jconf.add_ex_char(i)
 							break
 					if not switch: continue
 					
