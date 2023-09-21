@@ -742,9 +742,9 @@
 | 3002431 = Heartful Flush
 | 3002432 = Jackpot Half
 | 3002433 = Perfect Game
-| 3002441 = plank burst
-| 3002442 = Jigumi-Danko!
-| 3002443 = Everyone moonbat, 10,000 impulses under the moon.
+| 3002441 = Prank Burst
+| 3002442 = Tsukimi Dango Hell Bullet
+| 3002443 = Violent Family Moongazing
 | 3002461 = Astral Wave
 | 3002462 = Astral Ray
 | 3002463 = Magic Siphon

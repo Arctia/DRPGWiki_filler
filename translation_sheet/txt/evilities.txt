@@ -939,10 +939,10 @@
 | 2432 = Hunter's Eye
 | 2433 = Blessing of Ghillie Dhu
 | 2434 = Bunny Trap
-| 2441 = Cute lion hare
-| 2442 = fragrant scent of wisteria hakama
-| 2443 = Shooting star with Chinese bellflower
-| 2444 = The embrace of the caresses
+| 2441 = Cute Lion Rabbit
+| 2442 = Aster Fragrance
+| 2443 = Shooting Starflower
+| 2444 = Cherished Flower's Embrace
 | 2461 = Mind Touch
 | 2462 = Torrent of Magic
 | 2463 = Reversal Magic

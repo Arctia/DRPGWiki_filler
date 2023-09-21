@@ -742,9 +742,9 @@
 | 3002431 = No cheating in front of the dealer
 | 3002432 = You gotta be lucky when you're a Monster Hunter
 | 3002433 = Hitting the target is a piece of cake!
-| 3002441 = Even the moon hides in front of the sister-brother bond.
-| 3002442 = We get on well with each other and have rice cakes at Kangetsu.
-| 3002443 = The fifteen-night-only combined depths of the Chōma school!
+| 3002441 = The moon is eclipsed by this mighty sibling bond
+| 3002442 = These traditional rice cake treats are to die for
+| 3002443 = Ultimate Demon Technique used only for this special occasion
 | 3002461 = These waves even interfere with phone reception!
 | 3002462 = A huge magic ray from a huge magic circle
 | 3002463 = A tasty snack of stolen life energy♪

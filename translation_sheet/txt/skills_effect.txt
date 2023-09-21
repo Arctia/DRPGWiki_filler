@@ -73,7 +73,7 @@
 | 3000223 = DEF -12% 
 | 3000231 = Grants Paralyze & Sleep immunity(2 turns) [All Allies]
 | 3000232 = ATK/INT +40%, [Queen Allies] CRD +30% (3T) & CRT +10% (1T)
-| 3000233 = Non -HP Basic Stats -#PER10#% & SPD -15% (3T), Removes target's buffs
+| 3000233 = Non -HP Basic Stats -20% & SPD -15% (3T), Removes target's buffs
 | 3000241 = Action Gauge +50
 | 3000242 = DEF -12% 
 | 3000243 = ATK +30% 
@@ -300,7 +300,7 @@
 | 3000963 = SPD -15% 
 | 3000964 = Non -HP Basic stats +(No. of foes defeated by this Skill)×10% 
 | 3000981 = Overheal Recovery small, removes ailments, removes Evility Seal
-| 3000982 = ATK/INT +35>40%, halves Ally Debuffs, [1 Ally]CRD +#PER10#% 
+| 3000982 = ATK/INT +35>40%, halves Ally Debuffs, [1 Ally]CRD +25% 
 | 3000983 = SPD +20%, Gauge +100, grants Poison/Paralysis immunity(4T)
 | 3000984 = ATK/INT -50%, removes target buffs
 | 3000991 =  -
@@ -318,7 +318,7 @@
 | 3001022 = INT +45>60%, CRD +20>30% 
 | 3001023 = SPD +10% 
 | 3001031 = SPD +8% (3T) [all allies]
-| 3001032 = DEF -30% (3T) & Remove enemy buff [single enemy], automatic SP recovery [#PER10#] (3T) [self]
+| 3001032 = DEF -30% (3T) & Remove enemy buff [single enemy], automatic SP recovery [10] (3T) [self]
 | 3001033 = ATK +45>60% (3T), CRT +10% (2T)
 | 3001041 = Halves ally debuffs & DEF/RES +10% (3T) [All allies]
 | 3001042 = Transfer all self's SP, ATK +25% (3T) [all allies]
@@ -347,7 +347,7 @@
 | 3001113 = ATK +35>45% (3T) & [Rook] Allies INT +35>45% (3T) & CRD +25% (3T) [all allies]
 | 3001121 = [Repeat Use Banned] ATK/DEF -50% (2T) [Single Enemy]
 | 3001122 = ATK + number of enemies defeated by this skill x 10% (3T) [Self]
-| 3001123 = ATK +30% (3T) & Skill Power +#PER10#% [self], Enemy buff effect removed [single enemy]
+| 3001123 = ATK +30% (3T) & Skill Power +5% [self], Enemy buff effect removed [single enemy]
 | 3001131 = CRT +10%, Barrier Count -1
 | 3001132 = [Repeat Use Banned] When striking a critical, Gauge +750(self), CRD +25% (all allies)
 | 3001133 = When striking a critical, Ignore 100% of target buffs to calculate damage
@@ -552,7 +552,7 @@
 | 3001783 = Small Overheal & ATK/INT +50% (3T)[all allies], CRD +25% (3T) & CRT +15% (1T)[1 ally]
 | 3001791 = ATK +55% (3T) & AG +100[all allies], CRD +30% (3T)[1 ally]
 | 3001792 = DEF -40% (3T) & Removes DEF Buff[1 foe], CRD +25% (3T) & Fire Damage +15% (1T)[1 ally]
-| 3001793 = Small Heal & Halves Debuffs & DEF/RES +#PER10#% (3T)[all allies], CRD +#PER12#% (3T)[1 ally]
+| 3001793 = Small Heal & Halves Debuffs & DEF/RES +45% (3T)[all allies], CRD +35% (3T)[1 ally]
 | 3001801 = ATK/CRD +20%, CRT +5% 
 | 3001802 = [Repeat Use Banned]DEF/RES -35%, cancels DEF buffs, [self]AG +1000
 | 3001803 = ATK/CRD +20% (2T) & grant Damage dealt by Special Skills +15% (2T)[1 ally]
@@ -665,7 +665,7 @@
 | 3002172 = Sacrifice 25% of remaining HP & ignores target's buffs by 80% to calculate damage & Wind damage +25% (1T) [self], steals target's SP by 30[1 foe]
 | 3002173 = Sacrifice 20% of remaining HP, Skill power +20% during a critical, ATK/INT -40% (3T) & CRD -30% (3T) [all foes]
 | 3002181 = Barrier -1[all foes], CRT +5% (3T)[all allies]
-| 3002182 = DEF/RES -30% (2T) & removes target buffs [1 foe], CRT +#PER11#% (1T) [all allies]
+| 3002182 = DEF/RES -30% (2T) & removes target buffs [1 foe], CRT +10% (1T) [all allies]
 | 3002183 = ATK/INT/CRD +50% (1T) & Damage dealt +20% (1T) [single ally]
 | 3002191 = Non -HP Basic Stats +20% (3T) [all allies]
 | 3002192 = DEF/RES +60% (3T) [Self], SP Regen [10] (3T) [All allies]
@@ -711,7 +711,7 @@
 | 3002323 = DEF/RES -75% (2T)[self], ATK/INT +75% (2T) & CRD +35% (2T)[1 ally]
 | 3002331 = ATK/CRD +10% (3T)[all allies]
 | 3002332 = [Repeat Use Banned]AG +1000& ATK +60% (1T) & CRD +40% (1T) & Fire Damage dealt +20% (1T)[self]
-| 3002333 = Skill power +15% when ATK is buffed[self], Removes target Buffs, Fire Resistance -#PER11#% (3T) & Barrier count -1, additional Fire Resistance -#PER12#% (3T) if Barrier count becomes 0 [1 foe]
+| 3002333 = Skill power +15% when ATK is buffed[self], Removes target Buffs, Fire Resistance -15% (3T) & Barrier count -1, additional Fire Resistance -15% (3T) if Barrier count becomes 0 [1 foe]
 | 3002341 = ATK/CRD -15% (3T)[all foes]
 | 3002342 = Inflict Paralyze(2T) & AG -100& DEF/CRD -35% (2T)[1 foe], CRT +10% (2T)[1 ally]
 | 3002343 = Inflict Paralyze(2T) &AG -300[1 foe], CRD +35% (2T) & Skill Damage +20% (2T)[1 ally]
@@ -732,7 +732,7 @@
 | 3002393 = CRD +50% when using skill, Steals 30SP from target & ATK/DEF -30% (3T)[1 foe]
 | 3002401 = CRT -5% (3T) & CRD -10% (3T)[1 foe], ATK/INT +10% (3T)[all allies]
 | 3002402 = Small Overheal & Non -HP Basic Stats +20% (3T) & CRT +10% (2T) & CRD +20% (3T)[all allies]
-| 3002403 = Inflict Paralysis (2T) & ATK/INT -50% (3T) & CRT -#PER10#% (3T)[all foes], Removes Debuffs[all allies]
+| 3002403 = Inflict Paralysis (2T) & ATK/INT -50% (3T) & CRT -30% (3T)[all foes], Removes Debuffs[all allies]
 | 3002411 = DEF/RES -30% (3T) & AG -50[all foes], ATK/INT +30% (3T) & CRD +20% (3T)[all allies]
 | 3002412 = Auto -Revive & Non -HP Basic Stats +30% (3T) & CRT +5% (3T)[1 ally], Damage received -15% (3T)[all allies]
 | 3002413 = Small Overheal & CRD +30% (3T) & Skill Damage +20% (1T)[all allies], Non -HP Basic Stats -35% (3T) & SPD -15% (3T)[all foes]
@@ -742,9 +742,9 @@
 | 3002431 = DEF/RES +25% (3T)[all allies]
 | 3002432 = HP Overheal & ATK/INT +20% (3T) & CRD +40% (3T)[all allies], Buff Duration -2turns[all foes]
 | 3002433 = ATK/INT +40% (3T) & CRT +10% (2T) & Damage dealt +15% (2T)[1 ally], Star Resistance -15% (2T)[1 foe]
-| 3002441 = All damage dealt +10% (2T) granted [ally alone],Flame resistance value -5% (3T) [enemy alone].
-| 3002442 = ATK, CRD +40% (5T) & CRT +3% (5T) & all damage dealt +5% (5T) granted [single ally], HP over -recovery small [all allies].
-| 3002443 = Ignores 70% of the target's buffs, calculates damage & removes buff effects & DEF -#PER10#% (3T) & CRT -#PER11#% (3T) [single enemy].
+| 3002441 = Damage dealt +10% (2T)[1 ally], Fire Resistance -5% (3T)[1 foe]
+| 3002442 = ATK/CRD +40% (5T) & CRT +3% (5T) & Damage dealt +5% (5T)[1 ally], Small Overheal[all allies]
+| 3002443 = Damage calculation ignores 70% of target's buffs & Removes Buffs & DEF -35% (3T) & CRT -20% (3T)[1 foe]
 | 3002461 = DEF/RES -30% (3T)[1 foe]
 | 3002462 = Skill Damage +10% (3T)[1 ally], INT +40% (4T) & CRD +25% (4T)[all allies]
 | 3002463 = Small Heal & CRD +50% when using this skill, steal 30SP from target[1 foe]

@@ -238,7 +238,7 @@
 | 241 = Beach Pirilika
 | 242 = Beach Higan Zesshosai
 | 243 = Bunny Meaver
-| 244 = Bunny Lieselotta.
+| 244 = Bunny Liezerota
 | 246 = Mizuki
 | 247 = Wild Fenrich
 | 1001 = Prism Red

@@ -941,10 +941,10 @@
 | 2432 = Gun-Equipped Self: Damage dealt+50%, also, All Allies: Damage dealt+20%
 | 2433 = All Allies: When this unit is attacked, SP+8 and Damage dealt+15%(2T)
 | 2434 = All Foes: When this unit is attacked, Action Gauge-25
-| 2441 = ATK and DEF-10%, SPD-8% of all enemies
-| 2442 = All damage dealt +50% when you are equipped with a spear weapon, plus all damage dealt by the party +25%.
-| 2443 = Effectiveness of buffs used by the party +10%, plus the party's SP consumption -15%.
-| 2444 = Party ATK+50%, CRT+10% if there are 2 or more characters of latent type [Knight] in the party.
+| 2441 = All Foes: ATK/DEF-10%, SPD-8%
+| 2442 = Spear Equipped Self: Damage dealt+50%, also, All Allies: Damage dealt+25%
+| 2443 = All Allies: Buff Effects+10%, SP Costs-15%
+| 2444 = All Allies: If 2+ Knight Allies, ATK+50%, CRT+10%
 | 2461 = All Allies: INT/RES+16%, HP+20%
 | 2462 = Staff-Equipped Self: Skill Damage+40%, also, All Allies: Skill Damage+25%
 | 2463 = All Allies: At start of battle, INT/CRD Debuff Conversion (2 times)

@@ -238,9 +238,7 @@
 | 241 = A pure-hearted young CEO enjoying her summer vacation. Pirilika is especially enjoying developing new special moves on the sands with her friends Flonne and Higan, who are always in the same mindset as her.
 | 242 = The Netherworld's strongest swordsman, known as the "Zesshosai" enjoying a relaxing summer. Though she's on vacation with Pirilika, she never skips a day of training, but she also won't pass up a chance at some seasonal sweets while she's at it!
 | 243 = Meaver all dressed up in the traditional garb of Toto Bunny to celebrate the Harvest Moon Festival. She's just excited to be included!
-| 244 = To participate in the Rabbit Rabbit Demon World's traditional event 'Beastly Night'.
-Lieselotta in a rabbit costume. She doesn't like to expose her skin, but she is happy to be matching with Seraphine.
-but she is happy to be matching with Seraphine.
+| 244 = Liezerota in traditional rabbit attire for attending the Toto Bunny Harvest Moon Festival. She's a bit shy about showing off so much skin, but she's enjoying having a matching outfit with Seraphina.
 | 246 = A graduate of magic school who used to be Summoner Adell's school mate. He has a knack for mind-altering magic. Due to this immense talent, he is known as the "Untouchable Super Genius Mage."
 | 247 = Fenrich's werewolf blood is out of control due to the heightened power of the harvest moon, so his fighting prowess and hair volume have drastically increased. Don't call him a Doggie or a Fluffy Butler if you like all your limbs where they are.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.

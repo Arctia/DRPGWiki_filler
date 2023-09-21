@@ -381,7 +381,7 @@ def WriteSkillsEffect(c, ci):
 			if s["id"] == sid:
 				effect = ci[f"Skill Effect {count}"]
 
-				for e in range(1,10):
+				for e in range(1,15):
 					effect = effect.replace("# ", "#").replace("%s #" % e, "%s#" % e)
 					if ("#PER%s#" % e) in effect:
 						if s["effect_values_min"][e-1] != s["effect_values_max_50"][e-1]:
