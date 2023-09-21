@@ -26,7 +26,7 @@
 | 25 = The princess of a human kingdom. She's still the "Killing Machine" despite being married to Almaz. Her goal is to become "the strongest creature on earth."
 | 26 = A soul born from hatred toward humans. Controlled by Fear the Great. It creates malice, and uses this malice to gain more power.
 | 27 = While a former Demon General, he was more known as the Great Demon Fist. He uses his fists that hold astounding power to crush anything in his path.
-| 28 = She is a 14-year-old girl who utilizes mechanical techniques left behind by her father. She has a strong will to end all war.
+| 28 = A 14-year-old girl who inherited powerful Mechanology tools and techniques from her Mechanician father. She was born in the Human World during a great war where she met Artina, whom she admires like a real big sister.
 | 29 = A human-Nekomata hybrid from the Human World, not from the Netherworld. She has a gentle heart but is worried about her monstrous strength from her demon half.
 | 30 = The student body president and 2nd Dean of Majin Academy. Originally filled with turmoil over the school's condition, she became close friends with Rutile after overcoming her father's death.
 | 31 = An aloof young demon. He witholds otherworldly magic power with an attitude that makes no one approach him.
@@ -160,7 +160,7 @@
 | 162 = A white-clad Usalia from another dimension. Due to her lack of negative emotions, she tends to innocently yet violently play with her enemies with a smile...
 | 163 = A Liezerota from another dimension. After returning from hundreds of years of hellish training, she was seen as an entirely new individual, known to the masses as the Great Demon Fist..."
 | 164 = A Seraphina from another dimension. Normally, she's lacking in self-confidence and ostentatious, but whenever Killia XENO's involved...
-| 165 = A Sapphire from another dimension. The first President of the Hell Federation who also fell in love with her muscles and manliness. The number of people who vollunteer to join are endless!
+| 165 = A Sapphire from another dimension. The first President of the Hell Federation who also fell in love with her muscles and manliness. The number of people who volunteer to join are endless!
 | 166 = An Adell from another dimension. Trained in the arts of summoning from his mother, he's grown into the ultimate summoner.
 | 167 = A girl that attends Majin Academy. As a chairman of the student council, her motto is to fight dirty and with extreme prejudice. She is living her unscrupulous demonic school life to the fullest.
 | 168 = Salvatore has been accepted into Majin Academy's Maid program, tempted by being able to give orders to both customers and masters as much as she wants. Her culinary specialty is the "Lovey-Dovey Omelette Rice".
@@ -224,6 +224,23 @@
 | 227 = Sicily XENO when clad in the manifested equipment of her Original Character, do not steal. The backstory behind her dual-wielded blades is extensive enough to fill multiple notebooks!
 | 228 = Valvatorez from another world. It is said that all who gaze upon his ethereal form come to fear and admire him. All, that is, except the one man who defeated him...
 | 229 = A powered up form of one of the four Holy Guardians, the Flamelord, but specialized in using clawed fist attacks. While the power boost is immense, the exhaustion of maintaining this form is equally difficult.
+| 230 = A demonic detective who seems just as likely to cause a murder as to solve one, earning the nickname "the Blue Shinigami". Laharl decides to use brains instead of brawn to hunt down today's culprit... hopefully!
+| 231 = There is always only one Truth, just like there should always be only one filling for a riceball! This is the motto of the Great Detective who can solve any impossible case, the Onigiri Detective Torachiyo! 
+| 232 = A new maid at Laharl's castle. She's polite, has a gentle personality, and is even good at cooking. She's perfect as a maid. But her favorite thing is a S-E-C-R-E-T.
+| 233 = A new form achieved by spending countless hours training to the limit within the Mental Time Chamber. These peak performance muscles are the crystallization of his desire to protect those he loves.
+| 234 = Seraphina in a custom made swimsuit. Designed with the goal of catching Sir Killia's eye. It seems that the cost of this swimsuit could buy an entire Netherworld.
+| 235 = Rozalin when she joins the swimming lessons camp to overcome her tendency to sink like a hammer in water. This swimsuit seems more designed for lounging than exercise though...
+| 236 = Valvatorez when seeking to overcome a vampire's innate weakness to flowing water. This sardine-themed hoodie has quickly become his favorite summer outfit.
+| 237 = Usalia having joined the swimming lessons camp. Her goal this summer is to overcome the reliance on her old friend, the floatie innertube, and venture off on her own to enjoy some beach house seafood curry.
+| 238 = Flonne when possessed by the Legendary Holy Swimsuit. The swimsuit warps her personality to be more like a real Fallen Angel's, so she acts a little more sultry than usual.
+| 239 = Known across Hinomoto as the Chivalric Thief, Mouse★Girl. She's obsessed with weapons, explosions, and sniffing gunpowder, which if she goes too long without doing, will negatively affect her health.
+| 240 = A Shogun of the Hinomoto Netherworld Cluster. A bit of a narcissist and a womanizer, his personality can cause trouble. Still, he has a knack for handling Infernal Treasures.
+| 241 = A pure-hearted young CEO enjoying her summer vacation. Pirilika is especially enjoying developing new special moves on the sands with her friends Flonne and Higan, who are always in the same mindset as her.
+| 242 = The Netherworld's strongest swordsman, known as the "Zesshosai" enjoying a relaxing summer. Though she's on vacation with Pirilika, she never skips a day of training, but she also won't pass up a chance at some seasonal sweets while she's at it!
+| 243 = Meaver all dressed up in the traditional garb of Toto Bunny to celebrate the Harvest Moon Festival. She's just excited to be included!
+| 244 = Liezerota in traditional rabbit attire for attending the Toto Bunny Harvest Moon Festival. She's a bit shy about showing off so much skin, but she's enjoying having a matching outfit with Seraphina.
+| 246 = A graduate of magic school who used to be Summoner Adell's school mate. He has a knack for mind-altering magic. Due to this immense talent, he is known as the "Untouchable Super Genius Mage."
+| 247 = Fenrich's werewolf blood is out of control due to the heightened power of the harvest moon, so his fighting prowess and hair volume have drastically increased. Don't call him a Doggie or a Fluffy Butler if you like all your limbs where they are.
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
 | 1003 = Prism Yellow of the Prism Rangers. A foodie who loves curry.
@@ -360,10 +377,13 @@ Its overwhelming power pierces any armor.
 | 20070 = The leader of XENO, a girl who looks a lot like Flonne. The magical power contained within her is out of control now that the armor given to her by Overlord Zenon has been shattered.
 | 20071 = A holy Prinny who serves Saint Etna. Her eyes are sparkling, and she's full of hope and vitality. She works hard on her own.
 | 20072 = Pirilika's special secretary Prinny. Though an excellent secretary, he's business-like and a little heartless. Violence isn't his specialty, but he's strong when he gets serious.
-| 20073 = He is an umpire for VR Fighters and is a member of the
-Lucky Board with a red card.
-His diminishing mouth doesn't stop at the match venue.
+| 20073 = A Lucky Board who serves as the Referee who issues Red Card penalties during the VR Fighters tournament. Never shuts up, even during key moments of a match.
 | 20074 = Fuka has succeeded in performing a triple Magichange fusion with her two younger sisters. By using not only a Magichanged weapon but a full body armor Magichange, their strength has been increased immensely.
+| 20075 = A Saint who awakened her maximum powers of purification. With her gentle heart, she can call forth the holy stars to purge malice from evil beings.
+| 20076 = Saint Prinny in a never-before-seen swimsuit. She's usually close to Saint Etna's side, but now she's flying solo at the beach. What could be going on there...?
+| 20077 = A young boy who served as the "Forseeing Magistrate," a prominent member of the shogunate. He may look youthful, but he is highly capable in battle, collecting data with his Infernal Treasure to predict the future.
+| 20078 = Hadou Zesshosai, known as the demon god of the Warring-Netherworlds Period. A hero said to have once destroyed a whole Netherworld on his own all in order to protect a young princess.
+| 20079 = Majorita dressed up in traditional Toto Bunny garb to participate in the Harvest Moon Festival. She claims she's only doing it so she can prank Usalia.
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.

@@ -1,13 +1,16 @@
 import io
-import os
+import os, platform
 import UnityPy
 import json
 
-# src = "./JPMasters"
-src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+
+linux = True if platform.system() == "Linux" else False
+
+src = "./JPMasters" if linux else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+
 env = UnityPy.load(src)
-extract_dir = "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"
-# extract_dir = "./JP"
+
+extract_dir = "JP" if linux else "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"
 
 for obj in env.objects:
     if obj.type.name == "MonoBehaviour":

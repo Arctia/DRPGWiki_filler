@@ -11,6 +11,7 @@ import json
 import mwclient
 #import mtranslate
 from user_data import username, password, deeplauth
+from plibs.config import Config
 
 translator = deepl.Translator(deeplauth)
 
@@ -54,6 +55,9 @@ for opt, arg in opts:
 jp_flag = "JP/" if JP == True else ""
 wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
 wiki.login(username=username, password=password)
+
+# --- Load configuration file
+cf = Config("plibs")
 
 #------------------------------------------------------
 #	Load Game Dictionaries

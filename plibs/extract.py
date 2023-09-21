@@ -28,8 +28,10 @@ def	extract_data(src: str, dest: str, ids):
 
 					switch = False
 					for i in ids:
-						if str(i) == fn:
+						if str(i) == fn or f"{str(i)}_1" == fn:
 							switch = True
+							if f"{str(i)}_1" == fn:
+								jconf.add_ex_char(i)
 							break
 					if not switch: continue
 					
@@ -75,6 +77,13 @@ print(ids)
 # Extract new Images
 extract_data(CHARA_FOLDER, EXTRACT_PATH, ids)
 unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
+
+ex_frames = jconf.get_exids()
+ex_frames_1 = []
+for id in ex_frames:
+	if id in ids:
+		ex_frames_1.append(f"{str(id)}_1")
+unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
 
 with open(os.path.join("..", "update_characters.sh"), "r") as f:
 	lines = f.readlines()

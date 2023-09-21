@@ -130,6 +130,7 @@ def MainTemplate(c):
 
 ==Gallery==
 {Gallery(c)}
+{Gallery2(c)}
 
 ===Navigation===
 {Navigation(c)}
@@ -376,6 +377,17 @@ Chara-command-{c["id"]}.png{{{{!}}}}Command
 Chara-ci-{c["id"]}.png{{{{!}}}}CutIn
 |type=slideshow |position=center |widths=500}}}}"""
 
+def Gallery2(c):
+	if not c["id"] in cf.get_exids(): return ""
+	return f"""
+==EX Gallery==
+{{{{#tag:gallery|
+Chara-illust-{c["id"]}_1.png{{{{!}}}}Illustration
+Chara-face-{c["id"]}_1.png{{{{!}}}}Portrait
+Chara-command-{c["id"]}_1.png{{{{!}}}}Command
+Chara-ci-{c["id"]}_1.png{{{{!}}}}CutIn
+|type=slideshow |position=center |widths=500}}}}"""
+
 def Categories(c):
 	string = ""
 	for serie_id in c["series_ids"]:
@@ -384,9 +396,12 @@ def Categories(c):
 	if JP:
 		Symbol = ["", "King", "Pawn", "Rook", "Bishop", "Knight", "Queen"]
 		string += f"""[[Category:{jp_flag}{Symbol[c["m_potential_class_id"]]}]]\n"""
+	if c['id'] in cf.get_exids():
+		string += f"""[[Category:EX]]\n"""
 	return string
 
 def Navigation(c):
+	# return f"""..."""
 	return f"""{{{{{jp_flag}Characters}}}}"""
 
 DD = [["InfoBox", InfoBox.create_page], ["Description", Description], ["StatsTable", StatsTable],

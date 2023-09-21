@@ -12,7 +12,10 @@ jconf = Config("./plibs/")
 wpath = "./translation_sheet/Disgaea RPG Translations of Characters.xlsx"
 spath = "./translation_sheet/result.xlsx"
 
-workbook = openpyxl.load_workbook(wpath)
+try:
+	workbook = openpyxl.load_workbook(wpath)
+except:
+	print("cannot load excell file")
 #ws["A1"].fill = PatternFill("solid", start_color="FFA500")
 
 # Row | Col | Text
@@ -378,7 +381,7 @@ def WriteSkillsEffect(c, ci):
 			if s["id"] == sid:
 				effect = ci[f"Skill Effect {count}"]
 
-				for e in range(1,10):
+				for e in range(1,15):
 					effect = effect.replace("# ", "#").replace("%s #" % e, "%s#" % e)
 					if ("#PER%s#" % e) in effect:
 						if s["effect_values_min"][e-1] != s["effect_values_max_50"][e-1]:
@@ -691,23 +694,24 @@ def ReadExcell(jish):
 			if _hash != {}: cids[c["Character ID"]] = _hash
 	RECORD.save_json()
 	return cids
-					
-_r_ = input("""write:
+
+if __name__ == "__main__":
+	_r_ = input("""write:
  w to write result.xlxs
  r to read values and push changes
  s to write spells
  m to check cells buffed or changed with green
  p to check cells untranslated with violet
 what do you want to do? """)
-if _r_ == "w":
-	main()
-elif _r_ == "r":
-	read()
-elif _r_ == "s":
-	spells()
-elif _r_ == "m":
-	modify()
-elif _r_ == "p":
-	blank_cells()
-elif _r_ == "e":
-	exit()
+	if _r_ == "w":
+		main()
+	elif _r_ == "r":
+		read()
+	elif _r_ == "s":
+		spells()
+	elif _r_ == "m":
+		modify()
+	elif _r_ == "p":
+		blank_cells()
+	elif _r_ == "e":
+		exit()
