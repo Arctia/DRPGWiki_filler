@@ -381,7 +381,7 @@ def WriteSkillsEffect(c, ci):
 			if s["id"] == sid:
 				effect = ci[f"Skill Effect {count}"]
 
-				for e in range(1,15):
+				for e in range(1,10):
 					effect = effect.replace("# ", "#").replace("%s #" % e, "%s#" % e)
 					if ("#PER%s#" % e) in effect:
 						if s["effect_values_min"][e-1] != s["effect_values_max_50"][e-1]:
@@ -550,6 +550,7 @@ def AddExcell(jish):
 
 	workbook.save(spath)
 
+modded_chars = []
 def ModifyExcell(jish):
 	pre_cell = 0
 	if JP:
@@ -571,7 +572,9 @@ def ModifyExcell(jish):
 							if value != c[f] and RowIDS[f] in ids_to_check:
 								worksheet.cell(RowIDS[f]+1, cl, c[f])
 								worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="20EE20")
-								print("[INFO	]: Modified character %s" % c["Character ID"])
+								if not c["Character ID"] in modded_chars:
+									print("[INFO	]: Modified character %s" % c["Character ID"])
+									modded_chars.append(c["Character ID"])
 								jconf.add_mod_chara(c)
 						break
 

@@ -10,14 +10,17 @@ class	Config():
 		self.load_config()
 
 	def __reset__(self):
-		self.new_characters()
+		self.clear_new()
+		# self.clear_modified()
 		self.save_config()
 
-	def	new_characters(self):
-		self.js['old_datas']['new_charas'] += self.js['new_charas'].copy()
+	def	clear_modified(self):
 		self.js['old_datas']['modified_charas'] += self.js['modified_charas'].copy()
-		self.js['new_charas'].clear()
 		self.js['modified_charas'].clear()
+
+	def clear_new(self):
+		self.js['old_datas']['new_charas'] += self.js['new_charas'].copy()
+		self.js['new_charas'].clear()
 
 	def remove_duplicates(self):
 		pass

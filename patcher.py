@@ -5,7 +5,8 @@ from gst import *
 STORY = True
 CHARS = False
 
-src = os.path.join("datas", "JPMasters") if platform.system == 'Linux' else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+src = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+if platform.system == 'Linux': src = os.path.join("datas", "JPMasters")
 
 env = UnityPy.load(src)
 path_M = os.path.join("datas", "JPMasters")

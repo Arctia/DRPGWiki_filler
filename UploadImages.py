@@ -12,7 +12,7 @@ folders = ["ci", "illust", "command", "face"]
 ico_folder = "icons"
 frame_folder = "frames"
 
-img_replace = False
+img_replace = True
 
 def main():
 	for folder in folders:

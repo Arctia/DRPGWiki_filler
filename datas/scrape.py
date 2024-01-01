@@ -1,12 +1,29 @@
 import io
-import os, platform
+import os, platform, shutil
 import UnityPy
 import json
 
 
 linux = True if platform.system() == "Linux" else False
 
-src = "./JPMasters" if linux else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+intermediate = "./JPMasters" if linux else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+files_to_export = [
+    "character",
+    "charactercommand",
+    "characterretrofit",
+    "charactermagiccommand",
+    "command",
+    "leaderskill",
+    "characterclassname",
+    "ritualtrainings",
+    "necessaryrebirthmaterial"
+]
+
+src = "./JPNeeded"
+
+for file in files_to_export:
+    shutil.copy2(os.path.join(intermediate, file), os.path.join(src, file))
+
 
 env = UnityPy.load(src)
 
@@ -28,7 +45,7 @@ for obj in env.objects:
             fp = os.path.join(extract_dir, f"{data.name}.bin")
             with open(fp, "wb") as f:
                 f.write(data.raw_data)
-        print(data.name)
+        print("[INFO  ]: done ", data.name)
         # edit
         if obj.serialized_type.nodes:
             tree = obj.read_typetree()
