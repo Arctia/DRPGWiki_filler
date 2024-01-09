@@ -1,3 +1,7 @@
+plibs/resources/
+translation_sheet/story.*
+datas/test
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

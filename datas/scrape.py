@@ -24,7 +24,7 @@ src = "./JPNeeded"
 for file in files_to_export:
     shutil.copy2(os.path.join(intermediate, file), os.path.join(src, file))
 
-
+# src = "./JPMasters"
 env = UnityPy.load(src)
 
 extract_dir = "JP" if linux else "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"

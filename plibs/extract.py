@@ -1,12 +1,17 @@
 
-import UnityPy, shutil, json, os
+import UnityPy, platform, shutil, json, os
 from config import Config
 
-GAMEDATA_PATH = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\"
-EXTRACT_PATH = "."
+linux = True if platform.system() == "Linux" else False
 
-CHARA_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
-FRONT_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
+EXTRACT_PATH = "."
+if not linux:
+	GAMEDATA_PATH = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\"
+	CHARA_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
+	FRONT_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
+else:
+	CHARA_FOLDER = "./resources/chara"
+	FRONT_FOLDER = "./resources/wait_front"
 
 STOP_FOLDER = "images/chara_contest"
 
@@ -28,13 +33,13 @@ def	extract_data(src: str, dest: str, ids):
 
 					switch = False
 					for i in ids:
-						if str(i) == fn or f"{str(i)}_1" == fn:
+						if str(i) == fn.split("/")[-1] or f"{str(i)}_1" == fn.split("/")[-1]:
 							switch = True
-							if f"{str(i)}_1" == fn:
+							if f"{str(i)}_1" == fn.split("/")[-1]:
 								jconf.add_ex_char(i)
 							break
 					if not switch: continue
-					
+
 					os.makedirs(os.path.dirname(dst), exist_ok=True)
 					dst += ".png"
 					data.image.save(dst)

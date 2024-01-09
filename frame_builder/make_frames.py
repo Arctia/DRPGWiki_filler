@@ -77,20 +77,20 @@ def create_image(chara):
 	void = io(_void)
 	bg 	 = io(_bg)
 
-	face = io(_p_faces + f"\\{chara.id}.png")
+	face = io(_p_faces + f"/{chara.id}.png")
 	face = crop_face(face)
 
 	frame = io(_p_frames + f"{chara.fr}.png")
-	frame = frame.resize((210,242), Image.ANTIALIAS)
+	frame = frame.resize((210,242), Image.LANCZOS)
 
 	weapon = io(_p_weap + f"{chara.wp}.png")
-	weapon = weapon.resize(icon_size, Image.ANTIALIAS)
+	weapon = weapon.resize(icon_size, Image.LANCZOS)
 
 	evil = io(_p_evil + f"{chara.ev}.png")
-	evil = evil.resize(icon_size, Image.ANTIALIAS)
+	evil = evil.resize(icon_size, Image.LANCZOS)
 
 	kind = io(_p_kind + f"{chara.tp}.png")
-	kind = kind.resize((32,32), Image.ANTIALIAS)
+	kind = kind.resize((32,32), Image.LANCZOS)
 
 	void.paste(bg, (0,0), bg)
 	void.paste(face, (of.x, of.y), face)

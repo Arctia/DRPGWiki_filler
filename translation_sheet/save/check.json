@@ -6155,5 +6155,20 @@
         "Evility Desc 3": "\u30d1\u30fc\u30c6\u30a3\u304c\u98a8\u5c5e\u6027\u306e\u6280\u3092\u4f7f\u7528\u3057\u305f\u6642\u3001\u30d1\u30fc\u30c6\u30a3\u306b\u4e0e\u3048\u308b\u5168\u3066\u306e\u30c0\u30e1\u30fc\u30b8+#PER#%(3T)\u4ed8\u4e0e, ATK\u30fbCRD+#PER2#%(3T)",
         "Evility Name 4": "\u6b6f\u3041\u98df\u3044\u3057\u3070\u3093\u306a\u3055\u3044\uff01",
         "Evility Desc 4": "\u30bf\u30fc\u30f3\u958b\u59cb\u6642\u3001\u30d1\u30fc\u30c6\u30a3\u306eCRD\u30d0\u30d5\u52b9\u679c\u3092\u53d7\u3051\u3066\u3044\u308b\u5473\u65b9\u306eATK+#PER#%(2T), CRT+#PER2#%(2T)"
+    },
+    "265": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "268": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
+    },
+    "20081": {
+        "Skill Name 4": null,
+        "Skill Desc 4": null,
+        "Skill Effect 4": null
     }
 }
