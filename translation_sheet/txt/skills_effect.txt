@@ -640,9 +640,9 @@
 | 3002081 = ATK/INT +20% (3T) [All Allies], Inflict Random Ailments (2T) [All Enemies]
 | 3002082 = All Damage +#PER11#% (2T) & All Damage Received -25% (2T) & Ailment Removal & Debuff Removal [Single Ally]
 | 3002083 = ATK/INT +45% (3T) & CRD +25% (3T) [All Allies], CRT +10% (3T) [Single Ally], Water Resistance -10% (2T) [Enemy Single]
-| 3002101 = CRT +5% (3T) [all allies]
-| 3002102 = Remove enemy buffs, all damage dealt +15% (2T) [all allies]
-| 3002103 = ATK/CRD +50% (1T) [single ally]
+| 3002101 = CRT +8% (3T) [all allies]
+| 3002102 = CRT +#PER10#% (2T) & all damage dealt +20% (2T) granted [all allies], buff effect removed [single enemy].
+| 3002103 = ATK, CRD +50% (3T) & all damage dealt +10% (3T) granted [all allies], DEF, RES -40% (3T) [all enemies].
 | 3002111 = ATK/INT/CRD +25% (3T)[All Allies]
 | 3002112 = [Repeat Use Banned] Non -HP Basic Stats +40% (2T) & [King] units are granted an additional turn (1 time) & CRD +50% (2T) & CRT +10% (2T)[Single Ally]
 | 3002113 = DEF/RES -35% (2T)[Single Foe], ATK/INT/CRD +35% (2T) [Single Ally] 
@@ -808,6 +808,9 @@
 | 3002651 = SPD +10% (3T) & AG +100[All Allies]
 | 3002652 = Fire Resistance -15% (3T) & DEF/RES -25% (3T)[Single Foe], AG +100[All Allies]
 | 3002653 = Fire Resistance -10% (3T)[All Foes], CRD +35% (3T) & Damage dealt +25% (3T) & AG +150[All Allies]
+| 3002661 = ATK, INT, CRD +10% (3T) [all allies].
+| 3002662 = The fewer enemies you have, the more powerful you are [yourself], base parameters other than HP +25% (3T) & CRD +30% (2T) & all damage you deal +15% (2T) & automatic SP recovery [7] (3T) [all allies].
+| 3002663 = Technique Power +10% & CRT +30% when using a technique [self], Star Resistance -15% (3T) & on a critical hit, ignore #100% of the target's buffs to calculate damage [enemy only].
 | 3002681 = Inflict Poison/Sleep(2T) & Buffs halved[All Foes], Damage dealt +#PER11#% (2T) & CRT +#PER12#% (2T)[All Allies]
 | 3002682 = Non -HP Basic Stats -30% (3T) & CRD/CRT -15% (3T)[Single Foe], Non -HP Basic Stats +30% (3T) & CRD/CRT +#PER11#% (3T)[Single Ally]
 | 3002683 = DEF/RES -45% (3T) & DEF/RES Buffs Removed[Single Foe], ATK/INT/CRD +35% (3T) & CRT +10% (3T)[Single Ally]
@@ -1129,6 +1132,9 @@ Small Heal & Damage Received -20% (2T)[all allies]
 | 3200811 = Non -HP Basic Stats/SPD/CRD/CRT -5% (3T)[Single Foe]
 | 3200812 = ATK/INT Buffs halved[All Foes], Skill Damage +15% (3T) & SP Regen[7](3T)[All Allies]
 | 3200813 = Non -HP Basic Stats +30% (2T) & when HP is max, CRD +40% (2T) & CRT +10% (2T)[All Allies]
+| 3200821 = DEF and RES +30% (3T) [all allies], Action Gauge -50[all enemies].
+| 3200822 = [No continuous fire] Action Gauge +1000& ATK +70% (2T) & CRT +20% (2T) [self], SPD, CRT, CRD -10% (3T) [enemy only].
+| 3200823 = The more debuffs the attack target is receiving, the more damage it does (up to 5 types) & on a critical hit, +15% of technique power [self].
 | 3210021 = ATK -5% 
 | 3210022 = ATK -12% 
 | 3210023 =  -

@@ -260,6 +260,7 @@
 | 263 = Casualwear Noel
 | 264 = Santa Fuka
 | 265 = New Year Salvatore
+| 266 = KANJI HIGASHI JOSAI
 | 268 = Priestess Bieko
 | 1001 = Prism Red
 | 1002 = Prism Blue
@@ -405,6 +406,7 @@
 | 20079 = Toto Majorita
 | 20080 = Pumpkin Prinny
 | 20081 = Sakura Mochi Saint Prinny
+| 20082 = Japan's best dressed girl
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

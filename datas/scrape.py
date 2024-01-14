@@ -7,6 +7,7 @@ import json
 linux = True if platform.system() == "Linux" else False
 
 intermediate = "./JPMasters" if linux else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+intermediate = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/masters"
 files_to_export = [
     "character",
     "charactercommand",

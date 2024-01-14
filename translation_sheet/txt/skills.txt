@@ -808,6 +808,9 @@
 | 3002651 = Magnificent Opening Salvo
 | 3002652 = Magnificent Kite
 | 3002653 = Magnificent New Year
+| 3002661 = higan-ryu and zero-star (species of weaverbird, Anser fabalis)
+| 3002662 = Higanryu, Retsukouseiken
+| 3002663 = Higanryu Okuyi, Shoryu Seigeki
 | 3002681 = Paper Charm of Misfortune
 | 3002682 = Birdcage Game
 | 3002683 = True Redemption
@@ -1128,6 +1131,9 @@
 | 3200811 = Prinny Flurry
 | 3200812 = New Year's Pringer Beam
 | 3200813 = Prinny Boardgame
+| 3200821 = Blaze Sunrise!
+| 3200822 = NIS opening!
+| 3200823 = New Year's Rally!
 | 3210021 = Buccal Cones
 | 3210022 = Frozen Lake
 | 3210023 = Dam Breaker

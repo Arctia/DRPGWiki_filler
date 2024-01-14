@@ -627,7 +627,7 @@
 | 1642 = Knight on a White Steed
 | 1643 = Beguiling Haze
 | 1644 = Witch's Demonic Tonic
-| 1651 = Netherworld Alliance President
+| 1651 = Boss of the Hell's Allies
 | 1652 = Head Decapitator
 | 1653 = Hype-Up Combo
 | 1654 = Raid Preparation
@@ -1027,6 +1027,10 @@
 | 2652 = New Year Opening Salvo
 | 2653 = G Parade
 | 2654 = Violent New Year Resolution
+| 2661 = blessing of the Dragon
+| 2662 = nothing is unbreakable
+| 2663 = Vertebra
+| 2664 = Supernatural Dragon Light
 | 2681 = Zombie Priestess Duties
 | 2682 = Clean Up Time!
 | 2683 = Sister Energy
@@ -1491,6 +1495,10 @@
 | 200812 = Sakura Mochi Power
 | 200813 = Cherry-Flavored Hide
 | 200814 = Saintly Bearing
+| 200821 = The hero in his Sunday best
+| 200822 = Justice Battledore.
+| 200823 = The flame of justice that guides our friends
+| 200824 = The best first sunrise in Japan!
 | 210021 = Treasure Guild
 | 210022 = Follow Me!
 | 210023 = Ice Wall

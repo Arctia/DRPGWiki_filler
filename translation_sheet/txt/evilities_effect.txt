@@ -805,10 +805,10 @@
 | 2082 = Axe-Equipped Self: Elemental Damage +50%, also, All Allies: Elemental Damage +20%
 | 2083 = All AlliesL When an ally uses a water-based Atk, Skill Damage +15% (2T)
 | 2084 = All Allies: At the end of the turn, if there are 3+ surviving allies, ATK・INT+35% (2T), and if there are 5+, CRD +40% (2T)
-| 2101 = All Allies: Basic Stats +16%, CRD +10%
-| 2102 = Ally with Highest ATK: At the end of this unit's turn, CRT +10% (1T), CRD +40% (1T)
-| 2103 = All Allies: The more surviving allies, the higher damage boost (max +18% with 5 allies)
-| 2104 = All Allies: at the start of the turn, if this unit's HP is at max, SP +12
+| 2101 = Party's basic parameters other than HP, CRD+16%, HP+20%.
+| 2102 = Ally with Highest ATK: At the end of this unit's turn, CRT +15% (1T), CRD +45% (1T)
+| 2103 = The more surviving characters in the party, the more all damage the party deals (max +30%, up to 5 characters).
+| 2104 = At the start of the turn, if the party has full health, SP+12, ATK and CRD+20% of the party (1T).
 | 2111 = All Allies: ATK/INT/CRD+16%, HP+20%
 | 2112 = All Allies: If this unit is equipped with a Bow, Damage dealt+20%, and also, King-type Allies: Damage dealt+20%
 | 2113 = All Allies: At start of this unit's turn, if there 2 or more [King] allies, SP +12
@@ -1029,6 +1029,10 @@
 | 2652 = Gun-Equipped Self: Damage dealt+50%, also, All Allies: Damage dealt+20%
 | 2653 = All Allies: If there are 2+ Gun Forte Allies, at start of this unit's turn, SP+15, Damage dealt+15%(1T)
 | 2654 = All Allies: At start of battle, ATK/INT Debuff Conversion(3 times), also, ATK/INT+45%(3T)
+| 2661 = Party ATK and INT +15%, HP +25%.
+| 2662 = Damage dealt by Special Moves when you are equipped with a fist weapon +50%, plus damage dealt by your party by Special Moves +20%.
+| 2663 = At the end of the turn, star attack on enemy character with low remaining HP (twice, power B+).
+| 2664 = When the party uses a star technique, the party's ATK, INT, CRD +15% (2T)
 | 2681 = All Allies: Basic Stats & CRD+15%
 | 2682 = Spear-Equipped Self: Damage dealt+50%, also, All Allies: Damage dealt+20%
 | 2683 = All Allies: If there are 2+  Bishop allies, at start of this unit's turn, CRD+35%(2T) & SP+12
@@ -1493,6 +1497,10 @@
 | 200812 = Mon Magic-Equipped Self: Damage dealt+50%, also, All Allies: Damage dealt+20%
 | 200813 = All Allies: At start of WAVE, AG+50 and Heal allies 15% of this unit's max HP
 | 200814 = All Allies: ATK/INT/CRD Buff effects+10%, DEF/RES Buff effects+8%
+| 200821 = ATK, INT, CRD +25%, DEF, RES +15% of demon-type characters in the party
+| 200822 = All damage dealt +55% when you equip a demon physical weapon, plus all damage dealt by the party +25%.
+| 200823 = At the start of the Wave, the action gauge of the demon-type character in the party +100, ATK/INT +50% (5T).
+| 200824 = At start of turn, CRD +50%(2T) of allied character with highest CRT, granting +15%(2T) of all damage dealt.
 | 210021 = Magic Monster Weapon-Wielding Allies: All stats except SPD +12%
 | 210022 = Monster Allies:AOE Damage dealt +15%
 | 210023 = Self: AOE Damage taken -50%

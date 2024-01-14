@@ -970,7 +970,7 @@
 | 1653 = Otherworldly Princess
 | 1654 = Otherworldly Princess
 | 1655 = Robust President
-| 1656 = Netherworld Alliance President
+| 1656 = Boss of the Hell's Allies
 | 1661 = Otherworldly Summoner
 | 1662 = Otherworldly Summoner
 | 1663 = Otherworldly Summoner
@@ -1566,6 +1566,12 @@
 | 2654 = New Year Warmonger
 | 2655 = Function Over Fashion
 | 2656 = Magnificent New Year Reveler
+| 2661 = Swordsmen who ate the dragon
+| 2662 = Swordsmen who ate the dragon
+| 2663 = Swordsmen who ate the dragon
+| 2664 = Swordsmen who ate the dragon
+| 2665 = The Dragon Rampage Conqueror.
+| 2666 = Ascending dragon of the New Year's celebration of good fortune
 | 2681 = Shrine Helper
 | 2682 = Shrine Helper
 | 2683 = Shrine Helper
@@ -2436,6 +2442,12 @@
 | 200814 = Pink Mochi Prinny
 | 200815 = Saint's Attendant
 | 200816 = Sacred Messenger of Early Spring
+| 200821 = New Year's heroes
+| 200822 = New Year's heroes
+| 200823 = New Year's heroes
+| 200824 = New Year's heroes
+| 200825 = Guardian of the first sunrise
+| 200826 = New Year's Day
 | 210011 = Krichevskoy Group
 | 210012 = Krichevskoy Group
 | 210013 = Krichevskoy Group

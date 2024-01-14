@@ -13,6 +13,9 @@ else:
 	CHARA_FOLDER = "./resources/chara"
 	FRONT_FOLDER = "./resources/wait_front"
 
+	FRONT_FOLDER = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
+	CHARA_FOLDER = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
+
 STOP_FOLDER = "images/chara_contest"
 
 def	extract_data(src: str, dest: str, ids):
@@ -97,7 +100,7 @@ for i in range(len(lines)):
 	if "Character.py" in lines[i]:
 		aids = [str(l) for l in aids]
 		id_to_write = ",".join(aids)
-		lines[i] = f"py Character.py -u y -d j -i {id_to_write} -c r\n"
+		lines[i] = f"python3 Character.py -u y -d j -i {id_to_write} -c r\n"
 
 with open(os.path.join("..", "update_characters.sh"), "w") as f:
 	for l in lines:
