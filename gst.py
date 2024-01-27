@@ -62,6 +62,8 @@ UNIQUE_UNPLAYABLE = []
 HUMAN = []
 MONSTER = []
 
+offset_y = 33
+
 jish = {'Unique Human': UNIQUE_HUMAN,
 		'Unique Human 2': UNIQUE_HUMAN_2,
 		'Unique Monster': UNIQUE_MONSTER, 
@@ -550,6 +552,19 @@ def AddExcell(jish):
 
 	workbook.save(spath)
 
+
+def push_down_char(ws, cl:int) -> None:
+	row = offset_y
+	while ws.cell(row + 2, cl).value != None: 
+		row += offset_y
+	
+	for field in RowIDS.values():
+		japanese_value = ws.cell(field, cl).value
+		translation_value = ws.cell(field, cl + 1).value
+		ws.cell(row + field, cl, japanese_value)
+		ws.cell(row + field, cl + 1, translation_value)
+
+
 modded_chars = []
 def ModifyExcell(jish):
 	pre_cell = 0
@@ -570,11 +585,14 @@ def ModifyExcell(jish):
 							if f == "book_appear_at": continue
 							value = worksheet.cell(RowIDS[f]+1, cl).value
 							if value != c[f] and RowIDS[f] in ids_to_check:
-								worksheet.cell(RowIDS[f]+1, cl, c[f])
-								worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="20EE20")
 								if not c["Character ID"] in modded_chars:
 									print("[INFO	]: Modified character %s" % c["Character ID"])
+									push_down_char(worksheet, cl)
 									modded_chars.append(c["Character ID"])
+								# fill row with new info and color it
+								worksheet.cell(RowIDS[f]+1, cl, c[f])
+								worksheet.cell(RowIDS[f]+1, cl).fill = PatternFill("solid", start_color="20EE20")
+								worksheet.cell(RowIDS[f]+1, cl + 1, "")
 								jconf.add_mod_chara(c)
 						break
 

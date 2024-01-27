@@ -808,9 +808,9 @@
 | 3002651 = Ring in the New Year with a 21-gun salute to the face
 | 3002652 = Kite-flying is an honored New Year tradition. You're the kite.
 | 3002653 = Your orders are to scream Happy New Year while you die!!
-| 3002661 = It is said that if you can see it seven times, your wish will come true.
-| 3002662 = Zekkosai, empowered by the universe, is invincible!
-| 3002663 = That dragon, he who eats all things in the forest
+| 3002661 = Collect all 7 to grant your wish!
+| 3002662 = The Zesshosai gathers the universe's power into an invincible blow!
+| 3002663 = The dragon that swallows all creation
 | 3002681 = Begone, misfortune! Or at least go over there...
 | 3002682 = A ritual children's game for locking away the bad vibes
 | 3002683 = A united attack between shrine maidens!
@@ -1131,9 +1131,9 @@
 | 3200811 = A unique skill developed for attacking with flippers, dood
 | 3200812 = Gotta work hard in the New Year!
 | 3200813 = Boardgames are great when everyone's having fun, dood!
-| 3200821 = Dawn, when the darkness is gone and light abounds!
-| 3200822 = Kagamibiraki, Japan's largest Kagamibiraki, celebrated the New Year!
-| 3200823 = Be intoxicated by our beautiful skills!
+| 3200821 = I should've been the one to fill your dark days with light!
+| 3200822 = Time to open your New Year's gift!
+| 3200823 = Be amazed at this beautiful teamwork!
 | 3210021 = Rejoice for being my food!
 | 3210022 = Watch out for the ice lake at night!
 | 3210023 = Some consider this attack quite the reward.

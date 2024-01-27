@@ -260,9 +260,7 @@
 | 263 = An upbeat witch who aspires to be like Santa Claus. Even her casual clothes are themed with holiday colors since she looks forward to Netherworld Christmas every day.
 | 264 = Much to her annoyance, Fuka ends up wearing a too-short makeshift Santa costume that's useless for the cold. According to her, "No one would choose to wear something like this in winter!"
 | 265 = Salvatore dressed in order-made casual attire for the New Year. It's perfect for increasing freedom of movement, allowing her to dodge bullets and even the dangers of spilled curry soup!
-| 266 = Higan Zekkosai absorbs the power of the deadliest dragon.
-Along with the zodiac sign of the Year of the Dragon, he has acquired supernatural powers,
-It is said that there is nothing in the universe that cannot be shattered by his blow.
+| 266 = The deadliest swordsfighter, Higan Zesshosai, absorbed the power of the deadliest dragon of the Zodiac. Her newly-heightened powers are so great, it is thought that she can destroy anything in creation with a single blow.
 | 268 = Bieko dressed up in an adorable shrine maiden costume. Zed said that the combo of her innocent heart and unbeatably cute priestess costume make her look super strong...!
 | 1001 = Prism Red of the Prism Rangers. The hot-blooded one with a strong sense of justice.
 | 1002 = Prism Blue of the Prism Rangers. He's the cool one and was once Red's Rival.
@@ -409,9 +407,7 @@ Its overwhelming power pierces any armor.
 | 20079 = Majorita dressed up in traditional Toto Bunny garb to participate in the Harvest Moon Festival. She claims she's only doing it so she can prank Usalia.
 | 20080 = A pumpkin-colored Prinny, just out enjoying his best Halloween. It seems like he's up to something, but claims he just dyed his hide like this as his costume.
 | 20081 = Saint Prinny came to lend her aid to the unorthodox Heresy Lord's Shrine for the New Year. Her glossy hide was home-cooked by Saint Etna and looks delicious. Be careful, it spoils quickly if it gets wet.
-| 20082 = Avenge the evil that infests the new year!
-The hero of justice, the best in Japan!
-I will protect the New Year in the demon world!
+| 20082 = To protect the New Year from Devastion! To unite all heroes in the demon nation! Wandering heroine of Justice, Nisa! Surrender now or prepare to fight!
 | 21001 = A demon who was a vassal of the late King Krichevskoy, known as a chief strategist and commanded battles...or so it's said. Now no one remembers the details.
 | 21002 = A demon who was a vassal of the late King Krichevskoy. She was favored for her ability as a treasure hunter. It's said she looked after Laharl as a baby.
 | 21003 = Son of a rich demon. Unlike his father, he has a solid character. It's said that he looked cuter in the past. He respects Overlord Laharl.
