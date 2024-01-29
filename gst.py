@@ -559,6 +559,7 @@ def push_down_char(ws, cl:int) -> None:
 		row += offset_y
 	
 	for field in RowIDS.values():
+		field += 1
 		japanese_value = ws.cell(field, cl).value
 		translation_value = ws.cell(field, cl + 1).value
 		ws.cell(row + field, cl, japanese_value)
