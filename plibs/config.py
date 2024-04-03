@@ -11,7 +11,7 @@ class	Config():
 
 	def __reset__(self):
 		self.clear_new()
-		# self.clear_modified()
+		self.clear_modified()
 		self.save_config()
 
 	def	clear_modified(self):
@@ -22,6 +22,7 @@ class	Config():
 		self.js['old_datas']['new_charas'] += self.js['new_charas'].copy()
 		self.js['new_charas'].clear()
 
+	# TODO
 	def remove_duplicates(self):
 		pass
 

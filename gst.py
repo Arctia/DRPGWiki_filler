@@ -1,16 +1,19 @@
 
-import re
-import json
-import openpyxl
+import openpyxl, json, sys, re, os
 
 from plibs.config import Config
 from openpyxl.styles import PatternFill
 from globals import *
+from xlsx_fetcher import download_excell
 
 jconf = Config("./plibs/")
 
-wpath = "./translation_sheet/Disgaea RPG Translations of Characters.xlsx"
-spath = "./translation_sheet/result.xlsx"
+wpath = os.path.join("translation_sheet", "Disgaea RPG Translations of Characters.xlsx")
+wpath = os.path.join("translation_sheet", "result.xlsx")
+
+if "--refresh" in sys.argv:
+	if not download_excell():
+		print("[ERROR ]: Cannot download xlsx file.. Using old one")
 
 try:
 	workbook = openpyxl.load_workbook(wpath)
