@@ -53,5 +53,6 @@ for obj in env.objects:
             # apply modifications to the data within the tree
             obj.save_typetree(tree)
         else:
-            with open(replace_dir, data.name) as f:
-                data.save(raw_data = f.read())
+            # with open(replace_dir, data.name) as f:
+            #     data.save(raw_data = f.read())
+            pass
