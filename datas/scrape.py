@@ -1,13 +1,15 @@
-import io
-import os, platform, shutil
-import UnityPy
-import json
 
+import os, json, shutil
+import UnityPy, dotenv
 
-linux = True if platform.system() == "Linux" else False
+dotenv.load_dotenv()
 
-intermediate = "./JPMasters" if linux else "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
-intermediate = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/masters"
+intermediate = ""
+if os.getenv("DRPG_DEFAULT_PATH") == True:
+    intermediate = f"{os.getenv('LOCALAPPDATA')}\\..\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+else:
+    intermediate = os.getenv("DRPGMasters_path")
+
 files_to_export = [
     "character",
     "charactercommand",
@@ -28,7 +30,7 @@ for file in files_to_export:
 # src = "./JPMasters"
 env = UnityPy.load(src)
 
-extract_dir = "JP" if linux else "C:\\Users\\Arctia\\Desktop\\Root\\Projects\\DRPG_Wiki\\datas\\JP"
+extract_dir = "JP"
 
 for obj in env.objects:
     if obj.type.name == "MonoBehaviour":
@@ -52,6 +54,6 @@ for obj in env.objects:
             tree = obj.read_typetree()
             # apply modifications to the data within the tree
             obj.save_typetree(tree)
-        else:
-            with open(replace_dir, data.name) as f:
-                data.save(raw_data = f.read())
+        # else:
+            # with open(replace_dir, data.name) as f:
+                # data.save(raw_data = f.read())
