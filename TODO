@@ -1,16 +1,22 @@
  
 Compatibility:
-  ☐ make all paths produced by os (system compatibility)
-  ☐ produce bat scripts to execute python stuff in a Window environment
-  ✔ Add an env file that acts as an enviroment variables for datas folder @done (24-04-02 19:14)
-  ☐ modify plibs paths to pick up path from env too
+  □ make all paths produced by os (system compatibility)
+  □ produce batch scripts to execute python stuff in a Window environment
+  √ Add an env file that acts as an enviroment variables for datas folder @done (24-04-03 11:31)
+  √ modify plibs paths to pick up path from env too @done (24-04-03 11:42)
 
 Todo:
-  ☐ fix overwrite image in ImageUploader check mwclient new APIs
-  ☐ While doing the process ask to move ids in plibs/config.json
-  ☐ reorganize file structure
+  □ fix overwrite image in ImageUploader check mwclient new APIs
+  □ While doing the process ask to move ids in plibs/config.json
+  □ reorganize file structure
+  □ remove modified characters and new characters from plibs config when updated 
+  □ do not add characters on uniques or main template if already exists
+  □ 
 
 Patcher:
-  ☐ write a gui that can be runned by normal user
-  ☐ do a separate repo
+  □ write a gui that can be runned by normal user
+  □ do a separate repo
 
+Bugs:
+  □ wrong order in template if more than one month is included
+  □ do not stack on another row if same month

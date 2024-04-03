@@ -1,22 +1,26 @@
 
-import UnityPy, platform, shutil, json, os
+import UnityPy, dotenv, os
 from config import Config
 
-linux = True if platform.system() == "Linux" else False
+# ----------------------------------------------------------------------#
+# --- Load paths
+
+dotenv.load_dotenv("../.env")
 
 EXTRACT_PATH = "."
-if not linux:
-	GAMEDATA_PATH = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\"
-	CHARA_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
-	FRONT_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
-else:
-	CHARA_FOLDER = "./resources/chara"
-	FRONT_FOLDER = "./resources/wait_front"
+D_GAMEDATA = os.getenv("DRPGMasters_path")
+if os.getenv("DRPG_DEFAULT_PATH") == "true":
+    try:
+        D_GAMEDATA = f"{os.getenv('LOCALAPPDATA')}\\..\\LocalLow\\disgaearpg\\DisgaeaRPG"
+    except Exception as e:
+        print(f"[ERROR ]: Failed to find master folder -> {e}")
 
-	FRONT_FOLDER = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
-	CHARA_FOLDER = "/media/arctia/C46035B66035B052/Users/arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
+D_CHAR = os.path.join(D_GAMEDATA, "assetbundle", "images", "chara")
+D_FRONT = os.path.join(D_GAMEDATA, "assetbundle", "atlas", "chara", "battle", "wait_front")
 
-STOP_FOLDER = "images/chara_contest"
+
+# ----------------------------------------------------------------------#
+# --- Extract Functions
 
 def	extract_data(src: str, dest: str, ids):
 	for root, dirs, file in os.walk(src):
@@ -27,7 +31,7 @@ def	extract_data(src: str, dest: str, ids):
 			for path,obj in env.container.items():
 				if obj.type.name in ["Texture2D", "Sprite"]:
 					data = obj.read()
-					paths = path.split("/")
+					# paths = path.split("/")
 
 					dst = os.path.join(dest, *path.split("/"))
 					
@@ -83,15 +87,15 @@ aids = jconf.get_aids()
 
 print(ids)
 # Extract new Images
-extract_data(CHARA_FOLDER, EXTRACT_PATH, ids)
-unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
+extract_data(D_CHAR, EXTRACT_PATH, ids)
+unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
 
 ex_frames = jconf.get_exids()
 ex_frames_1 = []
 for id in ex_frames:
 	if id in ids:
 		ex_frames_1.append(f"{str(id)}_1")
-unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
+unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
 
 with open(os.path.join("..", "update_characters.sh"), "r") as f:
 	lines = f.readlines()

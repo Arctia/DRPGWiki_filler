@@ -2,11 +2,17 @@
 import os, json, shutil
 import UnityPy, dotenv
 
-dotenv.load_dotenv()
+dotenv.load_dotenv("../.env")
 
 intermediate = ""
-if os.getenv("DRPG_DEFAULT_PATH") == True:
-    intermediate = f"{os.getenv('LOCALAPPDATA')}\\..\\LocalLow\\disgaearpg\\DisgaeaRPG\\assetbundle\\masters\\"
+if os.getenv("DRPG_DEFAULT_PATH") == "true":
+    try:
+        intermediate = os.path.join(
+            os.getenv('LOCALAPPDATA'), "..",
+            "LocalLow", "disgaearpg", "DisgaeaRPG", 
+            "assetbundle", "masters")
+    except Exception as e:
+        print(f"[ERROR ]: Failed to find Master folder -> {e}")
 else:
     intermediate = os.getenv("DRPGMasters_path")
 
