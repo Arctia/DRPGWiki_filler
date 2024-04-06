@@ -13,6 +13,8 @@ datetime_m = "%Y-%m-%d %H:%M:%S"
 
 def	desktop_view(text:str, id_list:list) -> str:
 	for i in id_list:
+		if f"{{{{CharacterNavFrameJP|{str(i)}}}}}" in text:
+			continue
 		text += f"{{{{CharacterNavFrameJP|{str(i)}}}}}"
 	text += f"\n</div>"
 	return text
@@ -22,6 +24,8 @@ def mobile_view(text:str, id_list:list) -> str:
 	counter = mobile_last.count("| ")
 	str_to_add = ""
 	for i in id_list:
+		if f"| {{{{CharacterNavFrameJP|{str(i)}}}}}\n" in text:
+			continue 
 		if counter == 4:
 			str_to_add += "|- \n"
 			counter = 0
@@ -57,17 +61,24 @@ def check_date(date, tp="month", value="00") -> bool:
 
 	return False
 
-def write_new_section(dates, characters) -> str:
-	return f"""|-
-!style="text-align:left" |Latest Addition {dates}
-|-
-|{characters}\n"""
+def write_new_section(dates, characters, replace_date=False, previous_date="") -> str:
+	ret  = f"|-\n"
+	if not replace_date: 
+		ret += f"""!style="text-align:left" |Latest Addition {dates}"""
+	else:
+		ret += previous_date.replace("Latest Addition ", "Latest Addition " + dates + " - ")
+	ret += f"\n|-\n"
+	ret += f"|{characters}\n"
+
+	return ret
 
 def month_in_page(page, month, year):
-	latest_line = page.split("\n")[3]
+	latest_line = page.split("\n")[2]
+	return_line = page.split("\n")[4]
+	# print(f"[INFO   ]: {latest_line}")
 	ld = latest_line.split(" ")[-1]
-	if (ld.split("/")[0] == month and ld.split("/")[2] == year):
-		return latest_line
+	if (ld.split("/")[0] == month and ld.split("/")[-1] == year):
+		return return_line
 	return False
 
 def template_view(jconf:object):
@@ -98,6 +109,8 @@ def template_view(jconf:object):
 
 			for day in days:
 				for chara in new_charas:
+					if f"{{{{CharacterNavFrameJP|{chara['id']}}}}}" in page_text.split("|}")[0]:
+						continue
 					if (check_date(chara['release_date'], "day", day) and 
 						check_date(chara['release_date'], "month", month) and
 						check_date(chara['release_date'], "year", year)):
@@ -110,15 +123,15 @@ def template_view(jconf:object):
 						charas += f"{{{{CharacterNavFrameJP|{chara['id']}}}}}"
 			
 			if dates != "":
-				dates += f"/{year}"
 				line_to_replace = month_in_page(page_text, month, year)
 				
 				if line_to_replace:
-					charas += page_text.split("\n")[4].replace("|-", "")
-					new_fragment += write_new_section(dates, charas)
-					text_to_replace = page_text.split("\n")[2] + page_text.split("\n")[3] + page_text.split("\n")[4]
+					charas += page_text.split("\n")[4].replace("|", "  -  ", 1)
+					new_fragment += write_new_section(dates, charas, replace_date=True, previous_date=page_text.split("\n")[2])
+					text_to_replace = page_text.split("\n")[1] + "\n" + page_text.split("\n")[2] + "\n" + page_text.split("\n")[3] + "\n" + page_text.split("\n")[4] + "\n"
 					page_text = page_text.replace(text_to_replace, new_fragment)
 				else:
+					dates += f"/{year}"
 					new_fragment += write_new_section(dates, charas)
 					page_text = "{|\n" + page_text.replace("{|\n", new_fragment, 1)
 
@@ -128,6 +141,9 @@ def template_view(jconf:object):
 	
 	# page_text = page.text().replace("{|\n", new_fragment, 1)
 	Upload(page, page_text)
+	path = os.path.join("txt_files", "template.txt")
+	with open(path, "w") as f:
+		f.write(page_text)
 	print("[INFO  ]: Written Main Template Page")
 
 def main():

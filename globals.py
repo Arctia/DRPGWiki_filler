@@ -5,7 +5,7 @@
 ##################################################################
 
 import os, sys, getopt
-import deepl
+import deepl, dotenv
 import time
 import json
 import mwclient
@@ -13,6 +13,7 @@ import mwclient
 from user_data import username, password, deeplauth
 from plibs.config import Config
 
+dotenv.load_dotenv()
 translator = deepl.Translator(deeplauth)
 
 # --- Setting default values
@@ -28,7 +29,7 @@ PAGES_PATH = "./datas/text_pages/"
 To_Edit = ["StatsTable", "CharacterLinks"]
 
 # --- Getting terminal parameters
-opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:",["data=", "upload=", "chara=", "ids=", "reachid="])
+opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:re:w:m:b:a",["data=", "upload=", "chara=", "ids=", "reachid=", "refresh", "write", "update", "buffed", "all"])
 for opt, arg in opts:
 	if opt in ("-d", "--data"):
 		if arg == "gl":
@@ -45,6 +46,8 @@ for opt, arg in opts:
 		id_to_rewrite = [int(x) for x in arg.split(",")]
 	if opt in ("-ri", "--reachid"):
 		reached_id = int(arg)
+	if opt in ("-r", "--refresh"):
+		pass
 	if opt in ("-h", "--help"):
 		print("""	-c [--chara] <mode> \n	-i [--ids] <ids separated ,>
 	-d [--data] <mode (gl, jp)>\n	-u [--upload] <y or n>

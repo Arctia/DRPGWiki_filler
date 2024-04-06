@@ -1,0 +1,32 @@
+ 
+Compatibility:
+  √ Let the user fill new units as BADASS or GORGEOUS @done (24-04-06 14:20)
+  √ start by calling gst.py in write and mod mode @done (24-04-06 11:43)
+  ✘ produce batch scripts to execute python stuff in a Window environment @cancelled (24-04-06 11:53)
+  √ auto add ex characters to list @done (24-04-06 11:53)
+  √ make all paths produced by os (system compatibility) @done (24-04-03 16:32)
+  √ Add an env file that acts as an enviroment variables for datas folder @done (24-04-03 11:31)
+  √ modify plibs paths to pick up path from env too @done (24-04-03 11:42)
+  √ add a requirements.txt @done (24-04-06 14:24)
+  □ 
+
+Todo:
+  □ fix overwrite image in ImageUploader check mwclient new APIs
+  √ remove modified characters and new characters from plibs config when updated @done (24-04-03 16:28)
+  √ do not add characters on uniques or main template if already exists @done (24-04-03 16:31)
+  √ Download latest excell file from internet before checking for new units @done (24-04-03 16:27)
+  ✘ Save new ids to an online resource so I can update the Wiki-App effortlessy @cancelled (24-04-04 09:56)
+
+Patcher:
+  □ write a gui that can be runned by normal user
+  □ do a separate repo
+
+WikiApp:
+  √ check for new ids in the excell file so I can update the Wiki-App effortlessy @done (24-04-04 14:31)
+  √ download patch.json and modify it with the updated data @done (24-04-04 14:31)
+  □ auto extract new characters images or download the one djinn hosted
+
+Bugs:
+  □ wrong order in template if more than one month is included
+  √ do not stack on another row if same month @done (24-04-03 17:23)
+

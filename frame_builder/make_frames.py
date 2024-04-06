@@ -67,9 +67,6 @@ _p_kind		= "./kind/"
 frame_path	= os.path.join(fd_plibs, "assets", "assetbundles",
 	"images", "chara", "frames")
 
-frame_path = "../plibs/assets/assetbundles/images/chara/frames/"
-_p_faces = "../plibs/assets/assetbundles/images/chara/face/"
-
 def crop_face(img):
 	w = img.width
 	crop_size = (w - 175) if w > 175 else 0
@@ -80,20 +77,20 @@ def create_image(chara):
 	void = io(_void)
 	bg 	 = io(_bg)
 
-	face = io(_p_faces + f"\\{chara.id}.png")
+	face = io(_p_faces + f"/{chara.id}.png")
 	face = crop_face(face)
 
 	frame = io(_p_frames + f"{chara.fr}.png")
-	frame = frame.resize((210,242), Image.ANTIALIAS)
+	frame = frame.resize((210,242), Image.LANCZOS)
 
 	weapon = io(_p_weap + f"{chara.wp}.png")
-	weapon = weapon.resize(icon_size, Image.ANTIALIAS)
+	weapon = weapon.resize(icon_size, Image.LANCZOS)
 
 	evil = io(_p_evil + f"{chara.ev}.png")
-	evil = evil.resize(icon_size, Image.ANTIALIAS)
+	evil = evil.resize(icon_size, Image.LANCZOS)
 
 	kind = io(_p_kind + f"{chara.tp}.png")
-	kind = kind.resize((32,32), Image.ANTIALIAS)
+	kind = kind.resize((32,32), Image.LANCZOS)
 
 	void.paste(bg, (0,0), bg)
 	void.paste(face, (of.x, of.y), face)
@@ -112,5 +109,4 @@ for c in Characters:
 	if c["m_potential_class_id"] == 0: continue
 	chara = Chara(c)
 	create_image(chara)
-
 

@@ -10,15 +10,19 @@ class	Config():
 		self.load_config()
 
 	def __reset__(self):
-		self.new_characters()
+		self.clear_new()
+		self.clear_modified()
 		self.save_config()
 
-	def	new_characters(self):
-		self.js['old_datas']['new_charas'] += self.js['new_charas'].copy()
+	def	clear_modified(self):
 		self.js['old_datas']['modified_charas'] += self.js['modified_charas'].copy()
-		self.js['new_charas'].clear()
 		self.js['modified_charas'].clear()
 
+	def clear_new(self):
+		self.js['old_datas']['new_charas'] += self.js['new_charas'].copy()
+		self.js['new_charas'].clear()
+
+	# TODO
 	def remove_duplicates(self):
 		pass
 
@@ -34,6 +38,22 @@ class	Config():
 		cp = self.js
 		cp = sorted(cp[key_to_order], key=lambda x: datetime.datetime.strptime(x['release_date'], datetime_f), reverse=False)
 		self.js[key_to_order] = cp
+
+	def add_badass(self, cid:int=-1, clist:list = []):
+		if clist != []:
+			for cid in clist:
+				self.js["base_type"]["BADASS"].append(cid)
+			return
+		if cid != -1:
+			self.js["base_type"]["BADASS"].append(cid)
+
+	def add_gorgeous(self, cid:int=-1, clist:list = []):
+		if clist != []:
+			for cid in clist:
+				self.js["base_type"]["GORGEOUS"].append(cid)
+			return
+		if cid != -1:
+			self.js["base_type"]["GORGEOUS"].append(cid)
 
 	def add_new_chara(self, c):
 		for character in self.js['new_charas']:
@@ -60,7 +80,6 @@ class	Config():
 
 	def get_ids(self) -> list:
 		data = []
-		print(self.js)
 		for chara in self.js['new_charas']:
 			data.append(chara['id'])
 		return data
@@ -82,6 +101,7 @@ class	Config():
 	def add_ex_char(self, id:int) -> None:
 		if not id in self.js['EX']:
 			self.js['EX'].append(id)
+			self.save_config()
 
 	def get_exids(self) -> list:
 		return self.js['EX']

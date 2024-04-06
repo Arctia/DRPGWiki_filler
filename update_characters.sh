@@ -1,13 +1,16 @@
 echo "creating frames"
 cd "frame_builder"
-py make_frames.py
+python3 gst.py --refresh --update
+python3 make_frames.py
 cd ".."
 echo "uploading Images..."
-py UploadImages.py
+python3 UploadImages.py
 echo "uploading Character/s..."
-py Character.py -u y -d j -i 1,237,242,244 -c r
+python3 Character.py -u y -d j -i 278,242 -c r
 echo "uploading Secondary Tables..."
-py CharaTable.py -u y -d j
-py CharaSymbol.py -u y -d j
-py CharaRelease.py -u y -d j
-py CharaList.py -u y -d j
+python3 CharaTable.py -u y -d j
+python3 CharaSymbol.py -u y -d j
+python3 CharaRelease.py -u y -d j
+python3 CharaList.py -u y -d j
+cd "plibs"
+python3 MoveNewCharacters.py

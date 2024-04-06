@@ -1,14 +1,26 @@
 
-import UnityPy, shutil, json, os
+import UnityPy, dotenv, os
 from config import Config
 
-GAMEDATA_PATH = "C:\\Users\\Arctia\\AppData\\LocalLow\\disgaearpg\\DisgaeaRPG\\"
+# ----------------------------------------------------------------------#
+# --- Load paths
+
+dotenv.load_dotenv("../.env")
+
 EXTRACT_PATH = "."
+D_GAMEDATA = os.getenv("DRPGMasters_path")
+if os.getenv("DRPG_DEFAULT_PATH") == "true":
+    try:
+        D_GAMEDATA = f"{os.getenv('LOCALAPPDATA')}\\..\\LocalLow\\disgaearpg\\DisgaeaRPG"
+    except Exception as e:
+        print(f"[ERROR ]: Failed to find master folder -> {e}")
 
-CHARA_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/images/chara"
-FRONT_FOLDER = "C:/Users/Arctia/AppData/LocalLow/disgaearpg/DisgaeaRPG/assetbundle/atlas/chara/battle/wait_front"
+D_CHAR = os.path.join(D_GAMEDATA, "assetbundle", "images", "chara")
+D_FRONT = os.path.join(D_GAMEDATA, "assetbundle", "atlas", "chara", "battle", "wait_front")
 
-STOP_FOLDER = "images/chara_contest"
+
+# ----------------------------------------------------------------------#
+# --- Extract Functions
 
 def	extract_data(src: str, dest: str, ids):
 	for root, dirs, file in os.walk(src):
@@ -19,7 +31,7 @@ def	extract_data(src: str, dest: str, ids):
 			for path,obj in env.container.items():
 				if obj.type.name in ["Texture2D", "Sprite"]:
 					data = obj.read()
-					paths = path.split("/")
+					# paths = path.split("/")
 
 					dst = os.path.join(dest, *path.split("/"))
 					
@@ -28,13 +40,13 @@ def	extract_data(src: str, dest: str, ids):
 
 					switch = False
 					for i in ids:
-						if str(i) == fn or f"{str(i)}_1" == fn:
+						if str(i) == fn.split("/")[-1] or f"{str(i)}_1" == fn.split("/")[-1]:
 							switch = True
-							if f"{str(i)}_1" == fn:
+							if f"{str(i)}_1" == fn.split("/")[-1]:
 								jconf.add_ex_char(i)
 							break
 					if not switch: continue
-					
+
 					os.makedirs(os.path.dirname(dst), exist_ok=True)
 					dst += ".png"
 					data.image.save(dst)
@@ -67,23 +79,28 @@ def unpack_frames(source_folder : str, destination_folder : str, ids):
 ################################################ Main script
 jconf = Config()
 ids = jconf.get_ids()
+mids = jconf.get_mids()
 aids = jconf.get_aids()
 
 # Delete old ones 
 #if os.path.isdir(os.path.join(EXTRACT_PATH, "assets")):
 #	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
 
-print(ids)
+if ids != None and ids != []:
+	print(f"new chars: {ids}")
+if mids != None and mids != []:
+	print(f"mod chars: {mids}")
+
 # Extract new Images
-extract_data(CHARA_FOLDER, EXTRACT_PATH, ids)
-unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
+extract_data(D_CHAR, EXTRACT_PATH, ids)
+unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)
 
 ex_frames = jconf.get_exids()
 ex_frames_1 = []
 for id in ex_frames:
 	if id in ids:
 		ex_frames_1.append(f"{str(id)}_1")
-unpack_frames(FRONT_FOLDER, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
+unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
 
 with open(os.path.join("..", "update_characters.sh"), "r") as f:
 	lines = f.readlines()
@@ -92,7 +109,7 @@ for i in range(len(lines)):
 	if "Character.py" in lines[i]:
 		aids = [str(l) for l in aids]
 		id_to_write = ",".join(aids)
-		lines[i] = f"py Character.py -u y -d j -i {id_to_write} -c r\n"
+		lines[i] = f"python3 Character.py -u y -d j -i {id_to_write} -c r\n"
 
 with open(os.path.join("..", "update_characters.sh"), "w") as f:
 	for l in lines:
