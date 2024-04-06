@@ -9,11 +9,21 @@ from xlsx_fetcher import download_excell
 jconf = Config("./plibs/")
 
 wpath = os.path.join("translation_sheet", "Disgaea RPG Translations of Characters.xlsx")
-wpath = os.path.join("translation_sheet", "result.xlsx")
+spath = os.path.join("translation_sheet", "result.xlsx")
 
 if "--refresh" in sys.argv:
 	if not download_excell():
 		print("[ERROR ]: Cannot download xlsx file.. Using old one")
+
+work_to_do = None
+if "--all" in sys.argv:
+	work_to_do = "all"
+elif "--write" in sys.argv:
+	work_to_do = "write"
+elif "--update" in sys.argv:
+	work_to_do = "update"
+elif "--buffed" in sys.argv:
+	work_to_do = "buffed"
 
 try:
 	workbook = openpyxl.load_workbook(wpath)
@@ -446,7 +456,7 @@ def Evilities(c, l):
 	olids = [c["additional_m_leader_skill_id"], c["additional_m_leader_skill_id_sub_1"], c["additional_m_leader_skill_id_sub_2"], c["additional_m_leader_skill_id_sub_3"]]
 
 	if l_ids[3] > olids[3] and olids[3] != 0:
-		print("first leaderskill is after")
+		# print("first leaderskill is after")
 		swap = l_ids[3]
 		l_ids[3] = olids[3]
 		olids[3] = swap
@@ -461,7 +471,9 @@ def Evilities(c, l):
 					if ae["id"] != olids[count-1]: continue
 					des = ae["description"].replace("#PER#", "#PER2#")[1:]
 					l[f"Evility Desc {count}"] = f"{e['description']}, {des}"
-					if c["id"] == 200: print(l[f"Evility Desc {count}"])
+					# if c["id"] == 200: 
+					# 	# print(l[f"Evility Desc {count}"])
+					# 	pass
 					break 
 			else:
 				l[f"Evility Desc {count}"] = e["description"]
@@ -571,24 +583,20 @@ def push_down_char(ws, cl:int) -> None:
 
 modded_chars = []
 def ModifyExcell(jish):
-	pre_cell = 0
 	if JP:
 		for key in jish:
-			col = offset_x
 			worksheet = workbook[key]
 			for c in jish[key]:
-				found = False
-				last_cell = 0
 				for cl in range(2, worksheet.max_column+3, 3):
 					cell_value = worksheet.cell(RowIDS["Character ID"]+1, cl).value
 					#if cell_value == c["Character ID"]: break
-					if cell_value == None or cell_value == "None": last_cell = cl;break
 					if cell_value == c["Character ID"]:
-						found = True
 						for f in c:
 							if f == "book_appear_at": continue
 							value = worksheet.cell(RowIDS[f]+1, cl).value
 							if value != c[f] and RowIDS[f] in ids_to_check:
+								if not c["Character ID"] in modded_chars and c["Character ID"] == 242 and f == "Skill Effect 3":
+									continue
 								if not c["Character ID"] in modded_chars:
 									print("[INFO	]: Modified character %s" % c["Character ID"])
 									push_down_char(worksheet, cl)
@@ -703,11 +711,11 @@ def ReadExcell(jish):
 									value = RECORD.ReturnTranslation(c, key)
 								else:
 									RECORD.WriteRecord(c, key, val)
-									print("Japanese: " + val)
+									# print("Japanese: " + val)
 									value = translate(val)
 									if value.count("#PER#") > 1 and "Evility Desc" in key:
 										value = replacenth(value, "#PER#", "#PER2#", 2)
-									print("English: " + value)
+									# print("English: " + value)
 									RECORD.WriteTranslation(c, key, value)
 							else:
 								RECORD.WriteRecord(c, key, val)
@@ -721,22 +729,26 @@ def ReadExcell(jish):
 	return cids
 
 if __name__ == "__main__":
-	_r_ = input("""write:
+	if work_to_do == None:
+		_r_ = input("""write:
  w to write result.xlxs
  r to read values and push changes
  s to write spells
  m to check cells buffed or changed with green
  p to check cells untranslated with violet
 what do you want to do? """)
-	if _r_ == "w":
+		if _r_ == "w": main()
+		elif _r_ == "r": read()
+		elif _r_ == "s": spells()
+		elif _r_ == "m": modify()
+		elif _r_ == "p": blank_cells()
+		elif _r_ == "e": exit()
+		exit(0)
+
+	if work_to_do == "all":
 		main()
-	elif _r_ == "r":
-		read()
-	elif _r_ == "s":
-		spells()
-	elif _r_ == "m":
+		workbook = openpyxl.load_workbook(spath)
 		modify()
-	elif _r_ == "p":
-		blank_cells()
-	elif _r_ == "e":
-		exit()
+	elif work_to_do == "write": main()
+	elif work_to_do == "buffed": modify()
+	elif work_to_do == "update": read() 

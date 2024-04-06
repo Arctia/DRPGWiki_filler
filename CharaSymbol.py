@@ -1,6 +1,4 @@
 
-import sys
-import time
 from globals import *
 
 def _not_usable(c):
@@ -18,7 +16,6 @@ def _template(c, rarity):
 
 def main():
 	print("starting the work")
-	string = ""
 	
 	types= {"kings": "", "pawns": "", "rooks": "",
 			"queens": "", "knights": "", "bishops": ""}

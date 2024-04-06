@@ -79,13 +79,18 @@ def unpack_frames(source_folder : str, destination_folder : str, ids):
 ################################################ Main script
 jconf = Config()
 ids = jconf.get_ids()
+mids = jconf.get_mids()
 aids = jconf.get_aids()
 
 # Delete old ones 
 #if os.path.isdir(os.path.join(EXTRACT_PATH, "assets")):
 #	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
 
-print(ids)
+if ids != None and ids != []:
+	print(f"new chars: {ids}")
+if mids != None and mids != []:
+	print(f"mod chars: {mids}")
+
 # Extract new Images
 extract_data(D_CHAR, EXTRACT_PATH, ids)
 unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ids)

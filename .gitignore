@@ -1,6 +1,7 @@
 plibs/resources/
 translation_sheet/story.*
 datas/test
+plibs/patch.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

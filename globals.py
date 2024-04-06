@@ -29,7 +29,7 @@ PAGES_PATH = "./datas/text_pages/"
 To_Edit = ["StatsTable", "CharacterLinks"]
 
 # --- Getting terminal parameters
-opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:r",["data=", "upload=", "chara=", "ids=", "reachid=", "refresh"])
+opts, args = getopt.getopt(sys.argv[1:],"hd:u:c:i:ri:re:w:m:b:a",["data=", "upload=", "chara=", "ids=", "reachid=", "refresh", "write", "update", "buffed", "all"])
 for opt, arg in opts:
 	if opt in ("-d", "--data"):
 		if arg == "gl":

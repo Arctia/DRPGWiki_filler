@@ -1,0 +1,6 @@
+mwclient
+deepl
+UnityPy
+requests
+openpyxl
+dotenv
