@@ -3,4 +3,5 @@ deepl
 UnityPy
 requests
 openpyxl
-dotenv
+python-dotenv
+pillow

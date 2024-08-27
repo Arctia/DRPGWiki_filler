@@ -14,6 +14,8 @@ spath = os.path.join("translation_sheet", "result.xlsx")
 if "--refresh" in sys.argv:
 	if not download_excell():
 		print("[ERROR ]: Cannot download xlsx file.. Using old one")
+else:
+	print("[INFO  ]: Using old xlsx")
 
 work_to_do = None
 if "--all" in sys.argv:
@@ -679,6 +681,24 @@ class Record():
 			return self.cids_record[str(c["Character ID"])][key]
 		return None
 
+class AI_Translations():
+	ai_translated = None
+
+	def load_json(self):
+		with open('./translation_sheet/AI/ai_translated.json') as f:
+			self.ai_translated = json.load(f)
+
+	def get_chara(self, id:int):
+		for c in self.ai_translated:
+			if int(c["Character ID"]) == id:
+				return c
+		return None
+
+	def check_value(self, c, key:str):
+		chara = self.get_chara(c["Character ID"])
+		if not chara: return None
+		return chara[key]
+
 def replacenth(string, sub, wanted, n):
     where = [m.start() for m in re.finditer(sub, string)][n-1]
     before = string[:where]
@@ -688,10 +708,12 @@ def replacenth(string, sub, wanted, n):
     return newString
 
 RECORD = Record()
+AI_TRANSLATIONS = AI_Translations()
 
 def ReadExcell(jish):
 	cids = {}
 	RECORD.load_json()
+	AI_TRANSLATIONS.load_json()
 	#print(RECORD.cids_check)
 	for key in jish:
 		col = offset_x
@@ -706,7 +728,11 @@ def ReadExcell(jish):
 						if value == None or value == "None":
 							val = worksheet.cell(RowIDS[key]+1, cl).value
 							if not val in ["None", None, "", " ", "  "]:
-								if RECORD.CheckRecord(c, key, val) and not c["Character ID"] in [200374]:
+								# check AI translated stuff
+								tmp_val = AI_TRANSLATIONS.check_value(c, key)
+								if tmp_val != None:
+									value = tmp_val
+								elif RECORD.CheckRecord(c, key, val) and not c["Character ID"] in [200374]:
 									# IF Japanese string didn't change load the already translated text
 									value = RECORD.ReturnTranslation(c, key)
 								else:

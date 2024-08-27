@@ -1,6 +1,5 @@
 
 import time
-import mwclient
 import InfoBox
 from globals import *
 import Skills
@@ -20,6 +19,8 @@ def main():
 				Edit_Characters(c)
 		elif CHARA_MODE in ("rewrite", "r"):
 			if c["id"] in id_to_rewrite: Rewrite_Characters(c, False)
+		elif CHARA_MODE in ("rewrite-all", "rall"):
+			Rewrite_Characters(c, False)
 
 
 def Rewrite_Characters(c, skip_templates=False):
@@ -30,7 +31,7 @@ def Rewrite_Characters(c, skip_templates=False):
 			content = part[1](c)
 			page = wiki.pages[f'Template:{jp_flag}Character/{c["id"]}/{part[0]}']
 			print(content) if not uploading else Upload(page, content, True)
-			printl(f"""Done {c["id"]} {part[0]}			""")
+			printl(f"""Done {c["id"]} {part[0]}""")
 
 	content = MainTemplate(c)
 	page = wiki.pages[f'{jp_flag}Character/{c["id"]}']
@@ -39,7 +40,7 @@ def Rewrite_Characters(c, skip_templates=False):
 		page = wiki.pages[f'{uri}']
 	print(content) if not uploading else Upload(page, content)
 
-	printl(f"Uploaded character id: {c['id']}			\n")
+	printl(f"Uploaded character id: {c['id']}\n")
 
 def New_Characters(c):
 	page = wiki.pages[f'{jp_flag}Character/{c["id"]}']
@@ -59,7 +60,7 @@ def Edit_Characters(c):
 
 	Edit_Main_Template(c)
 
-	printl(f"Edited character id: {c['id']}			\n")
+	printl(f"Edited character id: {c['id']}\n")
 
 def Edit_Main_Template(c):
 	page = wiki.pages[f'{jp_flag}Character/{c["id"]}']
@@ -260,6 +261,7 @@ def LeaderSkillsTable(c):
 | m_leader_skill_id_sub_1 = {c["m_leader_skill_id_sub_1"]}
 | m_leader_skill_id_sub_2 = {c["m_leader_skill_id_sub_2"]} 
 | m_leader_skill_id_sub_3 = {c["m_leader_skill_id_sub_3"]} 
+| ampoule_skill = {c["ampoule_leader_skill_number"]}
 }}}}"""
 
 #################################################################################################

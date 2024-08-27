@@ -39,8 +39,8 @@ for opt, arg in opts:
 			uploading = True
 	if opt in ("-c", "--chara"):
 		CHARA_MODE = arg
-		if not arg in ("new", "edit", "rewrite", "n", "e", "r"):
-			print("valid options for -c are [ new, edit, rewrite, n, e, r ]")
+		if not arg in ("new", "edit", "rewrite", "rewrite-all", "n", "e", "r", "rall"):
+			print("valid options for -c are [ new, edit, rewrite, rewrite-all, n, e, r, rall]")
 			sys.exit(2)
 	if opt in ("-i", "--ids"):
 		id_to_rewrite = [int(x) for x in arg.split(",")]
@@ -54,7 +54,7 @@ for opt, arg in opts:
 	-ri [--reachid] <id reached>""")
 		sys.exit()
 
-# --- Setting jp flag and log to the wikia
+# --- Setting jp flag and log into the wikia
 jp_flag = "JP/" if JP == True else ""
 wiki = mwclient.Site('disgaea-rpg.fandom.com', path='/')
 wiki.login(username=username, password=password)
@@ -120,9 +120,24 @@ def EditPage(page, text, reason='-'):
 		time.sleep(120)
 		EditPage(page, text, reason)
 
+def RewritePage(page_name:str, webpage_text:str) -> bool:
+	try:
+		page = wiki.pages[page_name]
+		EditPage(page, webpage_text, "Update")
+		path = os.path.join("txt_files", f"{page_name.lower()}.txt")
+		with open(path, "w") as f: f.write(webpage_text)
+		print(f"[INFO  ]: Written {page_name} Page")
+		return True
+	except Exception as e:
+		print(f"[ERROR ]: {e}")
+		return False
+
 def printl(string, mode="[INFO	]: "):
 	sys.stdout.flush()
-	sys.stdout.write('\r' + mode + str(string)+'				')
+	sys.stdout.write(f"\r{mode} {string}..........")
+
+def is_chara_playable(c:dict) -> bool: 
+	return True if (c["m_leader_skill_id"] != 0 and c["id"] < 40000) else False
 
 #------------------------------------------------------
 #	Some Usefull Enums

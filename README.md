@@ -1,6 +1,7 @@
 # DRPG Wiki Filler
 
 A tool written in python 3 to update the wikia automatically.
+
 ## Installation
 
 git clone this repo 
@@ -26,7 +27,8 @@ DRPG_DEFAULT_PATH=true
 DRPGMasters_path=""
 ```
 
-now you need to install python requirements (inside an venv or as you please)
+now you need to install python requirements (inside a venv or as you please)
+
 
 ```bash
 pip install -r requirements.txt

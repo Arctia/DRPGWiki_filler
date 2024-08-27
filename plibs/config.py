@@ -98,10 +98,24 @@ class	Config():
 			data.append(chara['id'])
 		return data
 
+	def get_oids(self) -> list:
+		data = []
+		for chara in self.js['old_datas']['new_charas']:
+			data.append(chara['id'])
+		for chara in self.js['old_datas']['modified_charas']:
+			data.append(chara['id'])
+		return data
+
 	def add_ex_char(self, id:int) -> None:
 		if not id in self.js['EX']:
 			self.js['EX'].append(id)
 			self.save_config()
+
+	def get_playable_ids(self) -> list:
+		data:list = []
+		data.extend(self.get_aids())
+		data.extend(self.get_oids())
+		return data
 
 	def get_exids(self) -> list:
 		return self.js['EX']

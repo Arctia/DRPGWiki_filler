@@ -9,20 +9,24 @@ dotenv.load_dotenv("../.env")
 
 EXTRACT_PATH = "."
 D_GAMEDATA = os.getenv("DRPGMasters_path")
+D_ASSETS = ".."
 if os.getenv("DRPG_DEFAULT_PATH") == "true":
     try:
         D_GAMEDATA = f"{os.getenv('LOCALAPPDATA')}\\..\\LocalLow\\disgaearpg\\DisgaeaRPG"
+        D_ASSETS = "assetbundle"
     except Exception as e:
         print(f"[ERROR ]: Failed to find master folder -> {e}")
+        exit()
 
-D_CHAR = os.path.join(D_GAMEDATA, "assetbundle", "images", "chara")
-D_FRONT = os.path.join(D_GAMEDATA, "assetbundle", "atlas", "chara", "battle", "wait_front")
+D_CHAR = os.path.join(D_GAMEDATA, D_ASSETS, "images", "chara")
+D_FRONT = os.path.join(D_GAMEDATA, D_ASSETS, "atlas", "chara", "battle", "wait_front")
 
 
 # ----------------------------------------------------------------------#
 # --- Extract Functions
 
 def	extract_data(src: str, dest: str, ids):
+	print("[INFO  ]: extracting images ...")
 	for root, dirs, file in os.walk(src):
 		for file_name in file:
 			file_path = os.path.join(root, file_name)
@@ -50,7 +54,7 @@ def	extract_data(src: str, dest: str, ids):
 					os.makedirs(os.path.dirname(dst), exist_ok=True)
 					dst += ".png"
 					data.image.save(dst)
-					print(f"[INFO  ]: Written: {dst}")
+					# print(f"[INFO  ]: Written: {dst}")
 
 def unpack_frames(source_folder : str, destination_folder : str, ids):
 	for root, dirs, files in os.walk(source_folder):
@@ -87,9 +91,9 @@ aids = jconf.get_aids()
 #	shutil.rmtree(os.path.join(EXTRACT_PATH, "assets"))
 
 if ids != None and ids != []:
-	print(f"new chars: {ids}")
+	print(f"[INFO  ]: new chars -> {ids}")
 if mids != None and mids != []:
-	print(f"mod chars: {mids}")
+	print(f"[INFO  ]: mod chars -> {mids}")
 
 # Extract new Images
 extract_data(D_CHAR, EXTRACT_PATH, ids)
@@ -102,16 +106,31 @@ for id in ex_frames:
 		ex_frames_1.append(f"{str(id)}_1")
 unpack_frames(D_FRONT, os.path.join(EXTRACT_PATH, "assets", "wait_front"), ex_frames_1)
 
-with open(os.path.join("..", "update_characters.sh"), "r") as f:
+filename = "update_characters.sh"
+with open(os.path.join("..", filename), "r") as f:
 	lines = f.readlines()
 
 for i in range(len(lines)):
 	if "Character.py" in lines[i]:
 		aids = [str(l) for l in aids]
 		id_to_write = ",".join(aids)
-		lines[i] = f"python3 Character.py -u y -d j -i {id_to_write} -c r\n"
+		lines[i] = f"{lines[i].split(' ')[0]} Character.py -u y -d j -i {id_to_write} -c r\n"
 
-with open(os.path.join("..", "update_characters.sh"), "w") as f:
+with open(os.path.join("..", filename), "w") as f:
+	for l in lines:
+		f.write(l)
+
+filename = "update_characters.bat"
+with open(os.path.join("..", filename), "r") as f:
+	lines = f.readlines()
+
+for i in range(len(lines)):
+	if "Character.py" in lines[i]:
+		aids = [str(l) for l in aids]
+		id_to_write = ",".join(aids)
+		lines[i] = f"{lines[i].split(' ')[0]} Character.py -u y -d j -i {id_to_write} -c r\n"
+
+with open(os.path.join("..", filename), "w") as f:
 	for l in lines:
 		f.write(l)
 

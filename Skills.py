@@ -1,5 +1,4 @@
-import time
-import mwclient
+
 from globals import *
 
 ids = [3000341, 3000342, 3000343, 3000344]
@@ -86,7 +85,7 @@ def SkillTemplateJP(s, special=False):
 |gain_sp = {s["gain_sp"]}
 |attr = {s["attr"]}
 |relational_param = {s["relational_param"]}
-|description = {translate(s["description"])}
+|description = 
 |description_effect = {DescriptionEffect(s)}
 {ArrayList(s["effect_values_min"], "effect_values_min")}
 {ArrayList(s["effect_values_max_50"], "effect_values_max")}
@@ -103,7 +102,7 @@ def SkillTemplateJP(s, special=False):
 {ArrayList(s["trigger_type_params"], "trigger_type_params")}
 {ArrayList(s["trigger_targets"], "trigger_targets")}
 
-|name_battle = {translate(s["name_battle"])}
+|name_battle = 
 |command_category = {s["command_category"]}
 |max_lv = {s["max_lv"]}
 |circle_flag = {s["circle_flg"]}
