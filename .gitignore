@@ -2,6 +2,8 @@ plibs/resources/
 translation_sheet/story.*
 datas/test
 plibs/patch.tar.gz
+data/
+src/datas/JPNeeded
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
