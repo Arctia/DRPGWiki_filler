@@ -292,10 +292,12 @@
 | 295 = Beach Liezerota
 | 296 = Beach Melodia
 | 297 = Yukata Flonne
-| 298 = Swimsuit Ao
-| 299 = Swimsuit NISA-chan
+| 298 = Beach Ao
+| 299 = Beach Nisa
 | 300 = Yukata Pirilika
-| 301 = Summer Uniform Seraphine
+| 301 = Summer Seraphina
+| 302 = Table Tennis Magistrate Akuma
+| 304 = Volleyball Queen Fuka XENO
 | 1001 = Prism Red
 | 1002 = Prism Blue
 | 1003 = Prism Yellow
@@ -450,7 +452,8 @@
 | 20089 = DJ Desco
 | 20090 = Summer Board
 | 20091 = Beach Raspberyl XENO
-| 20092 = Onsen Magistrate Yubana
+| 20092 = Yubana
+| 20093 = Skateboard Majorita
 | 21001 = Grosso
 | 21002 = Rainier
 | 21003 = Porkmeister

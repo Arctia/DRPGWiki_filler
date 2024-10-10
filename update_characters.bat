@@ -18,7 +18,7 @@ cd ".."
 python UploadImages.py
 
 echo Uploading New characters to the wiki
-python Character.py -u y -d j -i 301,298,299,6,7,234,236,20017,75,188,241,242,292 -c r
+python Character.py -u y -d j -i 302,304,20093,13,17,18,19,292,20001 -c r
 
 echo Update List Tables
 python CharaTable.py -u y -d j

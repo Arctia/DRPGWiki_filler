@@ -2353,5 +2353,47 @@
     "242": {
         "Skill Effect 2": "[No continuous fire] action gauge +#PER4# & automatic SP recovery [#PER3#](4T) granted & CRD +#PER1#%(4T) & all damage dealt +#PER2#%(4T) granted [self].",
         "Skill Effect 3": "Lock-on granted (CRT down the more times it continues) & ATK+#PER3#% (3T) [self]."
+    },
+    "13": {
+        "Skill Effect 1": "RES-#PER2#% (3T) [single enemy].",
+        "Skill Effect 2": "All damage dealt +#PER2#%(1T) & CRT +#PER3#%(1T)[self],RES -#PER4#%(3T) & star resistance value -#PER5#%(1T)[all enemies].",
+        "Skill Effect 3": "RES-#PER2#%(3T)[all enemies], CRD+#PER3#% when using a technique & on a critical hit, technique power +#PER4#%[self].",
+        "Evility Desc 1": "Party's INT +#PER#%, damage dealt by special attacks +#PER2#%.",
+        "Evility Desc 2": "At end of turn, if you have killed an enemy character, your INT+#PER#% (3T), CRT+#PER2#% (3T)",
+        "Evility Desc 3": "At start of turn, SP+#PER#, CRD+#PER2#% (3T) for characters equipped with wand and demon magic weapons.",
+        "Evility Desc 4": "At the start of the turn, DEF and RES-#PER#% of the enemy character whose action gauge is first (2T)."
+    },
+    "17": {
+        "Skill Effect 1": "HP over recovery small & full state abnormal ineffective (3T) paid to [Flavour Formula Full].",
+        "Skill Effect 2": "ATK/INT-#PER2#% (3T) [all enemies].",
+        "Skill Effect 3": "Basic parameters other than HP + number of enemy characters killed by this move x ##PER2#% (5T) [all allies], ignoring ##PER6#% of the target's buffs, damage calculation & action gauge - ##PER7# [all enemies].",
+        "Evility Desc 1": "Damage done by your whole attack +#PER#%.",
+        "Evility Desc 2": "INT+#PER#% of the party's staff and demon magic weapon equipped characters",
+        "Evility Desc 3": "All damage the party takes -#PER#%, all damage dealt +#PER2#%.",
+        "Evility Desc 4": "INT and DEF +#PER#% of orb-equipped characters in the party"
+    },
+    "18": {
+        "Skill Effect 1": "ATK+#PER2#%(1T)[ally single].",
+        "Skill Effect 2": "DEF-#PER2#% (3T) & Paralysis Effect (2T) granted & ATK and DEF buff effects cancelled [all enemies].",
+        "Skill Effect 3": "ATK, INT +#PER2#% (3T) & CRD +#PER4#% (3T) & SPD +#PER5#% (3T) & all damage dealt +#PER6#% (2T) [all allies].",
+        "Evility Desc 2": "At the end of the turn, ATK/INT+#PER#% (3T) of the allied character whose action gauge is at the top.",
+        "Evility Desc 3": "All damage dealt by fist weapon equipped characters in the party +#PER#%, all damage dealt by you +#PER2#%."
+    },
+    "19": {
+        "Skill Effect 1": "ATK+#PER2#%(3T) & Damage dealt by Special Moves +#PER3#%(3T) [self].",
+        "Skill Effect 2": "ATK/INT+#PER2#%(3T)[all allies],DEF/RES-#PER4#%(3T)[all enemies].",
+        "Skill Effect 3": "The fewer enemies you have, the more powerful & CRD+#PER4#%[self],DEF-#PER2#%(3T)[all enemies] when using the technique.",
+        "Evility Desc 1": "The less HP you have, the more your ATK and DEF increase (max +#PER#%).",
+        "Evility Desc 2": "All damage dealt by axe weapon equipped characters in the party +#PER#%, all damage dealt by you +#PER2#%.",
+        "Evility Desc 3": "HP+#PER#%, ATK and CRD+#PER2#% of axe weapon equipped characters in the party",
+        "Evility Desc 4": "HP and ATK +#PER#%, CRT +#PER2#% for muscle-equipped characters in the party"
+    },
+    "20001": {
+        "Skill Effect 1": "ATK+#PER2#%(3T)[ally single].",
+        "Skill Effect 2": "Paralysis effect (2T) & DEF/RES-#PER3#% (3T) [enemy only], Damage dealt by Special Moves +#PER5#% (1T) [ally only].",
+        "Skill Effect 3": "Action Gauge +#PER2# & ATK +#PER3#% (3T) & CRD +#PER4#% (3T) & Damage dealt by Special Moves +#PER5#% (3T) [all allies].",
+        "Skill Effect 4": "DEF+#PER2#%(3T) & RES+#PER3#%(3T)[all allies], ignores ##PER6#% of target's buffs, calculates damage & CRD/CRT -#PER4#%(3T) & grants one of the status effects (2T)[all enemies].",
+        "Evility Desc 1": "ATK+#PER#%, CRD+#PER2#% of party",
+        "Evility Desc 2": "Damage done by the party with special attacks +#PER#%, Damage done by you with special attacks +#PER2#%."
     }
 }
