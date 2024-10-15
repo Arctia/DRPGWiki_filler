@@ -1,7 +1,7 @@
 @REM @Author: arctia
 @REM @Date:   2024-06-22
 @REM @Last Modified by:   arctia
-@REM Modified time: 2024-06-22
+@REM Modified time: 2024-10-15
 
 @echo off
 setlocal
@@ -18,7 +18,7 @@ cd ".."
 python UploadImages.py
 
 echo Uploading New characters to the wiki
-python Character.py -u y -d j -i 302,304,20093,13,17,18,19,292,20001 -c r
+python Character.py -u y -d j -i 302,304,20093,13,17,18,19,292,20001,305,303,306,307,310,20094,311,35,36,243,247,292,20030 -c r
 
 echo Update List Tables
 python CharaTable.py -u y -d j

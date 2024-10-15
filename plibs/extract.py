@@ -73,7 +73,7 @@ def unpack_frames(source_folder : str, destination_folder : str, ids):
 			for obj in env.objects:
 				if obj.type.name in ["Sprite"]:
 					data = obj.read()
-					dest = os.path.join(destination_folder, file_name, data.name)
+					dest = os.path.join(destination_folder, file_name, data.m_Name)
 					os.makedirs(os.path.dirname(dest), exist_ok = True)
 					dest, ext = os.path.splitext(dest)
 					dest = dest + ".png"

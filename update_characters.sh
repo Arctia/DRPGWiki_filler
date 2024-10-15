@@ -6,8 +6,7 @@ cd ".."
 echo "uploading Images..."
 python3 UploadImages.py
 echo "uploading Character/s..."
-# 301,298,299,6,7,234,236,20017,75,188,241,242
-python3 Character.py -u y -d j -i 302,304,20093,13,17,18,19,20001 -c r
+python3 Character.py -u y -d j -i 302,304,20093,13,17,18,19,20001,305,303,306,307,310,20094,311,35,36,243,247,292,20030 -c r
 echo "uploading Secondary Tables..."
 python3 CharaTable.py -u y -d j
 python3 CharaSymbol.py -u y -d j
