@@ -134,7 +134,7 @@ def MainTemplate(c):
 {Gallery2(c)}
 
 ===Navigation===
-{Navigation(c)}
+[[JP/Characters|To Character List]]
 
 <noinclude>
 [[Category:{jp_flag}Character]]
